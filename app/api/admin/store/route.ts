@@ -3,6 +3,8 @@ import fs from "fs";
 import path from "path";
 import { DEFAULT_STORE_DATA, StoreData } from "@/lib/store";
 
+export const dynamic = "force-dynamic";
+
 const STORE_FILE_PATH = path.join(process.cwd(), "data", "store.json");
 
 export async function GET() {

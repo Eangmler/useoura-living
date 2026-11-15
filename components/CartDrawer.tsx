@@ -10,11 +10,8 @@ import {
   ArrowRight,
   ArrowLeft,
   ShoppingBag,
-  MapPin,
   MessageCircle,
-  Truck,
   ShieldCheck,
-  Check,
   HelpCircle,
   Settings2,
 } from "lucide-react";
@@ -24,7 +21,6 @@ import {
   CustomerOrderDetails,
   generateOrderReference,
   buildWhatsAppLink,
-  formatWhatsAppOrderMessage,
 } from "@/lib/whatsapp";
 
 export interface CartItem {
@@ -70,25 +66,12 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
 
   if (!isOpen) return null;
 
-  const subtotal = items.reduce(
+  const total = items.reduce(
     (sum, item) => sum + item.product.price * item.quantity,
     0
   );
 
   const isAccra = region === "accra";
-  const freeShippingThreshold = STORE_CONFIG.accraFreeDeliveryThreshold;
-
-  // Calculate delivery fee
-  let deliveryFee = 0;
-  if (isAccra) {
-    deliveryFee = subtotal >= freeShippingThreshold ? 0 : STORE_CONFIG.accraDeliveryFee;
-  } else {
-    deliveryFee = STORE_CONFIG.outsideAccraDeliveryFee;
-  }
-
-  const grandTotal = subtotal + deliveryFee;
-  const progressPercent = Math.min(100, (subtotal / freeShippingThreshold) * 100);
-  const remainingForFreeShipping = Math.max(0, freeShippingThreshold - subtotal);
 
   const handleProceedToWhatsApp = () => {
     setIsSubmitting(true);
@@ -106,20 +89,17 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
       orderRef,
       items,
       customerInfo: customerDetails,
-      subtotal,
-      deliveryFee,
-      total: grandTotal,
+      total,
       customNumber: activeWhatsAppNumber,
     });
 
-    // Save recent order to localStorage for tracking
     if (typeof window !== "undefined") {
       try {
         const orderData = {
           orderRef,
           items,
           customerDetails,
-          grandTotal,
+          total,
           createdAt: new Date().toISOString(),
         };
         localStorage.setItem(`order_${orderRef}`, JSON.stringify(orderData));
@@ -146,7 +126,6 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
 
   return (
     <div className="fixed inset-0 z-50 overflow-hidden animate-in fade-in duration-200">
-      {/* Backdrop */}
       <div
         className="absolute inset-0 bg-black/60 backdrop-blur-xs transition-opacity"
         onClick={onClose}
@@ -169,12 +148,12 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
               <ShoppingBag strokeWidth={1.5} className="w-4 h-4 text-[#1A1A1A]" />
               <div className="flex flex-col">
                 <span className="text-xs sm:text-sm font-mono uppercase tracking-[0.2em] font-semibold text-[#1A1A1A]">
-                  {step === "cart" ? "Shopping Bag" : "Delivery & WhatsApp"}
+                  {step === "cart" ? "Shopping Bag" : "Delivery Details"}
                 </span>
                 <span className="text-[10px] font-mono text-neutral-400">
                   {step === "cart"
-                    ? `${items.reduce((acc, i) => acc + i.quantity, 0)} OBJECTS SELECTED`
-                    : "STEP 2 OF 2 // DIRECT DISPATCH"}
+                    ? `${items.reduce((acc, i) => acc + i.quantity, 0)} OBJECTS IN BAG`
+                    : "FREE GREATER ACCRA DISPATCH INCLUDED"}
                 </span>
               </div>
             </div>
@@ -197,12 +176,12 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
             </div>
           </div>
 
-          {/* WhatsApp Destination Quick Switcher Banner (For owner/tester) */}
+          {/* WhatsApp Destination Quick Switcher Banner */}
           {showNumberConfig && (
             <div className="bg-[#1A1A1A] text-white p-4 border-b border-neutral-700 animate-in slide-in-from-top-2 text-xs font-mono">
               <div className="flex justify-between items-center mb-2">
                 <span className="text-[10px] tracking-wider uppercase text-neutral-400">
-                  Store Owner Setting: WhatsApp Number
+                  Store Owner: WhatsApp Target Number
                 </span>
                 <button
                   onClick={() => setShowNumberConfig(false)}
@@ -216,7 +195,7 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
                   type="text"
                   value={phoneConfigInput}
                   onChange={(e) => setPhoneConfigInput(e.target.value)}
-                  placeholder="e.g. 233240000000"
+                  placeholder="233248147952"
                   className="flex-1 bg-neutral-900 border border-neutral-700 px-3 py-1.5 text-xs text-white focus:outline-none"
                 />
                 <button
@@ -227,7 +206,7 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
                 </button>
               </form>
               <p className="text-[9px] text-neutral-400 mt-1">
-                Active: +{activeWhatsAppNumber} (Orders will route to this WhatsApp).
+                Active: +{activeWhatsAppNumber}
               </p>
             </div>
           )}
@@ -235,23 +214,10 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
           {/* STEP 1: CART ITEMS VIEW */}
           {step === "cart" && (
             <>
-              {/* Delivery Threshold Indicator */}
-              <div className="bg-[#EFEFEF] px-6 py-3 border-b border-neutral-200 text-xs font-mono">
-                {subtotal >= freeShippingThreshold ? (
-                  <span className="text-emerald-700 font-medium">
-                    ✓ COMPLIMENTARY OURA DISPATCH UNLOCKED (GREATER ACCRA)
-                  </span>
-                ) : (
-                  <span className="text-neutral-600">
-                    ADD <strong className="text-[#1A1A1A]">GH₵ {remainingForFreeShipping.toFixed(2)}</strong> MORE FOR FREE ACCRA DELIVERY
-                  </span>
-                )}
-                <div className="w-full bg-neutral-300 h-1 mt-2 overflow-hidden">
-                  <div
-                    className="bg-[#1A1A1A] h-full transition-all duration-300"
-                    style={{ width: `${progressPercent}%` }}
-                  />
-                </div>
+              {/* Delivery Benefit Ribbon */}
+              <div className="bg-[#EFEFEF] px-6 py-2.5 border-b border-neutral-200 text-[11px] font-mono text-neutral-600 flex items-center justify-between">
+                <span>✓ ALL PRICES INCLUDE FREE GREATER ACCRA DISPATCH</span>
+                <span className="text-[#1A1A1A] font-semibold">UBER COURIER</span>
               </div>
 
               {/* Cart Item List */}
@@ -279,7 +245,6 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
                 ) : (
                   items.map((item) => (
                     <div key={item.product.id} className="py-5 flex space-x-4 items-center">
-                      {/* Floating thumbnail with mix-blend-multiply */}
                       <div className="relative w-20 h-20 bg-[#F0F0F0] border border-neutral-200 p-2 shrink-0 flex items-center justify-center">
                         <Image
                           src={item.product.image}
@@ -340,21 +305,11 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
               {/* Bottom Actions for Step 1 */}
               {items.length > 0 && (
                 <div className="p-5 sm:p-6 border-t border-[#EAEAEA] bg-white space-y-4">
-                  <div className="space-y-1.5 font-mono text-xs">
-                    <div className="flex justify-between text-neutral-500">
-                      <span>SUBTOTAL</span>
-                      <span className="text-[#1A1A1A] font-medium">
-                        GH₵ {subtotal.toFixed(2)}
-                      </span>
-                    </div>
-                    <div className="flex justify-between text-neutral-500">
-                      <span>ESTIMATED DELIVERY</span>
-                      <span className="text-[#1A1A1A] font-medium">
-                        {subtotal >= freeShippingThreshold
-                          ? "COMPLIMENTARY (ACCRA)"
-                          : "FROM GH₵ 25.00"}
-                      </span>
-                    </div>
+                  <div className="flex justify-between items-baseline font-mono text-xs">
+                    <span className="text-neutral-500 uppercase tracking-wider">TOTAL (FREE ACCRA DISPATCH)</span>
+                    <span className="text-base font-semibold text-[#1A1A1A]">
+                      GH₵ {total.toFixed(2)}
+                    </span>
                   </div>
 
                   <button
@@ -374,11 +329,11 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
             </>
           )}
 
-          {/* STEP 2: DELIVERY ADDRESS & WHATSAPP META AI ROUTING */}
+          {/* STEP 2: DELIVERY ADDRESS & WHATSAPP ROUTING */}
           {step === "delivery" && (
             <div className="flex-1 flex flex-col justify-between overflow-y-auto">
               <div className="p-5 sm:p-6 space-y-6">
-                {/* Delivery Region Selection (Dictates Payment Rules) */}
+                {/* Region Selector */}
                 <div className="space-y-3">
                   <label className="text-[11px] font-mono uppercase tracking-[0.2em] font-semibold text-[#1A1A1A] block">
                     1. Select Delivery Destination
@@ -418,11 +373,8 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
                           Pay on Delivery
                         </span>
                       </div>
-                      <div className="mt-2 text-[10px] font-mono text-neutral-500 pl-6">
-                        Fee:{" "}
-                        {subtotal >= freeShippingThreshold
-                          ? "FREE (Orders > GH₵ 400)"
-                          : "GH₵ 25.00"}
+                      <div className="mt-2 text-[10px] font-mono text-emerald-700 pl-6 font-medium">
+                        ✓ Free Delivery via Uber Courier Included
                       </div>
                     </div>
 
@@ -460,13 +412,13 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
                         </span>
                       </div>
                       <div className="mt-2 text-[10px] font-mono text-neutral-500 pl-6">
-                        Fee: GH₵ 45.00 (Intercity Courier / VIP Station Parcel)
+                        Dispatched via VIP station parcel / regional courier
                       </div>
                     </div>
                   </div>
                 </div>
 
-                {/* Delivery Address Form (Optional - won't block WhatsApp redirection) */}
+                {/* Delivery Address Form (Optional - won't block) */}
                 <div className="space-y-4 pt-2 border-t border-[#EAEAEA]">
                   <div className="flex items-center justify-between">
                     <label className="text-[11px] font-mono uppercase tracking-[0.2em] font-semibold text-[#1A1A1A]">
@@ -477,11 +429,10 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
                     </span>
                   </div>
 
-                  {/* Informational reassurance banner */}
                   <div className="bg-neutral-100 border border-neutral-200/90 p-3 text-[11px] font-mono text-neutral-600 leading-relaxed flex items-start space-x-2">
                     <HelpCircle strokeWidth={1.5} className="w-4 h-4 text-neutral-500 shrink-0 mt-0.5" />
                     <span>
-                      Entering your address here pre-fills your WhatsApp order. If you leave it empty, our WhatsApp assistant will ask for your location when chatting.
+                      Entering your address pre-fills your WhatsApp order. If left empty, you can simply share it on chat.
                     </span>
                   </div>
 
@@ -501,7 +452,7 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
 
                     <div>
                       <label className="block text-[10px] uppercase text-neutral-500 mb-1">
-                        Phone Number (WhatsApp or Call)
+                        Phone Number
                       </label>
                       <input
                         type="tel"
@@ -540,7 +491,7 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
                   </div>
                 </div>
 
-                {/* Regional Payment Terms Summary Banner */}
+                {/* Payment Policy Banner */}
                 <div
                   className={`p-3.5 border font-mono text-xs ${
                     isAccra
@@ -558,8 +509,8 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
                   </div>
                   <p className="text-[11px] leading-relaxed opacity-90">
                     {isAccra
-                      ? "Pay via Cash or Mobile Money when the courier arrives at your doorstep."
-                      : "Due to intercity parcel transit logistics, orders outside Greater Accra require confirmed payment via MoMo before dispatch. Our WhatsApp assistant will share payment details."}
+                      ? "Pay via Cash or Mobile Money when the Uber courier arrives at your doorstep."
+                      : "Orders outside Greater Accra require confirmed payment via MoMo before parcel dispatch."}
                   </p>
                 </div>
               </div>
@@ -567,22 +518,13 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
               {/* Bottom Sticky Action: Complete on WhatsApp */}
               <div className="p-5 sm:p-6 border-t border-[#EAEAEA] bg-white space-y-4">
                 <div className="space-y-1 font-mono text-xs">
-                  <div className="flex justify-between text-neutral-500">
-                    <span>ITEMS ({items.reduce((acc, i) => acc + i.quantity, 0)})</span>
-                    <span>GH₵ {subtotal.toFixed(2)}</span>
+                  <div className="flex justify-between items-baseline text-sm font-semibold text-[#1A1A1A]">
+                    <span>TOTAL AMOUNT DUE</span>
+                    <span>GH₵ {total.toFixed(2)}</span>
                   </div>
-                  <div className="flex justify-between text-neutral-500">
-                    <span>
-                      DELIVERY ({isAccra ? "GREATER ACCRA" : "REGIONAL"})
-                    </span>
-                    <span className={deliveryFee === 0 ? "text-emerald-700 font-semibold" : ""}>
-                      {deliveryFee === 0 ? "FREE" : `GH₵ ${deliveryFee.toFixed(2)}`}
-                    </span>
-                  </div>
-                  <div className="pt-2 border-t border-neutral-200 flex justify-between text-sm font-semibold text-[#1A1A1A]">
-                    <span>TOTAL DUE</span>
-                    <span>GH₵ {grandTotal.toFixed(2)}</span>
-                  </div>
+                  <p className="text-[10px] text-emerald-700 font-mono">
+                    ✓ Includes Free Greater Accra Courier
+                  </p>
                 </div>
 
                 {/* Primary WhatsApp Button */}
@@ -595,13 +537,9 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
                   <span>
                     {isSubmitting
                       ? "Generating Order..."
-                      : `Complete Order on WhatsApp (GH₵ ${grandTotal.toFixed(2)})`}
+                      : `Complete Order on WhatsApp (GH₵ ${total.toFixed(2)})`}
                   </span>
                 </button>
-
-                <p className="text-[10px] font-mono text-neutral-500 text-center tracking-wider">
-                  Directs straight to WhatsApp with your order details pre-filled.
-                </p>
               </div>
             </div>
           )}

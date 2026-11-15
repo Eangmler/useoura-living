@@ -175,7 +175,9 @@ export const Footer: React.FC = () => {
             <span>·</span>
             <span>DIETER RAMS MODEL</span>
             <span>·</span>
-            <span>VERCEL PROTOTYPE</span>
+            <a href="/admin" className="hover:text-black transition-colors font-medium text-neutral-500">
+              ADMIN
+            </a>
           </div>
         </div>
       </div>

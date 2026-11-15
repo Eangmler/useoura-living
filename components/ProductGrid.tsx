@@ -1,9 +1,8 @@
 "use client";
 
-import React, { useState, useMemo } from "react";
-import { PRODUCTS, Product } from "@/lib/products";
+import React, { useState, useEffect, useMemo } from "react";
+import { PRODUCTS, Product, getStoredProducts } from "@/lib/products";
 import { ProductCard } from "@/components/ProductCard";
-import { SlidersHorizontal, Check } from "lucide-react";
 
 interface ProductGridProps {
   onAddToCart: (product: Product) => void;
@@ -18,18 +17,30 @@ export const ProductGrid: React.FC<ProductGridProps> = ({
   selectedCategorySlug,
   onSelectCategory,
 }) => {
+  const [liveProducts, setLiveProducts] = useState<Product[]>(PRODUCTS);
   const [sortBy, setSortBy] = useState<"default" | "price-asc" | "price-desc">("default");
 
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      setLiveProducts(getStoredProducts());
+      const handleStorage = () => {
+        setLiveProducts(getStoredProducts());
+      };
+      window.addEventListener("storage", handleStorage);
+      return () => window.removeEventListener("storage", handleStorage);
+    }
+  }, []);
+
   const filterTabs = useMemo(() => [
-    { label: "All Objects", slug: "all", count: PRODUCTS.length },
-    { label: "Mobile & Desk", slug: "mobile-desk", count: PRODUCTS.filter(p => p.categorySlug === "mobile-desk").length },
-    { label: "Smart Home", slug: "smart-home", count: PRODUCTS.filter(p => p.categorySlug === "smart-home").length },
-    { label: "Lifestyle", slug: "lifestyle", count: PRODUCTS.filter(p => p.categorySlug === "lifestyle").length },
-    { label: "Automotive", slug: "automotive", count: PRODUCTS.filter(p => p.categorySlug === "automotive").length },
-  ], []);
+    { label: "All Objects", slug: "all", count: liveProducts.length },
+    { label: "Mobile & Desk", slug: "mobile-desk", count: liveProducts.filter(p => p.categorySlug === "mobile-desk").length },
+    { label: "Smart Home", slug: "smart-home", count: liveProducts.filter(p => p.categorySlug === "smart-home").length },
+    { label: "Automotive", slug: "automotive", count: liveProducts.filter(p => p.categorySlug === "automotive").length },
+    { label: "Lifestyle", slug: "lifestyle", count: liveProducts.filter(p => p.categorySlug === "lifestyle").length },
+  ], [liveProducts]);
 
   const filteredProducts = useMemo(() => {
-    let list = [...PRODUCTS];
+    let list = [...liveProducts];
     if (selectedCategorySlug !== "all") {
       list = list.filter((p) => p.categorySlug === selectedCategorySlug);
     }
@@ -39,7 +50,7 @@ export const ProductGrid: React.FC<ProductGridProps> = ({
       list.sort((a, b) => b.price - a.price);
     }
     return list;
-  }, [selectedCategorySlug, sortBy]);
+  }, [liveProducts, selectedCategorySlug, sortBy]);
 
   return (
     <section id="bestsellers" className="w-full border-b border-[#EAEAEA] bg-[#F7F7F5] py-20 lg:py-28">
@@ -49,16 +60,16 @@ export const ProductGrid: React.FC<ProductGridProps> = ({
           <div className="space-y-3">
             <div className="flex items-center space-x-2 text-[10px] font-mono tracking-[0.25em] uppercase text-neutral-500">
               <span className="w-2 h-[1px] bg-neutral-900" />
-              <span>SECTION 03 // BROWSE HARDWARE</span>
+              <span>SECTION 03 // ARCHITECTURAL HARDWARE</span>
             </div>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-medium tracking-tight text-[#1A1A1A]">
-              Bestsellers Archive
+              Curated Catalogue
             </h2>
           </div>
 
           <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 text-xs font-mono text-neutral-500">
             <span className="uppercase tracking-widest">
-              [ {filteredProducts.length} OBJECTS IN CATALOGUE ]
+              [ {filteredProducts.length} OBJECTS · FREE ACCRA COURIER ]
             </span>
             <div className="flex items-center space-x-2 border border-neutral-300 px-3 py-1.5 bg-white">
               <span className="text-[10px] uppercase tracking-wider text-neutral-400">Sort:</span>
@@ -76,7 +87,7 @@ export const ProductGrid: React.FC<ProductGridProps> = ({
           </div>
         </div>
 
-        {/* Filter Navigation Tabs (Dieter Rams Monospace Minimalist Ribbon) */}
+        {/* Filter Navigation Tabs */}
         <div className="flex items-center space-x-2 sm:space-x-3 overflow-x-auto pb-6 mb-12 scrollbar-none border-b border-neutral-200">
           {filterTabs.map((tab) => {
             const isActive = selectedCategorySlug === tab.slug;
@@ -99,7 +110,7 @@ export const ProductGrid: React.FC<ProductGridProps> = ({
           })}
         </div>
 
-        {/* Asymmetrical Editorial Product Grid */}
+        {/* Asymmetrical Editorial Product Grid with Hover Angle Swap */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
           {filteredProducts.map((product, index) => {
             return (
@@ -114,13 +125,13 @@ export const ProductGrid: React.FC<ProductGridProps> = ({
           })}
         </div>
 
-        {/* Technical Blueprint Footnote */}
+        {/* Footnote */}
         <div className="mt-16 pt-8 border-t border-[#EAEAEA] flex flex-col sm:flex-row items-start sm:items-center justify-between text-[10px] font-mono tracking-[0.2em] uppercase text-neutral-400 gap-4">
           <div>
-            <span>SPECIFICATION STANDARDS: CE / FCC / ROHS / GHANA STANDARDS AUTHORITY</span>
+            <span>ACCRA FREE UBER COURIER DISPATCH</span>
           </div>
           <div>
-            <span>NEXT-DAY DELIVERY HUB // GREATER ACCRA REGION</span>
+            <span>HOVER ANY CARD TO INSPECT DETAIL ANGLE</span>
           </div>
         </div>
       </div>

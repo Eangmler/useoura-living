@@ -5,7 +5,6 @@ import Image from "next/image";
 import { X, Plus, Minus, Check, Shield, Truck, MessageCircle } from "lucide-react";
 import { Product } from "@/lib/products";
 import { buildWhatsAppLink, generateOrderReference } from "@/lib/whatsapp";
-import { STORE_CONFIG } from "@/lib/config";
 
 interface ProductModalProps {
   product: Product | null;
@@ -18,13 +17,20 @@ export const ProductModal: React.FC<ProductModalProps> = ({
   onClose,
   onAddToCart,
 }) => {
+  const [selectedImageIndex, setSelectedImageIndex] = useState(0);
   const [quantity, setQuantity] = useState(1);
   const [added, setAdded] = useState(false);
-  const [imageError, setImageError] = useState(false);
 
   if (!product) return null;
 
+  const galleryImages = product.images && product.images.length > 0
+    ? product.images
+    : [product.image, ...(product.secondaryImage ? [product.secondaryImage] : [])];
+
+  const currentImage = galleryImages[selectedImageIndex] || product.image;
+
   const handleAdd = () => {
+    if (!product.inStock) return;
     onAddToCart(product, quantity);
     setAdded(true);
     setTimeout(() => {
@@ -35,9 +41,7 @@ export const ProductModal: React.FC<ProductModalProps> = ({
 
   const handleInstantWhatsApp = () => {
     const orderRef = generateOrderReference();
-    const itemSubtotal = product.price * quantity;
-    const isFreeAccra = itemSubtotal >= STORE_CONFIG.accraFreeDeliveryThreshold;
-    const deliveryFee = isFreeAccra ? 0 : STORE_CONFIG.accraDeliveryFee;
+    const itemTotal = product.price * quantity;
 
     const url = buildWhatsAppLink({
       orderRef,
@@ -45,13 +49,11 @@ export const ProductModal: React.FC<ProductModalProps> = ({
       customerInfo: {
         name: "",
         phone: "",
-        region: "accra", // default for instant trigger
+        region: "accra",
         address: "",
-        landmarkNotes: "Initiated via Instant Product Quick-Order",
+        landmarkNotes: "Single item instant quick-order",
       },
-      subtotal: itemSubtotal,
-      deliveryFee,
-      total: itemSubtotal + deliveryFee,
+      total: itemTotal,
     });
 
     window.open(url, "_blank");
@@ -59,10 +61,8 @@ export const ProductModal: React.FC<ProductModalProps> = ({
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 lg:p-10 bg-black/60 backdrop-blur-sm animate-in fade-in duration-200">
-      {/* Backdrop click */}
       <div className="absolute inset-0" onClick={onClose} />
 
-      {/* Modal Dialog Container */}
       <div className="relative w-full max-w-4xl max-h-[92vh] overflow-y-auto bg-[#F7F7F5] border border-neutral-300 shadow-2xl z-10 flex flex-col md:flex-row">
         {/* Close Button */}
         <button
@@ -73,32 +73,55 @@ export const ProductModal: React.FC<ProductModalProps> = ({
           <X strokeWidth={1.5} className="w-5 h-5" />
         </button>
 
-        {/* Left Side: Floating Gallery Presentation */}
-        <div className="md:w-1/2 bg-[#F0F0F0] border-b md:border-b-0 md:border-r border-[#EAEAEA] p-8 sm:p-12 flex flex-col justify-between relative">
+        {/* Left Side: Multi-Angle Gallery Presentation */}
+        <div className="md:w-1/2 bg-[#F0F0F0] border-b md:border-b-0 md:border-r border-[#EAEAEA] p-6 sm:p-10 flex flex-col justify-between relative">
           <div className="flex justify-between items-center text-[10px] font-mono tracking-[0.2em] text-neutral-400 uppercase">
             <span>SCHEMATIC // {product.tag}</span>
-            <span>MUSEUM SPEC</span>
+            <span>ANGLE {selectedImageIndex + 1} OF {galleryImages.length}</span>
           </div>
 
-          <div className="relative w-full aspect-square my-8 flex items-center justify-center">
+          {/* Main Large View */}
+          <div className="relative w-full aspect-square my-6 flex items-center justify-center">
             <Image
-              src={imageError && product.fallbackImage ? product.fallbackImage : product.image}
-              alt={product.title}
+              src={currentImage}
+              alt={`${product.title} angle ${selectedImageIndex + 1}`}
               fill
               sizes="(max-width: 768px) 100vw, 50vw"
-              onError={() => setImageError(true)}
-              className="object-contain mix-blend-multiply p-6"
+              className="object-contain mix-blend-multiply p-4 transition-all duration-300"
             />
           </div>
 
-          <div className="flex justify-between items-center text-[9px] font-mono tracking-widest text-neutral-400 uppercase pt-4 border-t border-neutral-300/60">
-            <span>DIETER RAMS AESTHETIC</span>
-            <span>ACCRA STOCK READY</span>
-          </div>
+          {/* Multi-Angle Thumbnail Strip */}
+          {galleryImages.length > 1 && (
+            <div className="flex items-center space-x-2 pt-4 border-t border-neutral-300/60 overflow-x-auto pb-1">
+              {galleryImages.map((img, idx) => (
+                <button
+                  key={idx}
+                  onClick={() => setSelectedImageIndex(idx)}
+                  className={`relative w-14 h-14 bg-white border p-1 shrink-0 transition-all ${
+                    selectedImageIndex === idx
+                      ? "border-[#1A1A1A] ring-1 ring-[#1A1A1A]"
+                      : "border-neutral-300 opacity-60 hover:opacity-100"
+                  }`}
+                >
+                  <Image
+                    src={img}
+                    alt={`Angle ${idx + 1}`}
+                    fill
+                    sizes="56px"
+                    className="object-contain mix-blend-multiply"
+                  />
+                </button>
+              ))}
+              <span className="text-[9px] font-mono text-neutral-400 uppercase tracking-widest pl-2">
+                Click to switch angle
+              </span>
+            </div>
+          )}
         </div>
 
         {/* Right Side: Editorial Specifications & Action */}
-        <div className="md:w-1/2 p-8 sm:p-10 flex flex-col justify-between space-y-6">
+        <div className="md:w-1/2 p-6 sm:p-10 flex flex-col justify-between space-y-6">
           <div className="space-y-4">
             <div className="space-y-1">
               <span className="text-[10px] font-mono tracking-[0.25em] text-neutral-400 uppercase block">
@@ -107,8 +130,18 @@ export const ProductModal: React.FC<ProductModalProps> = ({
               <h2 className="text-2xl sm:text-3xl font-medium tracking-tight text-[#1A1A1A]">
                 {product.title}
               </h2>
-              <div className="pt-2 text-xl font-mono font-semibold text-[#1A1A1A]">
-                {product.priceFormatted}
+              <div className="pt-2 flex items-baseline space-x-3">
+                <span className="text-xl font-mono font-semibold text-[#1A1A1A]">
+                  GH₵ {product.price.toFixed(2)}
+                </span>
+                {product.originalPrice && (
+                  <span className="text-sm font-mono text-neutral-400 line-through">
+                    GH₵ {product.originalPrice.toFixed(2)}
+                  </span>
+                )}
+                <span className="text-[10px] font-mono bg-emerald-100 text-emerald-800 px-2 py-0.5 uppercase font-medium">
+                  Free Accra Courier
+                </span>
               </div>
             </div>
 
@@ -117,13 +150,13 @@ export const ProductModal: React.FC<ProductModalProps> = ({
             </p>
 
             {/* Technical Specifications Table */}
-            <div className="pt-4 border-t border-[#EAEAEA] space-y-2">
-              <span className="text-[10px] font-mono tracking-[0.2em] text-neutral-400 uppercase block mb-3">
-                Hardware Specifications
+            <div className="pt-2 border-t border-[#EAEAEA] space-y-2">
+              <span className="text-[10px] font-mono tracking-[0.2em] text-neutral-400 uppercase block mb-2">
+                Specifications
               </span>
               <div className="divide-y divide-neutral-200 border border-neutral-200 bg-white/60">
                 {product.specs.map((spec, i) => (
-                  <div key={i} className="flex justify-between py-2 px-3 text-xs font-mono">
+                  <div key={i} className="flex justify-between py-1.5 px-3 text-xs font-mono">
                     <span className="text-neutral-500 uppercase">{spec.label}</span>
                     <span className="text-[#1A1A1A] font-medium text-right max-w-[60%]">
                       {spec.value}
@@ -134,10 +167,10 @@ export const ProductModal: React.FC<ProductModalProps> = ({
             </div>
 
             {/* Logistics Guarantees */}
-            <div className="space-y-2 pt-2 text-[11px] font-mono text-neutral-600">
+            <div className="space-y-1.5 pt-2 text-[11px] font-mono text-neutral-600">
               <div className="flex items-center space-x-2">
                 <Truck strokeWidth={1.5} className="w-3.5 h-3.5 text-neutral-700" />
-                <span>Next-day dispatch via Oura Fleet across Greater Accra</span>
+                <span>Complimentary Uber Courier in Greater Accra</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Shield strokeWidth={1.5} className="w-3.5 h-3.5 text-neutral-700" />
@@ -146,8 +179,8 @@ export const ProductModal: React.FC<ProductModalProps> = ({
             </div>
           </div>
 
-          {/* Add to Bag Controls */}
-          <div className="pt-6 border-t border-[#EAEAEA] space-y-3">
+          {/* Controls */}
+          <div className="pt-4 border-t border-[#EAEAEA] space-y-3">
             <div className="flex items-center space-x-4">
               <div className="flex items-center border border-neutral-300 bg-white">
                 <button
@@ -171,13 +204,18 @@ export const ProductModal: React.FC<ProductModalProps> = ({
 
               <button
                 onClick={handleAdd}
+                disabled={!product.inStock}
                 className={`flex-grow py-3.5 px-6 font-mono text-xs uppercase tracking-[0.2em] font-medium transition-all duration-200 flex items-center justify-center space-x-2 ${
-                  added
+                  !product.inStock
+                    ? "bg-neutral-300 text-neutral-500 cursor-not-allowed"
+                    : added
                     ? "bg-emerald-700 text-white"
                     : "bg-[#1A1A1A] text-white hover:bg-neutral-800"
                 }`}
               >
-                {added ? (
+                {!product.inStock ? (
+                  <span>Sold Out</span>
+                ) : added ? (
                   <>
                     <Check strokeWidth={1.5} className="w-4 h-4" />
                     <span>Added to Bag</span>
@@ -188,14 +226,16 @@ export const ProductModal: React.FC<ProductModalProps> = ({
               </button>
             </div>
 
-            {/* Instant WhatsApp Order button (GoPixelr style) */}
-            <button
-              onClick={handleInstantWhatsApp}
-              className="w-full py-3 bg-[#25D366] hover:bg-[#1fa851] text-white font-mono text-xs uppercase tracking-[0.15em] font-semibold transition-all duration-200 flex items-center justify-center space-x-2"
-            >
-              <MessageCircle strokeWidth={2} className="w-4 h-4 fill-current" />
-              <span>Instant Order on WhatsApp</span>
-            </button>
+            {/* Instant WhatsApp Quick Order */}
+            {product.inStock && (
+              <button
+                onClick={handleInstantWhatsApp}
+                className="w-full py-3 bg-[#25D366] hover:bg-[#1fa851] text-white font-mono text-xs uppercase tracking-[0.15em] font-semibold transition-all duration-200 flex items-center justify-center space-x-2"
+              >
+                <MessageCircle strokeWidth={2} className="w-4 h-4 fill-current" />
+                <span>Instant Order on WhatsApp</span>
+              </button>
+            )}
           </div>
         </div>
       </div>

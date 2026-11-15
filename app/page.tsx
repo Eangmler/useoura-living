@@ -5,12 +5,13 @@ import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/Hero";
 import { FeaturedCategories } from "@/components/FeaturedCategories";
 import { ProductGrid } from "@/components/ProductGrid";
-import { BrandManifesto } from "@/components/BrandManifesto";
+import { ComboSection } from "@/components/ComboSection";
+import { SmartHomeSection } from "@/components/SmartHomeSection";
 import { Footer } from "@/components/Footer";
 import { ProductModal } from "@/components/ProductModal";
 import { CartDrawer, CartItem } from "@/components/CartDrawer";
 import { SearchModal } from "@/components/SearchModal";
-import { PRODUCTS, Product } from "@/lib/products";
+import { PRODUCTS, Product, getStoredProducts } from "@/lib/products";
 
 export default function Home() {
   const [cart, setCart] = useState<CartItem[]>([]);
@@ -21,7 +22,7 @@ export default function Home() {
   const [activeCategory, setActiveCategory] = useState<string>("all");
   const [toast, setToast] = useState<string | null>(null);
 
-  // Load cart from localStorage on client mount
+  // Load cart from localStorage
   useEffect(() => {
     try {
       const savedCart = localStorage.getItem("useoura_cart");
@@ -36,17 +37,18 @@ export default function Home() {
     } catch (e) {
       console.error("Failed to load cart from storage", e);
     }
-    // Default initial item for instant realistic feel
+    // Default initial item
+    const initialProducts = getStoredProducts();
     setCart([
       {
-        product: PRODUCTS[0],
+        product: initialProducts[0] || PRODUCTS[0],
         quantity: 1,
       },
     ]);
     setIsLoaded(true);
   }, []);
 
-  // Save cart to localStorage whenever it changes
+  // Save cart to localStorage
   useEffect(() => {
     if (isLoaded) {
       try {
@@ -82,6 +84,25 @@ export default function Home() {
     }
   };
 
+  const handleAddComboToCart = (comboProducts: Product[]) => {
+    setCart((prev) => {
+      let updated = [...prev];
+      comboProducts.forEach((prod) => {
+        const existing = updated.find((item) => item.product.id === prod.id);
+        if (existing) {
+          updated = updated.map((item) =>
+            item.product.id === prod.id ? { ...item, quantity: item.quantity + 1 } : item
+          );
+        } else {
+          updated.push({ product: prod, quantity: 1 });
+        }
+      });
+      return updated;
+    });
+    showToast(`Added combo bundle (${comboProducts.length} items) to bag`);
+    setIsCartOpen(true);
+  };
+
   const handleUpdateQuantity = (productId: string, quantity: number) => {
     if (quantity <= 0) {
       handleRemoveItem(productId);
@@ -110,7 +131,8 @@ export default function Home() {
   };
 
   const handleExploreProduct = (productId: string) => {
-    const found = PRODUCTS.find((p) => p.id === productId);
+    const all = getStoredProducts();
+    const found = all.find((p) => p.id === productId);
     if (found) {
       setSelectedProduct(found);
     }
@@ -120,7 +142,7 @@ export default function Home() {
 
   return (
     <div className="min-h-screen flex flex-col bg-[#F7F7F5] text-[#1A1A1A] selection:bg-[#1A1A1A] selection:text-[#F7F7F5]">
-      {/* Navbar with Sticky States and Bag Drawer Link */}
+      {/* Sticky Top Navigation */}
       <Navbar
         cartCount={totalCartCount}
         onOpenCart={() => setIsCartOpen(true)}
@@ -129,20 +151,21 @@ export default function Home() {
         activeCategory={activeCategory}
       />
 
-      {/* Hero Section */}
+      {/* Main Product-Focused Content */}
       <main className="flex-1">
+        {/* 1. Hero: User's Uploaded Living Room Visual with Dieter Rams Focus */}
         <Hero
           onShopClick={handleShopClick}
           onExploreProduct={handleExploreProduct}
         />
 
-        {/* Featured Categories (Magazine Style Layout) */}
+        {/* 2. Featured Categories (Magazine Style) */}
         <FeaturedCategories
           onSelectCategory={(slug) => setActiveCategory(slug)}
           activeCategory={activeCategory}
         />
 
-        {/* Bestsellers Product Grid (The Core Experience) */}
+        {/* 3. Core Product Grid (2-Angle Hover & In-Stock/Discount Indicators) */}
         <ProductGrid
           onAddToCart={(prod) => handleAddToCart(prod, 1, false)}
           onQuickView={(prod) => setSelectedProduct(prod)}
@@ -150,21 +173,24 @@ export default function Home() {
           onSelectCategory={(slug) => setActiveCategory(slug)}
         />
 
-        {/* Dieter Rams Manifesto & Editorial Photography */}
-        <BrandManifesto />
+        {/* 4. Curated Combos (Hardware that works hand-in-hand) */}
+        <ComboSection onAddComboToCart={handleAddComboToCart} />
+
+        {/* 5. Smart Home Engineering & In-Person Setups (with Minimalist YouTube Video) */}
+        <SmartHomeSection />
       </main>
 
       {/* Severely Minimalist Footer */}
       <Footer />
 
-      {/* Interactive Detail Modal */}
+      {/* Multi-Angle Product Inspection Modal */}
       <ProductModal
         product={selectedProduct}
         onClose={() => setSelectedProduct(null)}
         onAddToCart={(prod, qty) => handleAddToCart(prod, qty, true)}
       />
 
-      {/* Cart Drawer Slide-over with Direct WhatsApp Checkout */}
+      {/* Slide-over Cart & Delivery Details Drawer */}
       <CartDrawer
         isOpen={isCartOpen}
         onClose={() => setIsCartOpen(false)}
@@ -174,14 +200,14 @@ export default function Home() {
         onClearCart={handleClearCart}
       />
 
-      {/* Minimalist Search Overlay */}
+      {/* Search Overlay */}
       <SearchModal
         isOpen={isSearchOpen}
         onClose={() => setIsSearchOpen(false)}
         onSelectProduct={(prod) => setSelectedProduct(prod)}
       />
 
-      {/* Tactile Notification Toast */}
+      {/* Toast Feedback */}
       {toast && (
         <div className="fixed bottom-6 right-6 z-50 bg-[#1A1A1A] text-white px-5 py-3 shadow-xl font-mono text-xs uppercase tracking-wider flex items-center space-x-3 border border-neutral-700 animate-in slide-in-from-bottom-3 duration-300">
           <span className="w-1.5 h-1.5 rounded-full bg-emerald-400" />

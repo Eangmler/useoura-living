@@ -50,6 +50,34 @@ export const INITIAL_PRODUCTS: Product[] = [
     featured: true,
   },
   {
+    id: "prod-under-pillow-sleep-speaker",
+    title: "Under-Pillow Sleep Soundbar",
+    description: "Ultra-thin bone conduction soundbar engineered for private bedtime acoustics and deep restorative sleep. Slips under any pillow with zero bulk or discomfort.",
+    price: 210.00,
+    originalPrice: 250.00,
+    priceFormatted: "GH₵ 210.00",
+    category: "Minimalist Lifestyle",
+    categorySlug: "lifestyle",
+    image: "/assets/products/lifestyle/under-pillow-sleep-speaker-isolated.webp",
+    secondaryImage: "/assets/products/lifestyle/under-pillow-sleep-speaker-lifestyle.webp",
+    images: [
+      "/assets/products/lifestyle/under-pillow-sleep-speaker-isolated.webp",
+      "/assets/products/lifestyle/under-pillow-sleep-speaker-lifestyle.webp",
+      "/assets/products/lifestyle/under-pillow-sleep-speaker-story.webp"
+    ],
+    badge: "Bone Conduction",
+    specs: [
+      { label: "Sound", value: "Bone Conduction Resonance (Audible only on pillow)" },
+      { label: "Timer", value: "30 / 60 Min Sleep Auto-Off Timer" },
+      { label: "Connectivity", value: "Bluetooth 5.3 + White Noise Generator" },
+      { label: "Profile", value: "Sub-12mm ultra-flat aerodynamic chassis" }
+    ],
+    tag: "AUDIO // 08",
+    inStock: true,
+    hasDiscount: true,
+    featured: true,
+  },
+  {
     id: "prod-baseus-65w-car",
     title: "Baseus 65W Triple Port Car Charger",
     description: "Fast-charge laptops and phones on the go. Matte space aluminum.",

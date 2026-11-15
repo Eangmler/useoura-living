@@ -182,7 +182,7 @@ export const Navbar: React.FC<NavbarProps> = ({
               <div className="text-xs text-neutral-600 space-y-1 font-mono">
                 <p>Oura Hub: Accra, Ghana</p>
                 <p>Dispatch: Monday – Saturday (8:00 – 18:00)</p>
-                <p>Support: +233 50 000 0000</p>
+                <p>WhatsApp Order Desk: +233 24 814 7952</p>
               </div>
             </div>
           </div>

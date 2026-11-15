@@ -55,11 +55,11 @@ Instead of relying on third-party cart gateways or Shopify checkout:
 ## 3. Configuration & WhatsApp Number
 
 ### Setting Your WhatsApp Business Number
-1. In your Vercel Project Settings, add an Environment Variable:
+1. Default configured number: **`+233 24 814 7952`** (`233248147952`).
+2. To override in Vercel Project Settings, add an Environment Variable:
    ```env
-   NEXT_PUBLIC_WHATSAPP_NUMBER=233XXXXXXXXX
+   NEXT_PUBLIC_WHATSAPP_NUMBER=233248147952
    ```
-   *(Enter your Ghanaian phone number in international format without `+` or spaces, e.g. `233241234567`)*.
 2. In the web application, click the **Settings icon (⚙)** in the Shopping Bag drawer to update or test any WhatsApp phone number on the fly. The number is saved to your browser session.
 
 ---

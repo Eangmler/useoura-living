@@ -114,6 +114,16 @@ export const Footer: React.FC = () => {
                 </a>
               </li>
               <li>
+                <a
+                  href="https://wa.me/233248147952"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-black transition-colors flex items-center space-x-1"
+                >
+                  <span className="text-emerald-700 font-medium">WhatsApp: +233 24 814 7952</span>
+                </a>
+              </li>
+              <li>
                 <a href="#" className="hover:text-black transition-colors">
                   Accra Next-Day Fleet
                 </a>

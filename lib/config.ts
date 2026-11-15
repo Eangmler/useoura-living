@@ -2,7 +2,8 @@ export const STORE_CONFIG = {
   storeName: "useoura living",
   currency: "GH₵",
   country: "Ghana",
-  defaultWhatsAppNumber: "233500000000", // Standard international format without '+' or spaces. Can be overridden via NEXT_PUBLIC_WHATSAPP_NUMBER
+  defaultWhatsAppNumber: "233248147952", // +233 24 814 7952
+  displayWhatsAppNumber: "+233 24 814 7952",
   accraFreeDeliveryThreshold: 400,
   accraDeliveryFee: 25,
   outsideAccraDeliveryFee: 45,

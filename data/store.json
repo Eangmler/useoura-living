@@ -161,6 +161,46 @@
       "featured": true
     },
     {
+      "id": "prod-mini-wifi-ir-controller",
+      "title": "Mini Wi-Fi IR Controller",
+      "description": "Micro-profile universal infrared transceiver engineered to automate climate, audio, and displays with zero bulk. Discrete USB-powered form factor with Tuya & Smart Life ecosystem integration.",
+      "price": 145,
+      "originalPrice": 175,
+      "priceFormatted": "GH\u20b5 145.00",
+      "category": "Smart Home Automation",
+      "categorySlug": "smart-home",
+      "image": "/assets/products/smart-home/mini-wifi-ir-controller-isolated.webp",
+      "secondaryImage": "/assets/products/smart-home/mini-wifi-ir-controller-lifestyle.webp",
+      "images": [
+        "/assets/products/smart-home/mini-wifi-ir-controller-isolated.webp",
+        "/assets/products/smart-home/mini-wifi-ir-controller-lifestyle.webp",
+        "/assets/products/smart-home/mini-wifi-ir-controller-story.webp"
+      ],
+      "badge": "Micro IR Hub",
+      "specs": [
+        {
+          "label": "Profile",
+          "value": "Micro 50mm diameter stealth disc"
+        },
+        {
+          "label": "Coverage",
+          "value": "Omnidirectional 360-degree infrared transmission"
+        },
+        {
+          "label": "Ecosystem",
+          "value": "Tuya / Smart Life / Siri Shortcuts / Alexa"
+        },
+        {
+          "label": "Power",
+          "value": "USB 5V low-power continuous operation"
+        }
+      ],
+      "tag": "HOME // 11",
+      "inStock": true,
+      "hasDiscount": true,
+      "featured": false
+    },
+    {
       "id": "prod-baseus-65w-car",
       "title": "Baseus 65W Triple Port Car Charger",
       "description": "Fast-charge laptops and phones on the go. Matte space aluminum.",

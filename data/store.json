@@ -6,7 +6,7 @@
       "description": "Fast-charge laptops and phones on the go. Matte space aluminum.",
       "price": 210,
       "originalPrice": 240,
-      "priceFormatted": "GH₵ 210.00",
+      "priceFormatted": "GH\u20b5 210.00",
       "category": "Automotive Upgrades",
       "categorySlug": "automotive",
       "image": "https://baseus.com.au/cdn/shop/files/tzcckx-0g-3_1000x.jpg?v=1736398705",
@@ -18,10 +18,22 @@
       ],
       "badge": "GaN Fast Charge",
       "specs": [
-        { "label": "Output", "value": "65W Max (USB-C1 + C2 + USB-A)" },
-        { "label": "Display", "value": "Real-time LED voltage meter" },
-        { "label": "Compatibility", "value": "12V-24V car sockets, PD 3.0 & QC 4.0" },
-        { "label": "Finish", "value": "Matte space aluminum" }
+        {
+          "label": "Output",
+          "value": "65W Max (USB-C1 + C2 + USB-A)"
+        },
+        {
+          "label": "Display",
+          "value": "Real-time LED voltage meter"
+        },
+        {
+          "label": "Compatibility",
+          "value": "12V-24V car sockets, PD 3.0 & QC 4.0"
+        },
+        {
+          "label": "Finish",
+          "value": "Matte space aluminum"
+        }
       ],
       "tag": "AUTO // 01",
       "inStock": true,
@@ -34,7 +46,7 @@
       "description": "Compact dual USB-C charging brick with folding pins.",
       "price": 210,
       "originalPrice": 230,
-      "priceFormatted": "GH₵ 210.00",
+      "priceFormatted": "GH\u20b5 210.00",
       "category": "Mobile & Desk Tech",
       "categorySlug": "mobile-desk",
       "image": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/MNWP3?wid=1144&hei=1144&fmt=jpeg&qlt=90",
@@ -45,10 +57,22 @@
       ],
       "badge": "Official Spec",
       "specs": [
-        { "label": "Ports", "value": "2x USB-C (Intelligent power sharing)" },
-        { "label": "Power", "value": "35W dynamic distribution" },
-        { "label": "Prongs", "value": "Folding compact architectural pins" },
-        { "label": "Safety", "value": "Overcurrent & thermal protection" }
+        {
+          "label": "Ports",
+          "value": "2x USB-C (Intelligent power sharing)"
+        },
+        {
+          "label": "Power",
+          "value": "35W dynamic distribution"
+        },
+        {
+          "label": "Prongs",
+          "value": "Folding compact architectural pins"
+        },
+        {
+          "label": "Safety",
+          "value": "Overcurrent & thermal protection"
+        }
       ],
       "tag": "DESK // 02",
       "inStock": true,
@@ -59,7 +83,7 @@
       "title": "Anker 100W Braided USB-C Cable",
       "description": "Ultra-durable nylon fast-charging cable with silicone strap.",
       "price": 175,
-      "priceFormatted": "GH₵ 175.00",
+      "priceFormatted": "GH\u20b5 175.00",
       "category": "Mobile & Desk Tech",
       "categorySlug": "mobile-desk",
       "image": "https://cdn.shopify.com/s/files/1/0831/7042/7131/files/white-01_2d4272ab-2d5a-428d-8f79-c52ac1e98345_2878x_1.png?v=1790582640",
@@ -70,10 +94,22 @@
       ],
       "badge": "100W PD",
       "specs": [
-        { "label": "Throughput", "value": "100W (20V/5A E-Marker Chip)" },
-        { "label": "Build", "value": "Double-braided ballistic nylon" },
-        { "label": "Bend Rating", "value": "25,000+ lifecycle bends" },
-        { "label": "Length", "value": "1.8m (6ft) with silicone strap" }
+        {
+          "label": "Throughput",
+          "value": "100W (20V/5A E-Marker Chip)"
+        },
+        {
+          "label": "Build",
+          "value": "Double-braided ballistic nylon"
+        },
+        {
+          "label": "Bend Rating",
+          "value": "25,000+ lifecycle bends"
+        },
+        {
+          "label": "Length",
+          "value": "1.8m (6ft) with silicone strap"
+        }
       ],
       "tag": "DESK // 03",
       "inStock": true,
@@ -84,7 +120,7 @@
       "title": "Tuya Smart Zigbee 3.0 Hub",
       "description": "The brain for your smart home ecosystem. Connects 128+ sensors.",
       "price": 330,
-      "priceFormatted": "GH₵ 330.00",
+      "priceFormatted": "GH\u20b5 330.00",
       "category": "Smart Home Automation",
       "categorySlug": "smart-home",
       "image": "https://ae01.alicdn.com/kf/S2dd107e3cb734fa4bb96bc6334f59e66X.jpg",
@@ -95,10 +131,22 @@
       ],
       "badge": "Local Automation",
       "specs": [
-        { "label": "Protocol", "value": "Zigbee 3.0 & BLE Mesh" },
-        { "label": "Capacity", "value": "128 simultaneous sub-devices" },
-        { "label": "Coverage", "value": "100m open area range" },
-        { "label": "Offline Support", "value": "Local automations execute without internet" }
+        {
+          "label": "Protocol",
+          "value": "Zigbee 3.0 & BLE Mesh"
+        },
+        {
+          "label": "Capacity",
+          "value": "128 simultaneous sub-devices"
+        },
+        {
+          "label": "Coverage",
+          "value": "100m open area range"
+        },
+        {
+          "label": "Offline Support",
+          "value": "Local automations execute without internet"
+        }
       ],
       "tag": "HOME // 04",
       "inStock": true,
@@ -110,7 +158,7 @@
       "description": "Mechanical switch, anti-glare screen lighting with auto-dimming sensor.",
       "price": 580,
       "originalPrice": 620,
-      "priceFormatted": "GH₵ 580.00",
+      "priceFormatted": "GH\u20b5 580.00",
       "category": "Mobile & Desk Tech",
       "categorySlug": "mobile-desk",
       "image": "https://cdn.shopify.com/s/files/1/0831/7042/7131/files/lightbar-01_1024x1024.png?v=1790582645",
@@ -121,10 +169,22 @@
       ],
       "badge": "Eye Comfort",
       "specs": [
-        { "label": "Optics", "value": "Asymmetrical 45° optical glare cut-off" },
-        { "label": "Color Temp", "value": "2700K - 6500K stepless adjustment" },
-        { "label": "CRI", "value": "Ra ≥ 95 color accuracy" },
-        { "label": "Controller", "value": "Wireless 2.4GHz desktop rotary dial" }
+        {
+          "label": "Optics",
+          "value": "Asymmetrical 45\u00b0 optical glare cut-off"
+        },
+        {
+          "label": "Color Temp",
+          "value": "2700K - 6500K stepless adjustment"
+        },
+        {
+          "label": "CRI",
+          "value": "Ra \u2265 95 color accuracy"
+        },
+        {
+          "label": "Controller",
+          "value": "Wireless 2.4GHz desktop rotary dial"
+        }
       ],
       "tag": "DESK // 05",
       "inStock": true,
@@ -136,7 +196,7 @@
       "title": "XXL Solid Color Desk Mat",
       "description": "Premium faux leather workspace protector. Waterproof and wipeable.",
       "price": 220,
-      "priceFormatted": "GH₵ 220.00",
+      "priceFormatted": "GH\u20b5 220.00",
       "category": "Mobile & Desk Tech",
       "categorySlug": "mobile-desk",
       "image": "https://cdn.shopify.com/s/files/1/0831/7042/7131/files/deskmat-01_1024x1024.png?v=1790582650",
@@ -146,10 +206,22 @@
         "https://m.media-amazon.com/images/I/71P4oU44e4L._AC_SL1500_.jpg"
       ],
       "specs": [
-        { "label": "Dimensions", "value": "900mm x 400mm x 2.2mm" },
-        { "label": "Material", "value": "Architectural vegan PU leather & cork base" },
-        { "label": "Resistance", "value": "Waterproof, oil-proof, heat resistant" },
-        { "label": "Edge", "value": "Precision stitched anti-fray border" }
+        {
+          "label": "Dimensions",
+          "value": "900mm x 400mm x 2.2mm"
+        },
+        {
+          "label": "Material",
+          "value": "Architectural vegan PU leather & cork base"
+        },
+        {
+          "label": "Resistance",
+          "value": "Waterproof, oil-proof, heat resistant"
+        },
+        {
+          "label": "Edge",
+          "value": "Precision stitched anti-fray border"
+        }
       ],
       "tag": "DESK // 06",
       "inStock": true
@@ -157,9 +229,9 @@
     {
       "id": "prod-magsafe-car-mount",
       "title": "Magnetic Dashboard Phone Mount",
-      "description": "360° rotating sleek car mount. Aerospace alloy with N52 magnets.",
+      "description": "360\u00b0 rotating sleek car mount. Aerospace alloy with N52 magnets.",
       "price": 175,
-      "priceFormatted": "GH₵ 175.00",
+      "priceFormatted": "GH\u20b5 175.00",
       "category": "Automotive Upgrades",
       "categorySlug": "automotive",
       "image": "https://cdn.shopify.com/s/files/1/0831/7042/7131/files/mount-01_1024x1024.png?v=1790582655",
@@ -170,10 +242,22 @@
       ],
       "badge": "N52 Magnet",
       "specs": [
-        { "label": "Magnets", "value": "16x N52 aerospace neodymium array" },
-        { "label": "Rotation", "value": "360° fluid damping ball joint" },
-        { "label": "Adhesive", "value": "3M VHB heat-tolerant car mount pad" },
-        { "label": "Finish", "value": "CNC anodized aluminum body" }
+        {
+          "label": "Magnets",
+          "value": "16x N52 aerospace neodymium array"
+        },
+        {
+          "label": "Rotation",
+          "value": "360\u00b0 fluid damping ball joint"
+        },
+        {
+          "label": "Adhesive",
+          "value": "3M VHB heat-tolerant car mount pad"
+        },
+        {
+          "label": "Finish",
+          "value": "CNC anodized aluminum body"
+        }
       ],
       "tag": "AUTO // 07",
       "inStock": true
@@ -184,7 +268,7 @@
       "description": "Discreet, ultra-light wireless audio for studio-grade voice capture.",
       "price": 730,
       "originalPrice": 790,
-      "priceFormatted": "GH₵ 730.00",
+      "priceFormatted": "GH\u20b5 730.00",
       "category": "Minimalist Lifestyle",
       "categorySlug": "lifestyle",
       "image": "https://cdn.shopify.com/s/files/1/0831/7042/7131/files/dji-mic-mini-01.png?v=1790582660",
@@ -195,10 +279,22 @@
       ],
       "badge": "Studio Grade",
       "specs": [
-        { "label": "Weight", "value": "10 grams (Ultra-compact)" },
-        { "label": "Battery Life", "value": "48 hours with charging case" },
-        { "label": "Range", "value": "400m direct lossless transmission" },
-        { "label": "Noise Reduction", "value": "Two-level intelligent ambient filter" }
+        {
+          "label": "Weight",
+          "value": "10 grams (Ultra-compact)"
+        },
+        {
+          "label": "Battery Life",
+          "value": "48 hours with charging case"
+        },
+        {
+          "label": "Range",
+          "value": "400m direct lossless transmission"
+        },
+        {
+          "label": "Noise Reduction",
+          "value": "Two-level intelligent ambient filter"
+        }
       ],
       "tag": "AUDIO // 08",
       "inStock": true,
@@ -234,38 +330,31 @@
   ],
   "heroSlides": [
     {
-      "id": "slide-living-oled",
+      "id": "slide-pixel-white",
       "type": "image",
-      "src": "/assets/brand/hero-living.jpg",
+      "src": "/assets/brand/hero/hero-pixel-white.jpg",
       "title": "Curated technology and daily essentials.",
-      "active": true
-    },
-    {
-      "id": "slide-warm-desk",
-      "type": "image",
-      "src": "/assets/brand/hero/hero-warm-desk.jpg",
-      "title": "Pure form, uncompromised utility.",
       "active": true
     },
     {
       "id": "slide-gadgets-collection",
       "type": "image",
       "src": "/assets/brand/hero/hero-gadgets-collection.jpg",
-      "title": "Architectural tools engineered for daily life.",
+      "title": "Pure form, uncompromised utility.",
       "active": true
     },
     {
-      "id": "slide-pixel-white",
+      "id": "slide-warm-desk",
       "type": "image",
-      "src": "/assets/brand/hero/hero-pixel-white.jpg",
-      "title": "Ecosystems designed to work hand-in-hand.",
+      "src": "/assets/brand/hero/hero-warm-desk.jpg",
+      "title": "Architectural tools engineered for daily life.",
       "active": true
     },
     {
       "id": "slide-ambient-video",
       "type": "video",
       "src": "https://assets.mixkit.co/videos/preview/mixkit-living-room-in-a-modern-apartment-41488-large.mp4",
-      "poster": "/assets/brand/hero-living.jpg",
+      "poster": "/assets/brand/hero/hero-pixel-white.jpg",
       "title": "Quiet smart living.",
       "active": true
     }
@@ -292,6 +381,7 @@
     "pin": "oura2026",
     "whatsappNumber": "233248147952",
     "storeName": "useoura living",
-    "currency": "GH₵"
+    "currency": "GH₵",
+    "smartHomeVideoUrl": "https://assets.mixkit.co/videos/preview/mixkit-living-room-in-a-modern-apartment-41488-large.mp4"
   }
 }

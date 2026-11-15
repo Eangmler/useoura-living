@@ -12,6 +12,7 @@ import { ProductModal } from "@/components/ProductModal";
 import { CartDrawer, CartItem } from "@/components/CartDrawer";
 import { SearchModal } from "@/components/SearchModal";
 import { PRODUCTS, Product, getStoredProducts } from "@/lib/products";
+import { saveClientStoreData, StoreData } from "@/lib/store";
 
 export default function Home() {
   const [cart, setCart] = useState<CartItem[]>([]);
@@ -46,6 +47,16 @@ export default function Home() {
       },
     ]);
     setIsLoaded(true);
+
+    // Fetch latest server store data to ensure live catalog, hero slides & categories sync seamlessly
+    fetch("/api/admin/store")
+      .then((res) => (res.ok ? res.json() : null))
+      .then((serverData: StoreData | null) => {
+        if (serverData && serverData.products && serverData.products.length > 0) {
+          saveClientStoreData(serverData);
+        }
+      })
+      .catch((err) => console.log("Offline mode or cached store in use:", err.message));
   }, []);
 
   // Save cart to localStorage

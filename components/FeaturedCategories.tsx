@@ -26,6 +26,14 @@ export const FeaturedCategories: React.FC<FeaturedCategoriesProps> = ({
       };
 
       loadCategories();
+      fetch("/api/admin/store")
+        .then((r) => (r.ok ? r.json() : null))
+        .then((d) => {
+          if (d && d.categories && d.categories.length > 0) {
+            setCategories(d.categories);
+          }
+        })
+        .catch(() => {});
       window.addEventListener("storage", loadCategories);
       return () => window.removeEventListener("storage", loadCategories);
     }

@@ -26,6 +26,7 @@ import {
   ChevronDown,
   X,
   ExternalLink,
+  Upload,
 } from "lucide-react";
 import { Product } from "@/lib/products";
 import {
@@ -67,12 +68,39 @@ export default function AdminPage() {
   const [newMemberName, setNewMemberName] = useState("");
   const [newMemberEmail, setNewMemberEmail] = useState("");
   const [newMemberRole, setNewMemberRole] = useState<TeamMember["role"]>("Catalog Manager");
+  const [isEditingMember, setIsEditingMember] = useState(false);
+  const [editingMember, setEditingMember] = useState<TeamMember | null>(null);
 
   // New PIN state
   const [newPin, setNewPin] = useState("");
   const [confirmPin, setConfirmPin] = useState("");
   const [pinChangeSuccess, setPinChangeSuccess] = useState(false);
   const [pinChangeError, setPinChangeError] = useState("");
+
+  // Uploading state
+  const [isUploading, setIsUploading] = useState(false);
+
+  const handleUploadImageFile = async (file: File, onDone: (url: string) => void) => {
+    try {
+      setIsUploading(true);
+      const fd = new FormData();
+      fd.append("file", file);
+      const res = await fetch("/api/admin/upload", {
+        method: "POST",
+        body: fd,
+      });
+      const data = await res.json();
+      if (data.url) {
+        onDone(data.url);
+      } else {
+        alert("Upload error: " + (data.error || "Unknown"));
+      }
+    } catch (err: any) {
+      alert("Upload failed: " + err.message);
+    } finally {
+      setIsUploading(false);
+    }
+  };
 
   // Load store data on mount
   useEffect(() => {
@@ -319,6 +347,30 @@ export default function AdminPage() {
       m.id === id ? { ...m, role } : m
     );
     commitStoreChanges({ ...store, teamMembers: updated }, "Member role updated");
+  };
+
+  const handleOpenEditMember = (member: TeamMember) => {
+    setEditingMember({ ...member });
+    setIsEditingMember(true);
+  };
+
+  const handleSaveMemberModal = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!editingMember) return;
+    const updated = (store.teamMembers || []).map((m) =>
+      m.id === editingMember.id ? editingMember : m
+    );
+    commitStoreChanges({ ...store, teamMembers: updated }, `Member "${editingMember.name}" updated!`);
+    setIsEditingMember(false);
+    setEditingMember(null);
+  };
+
+  const handleUpdateSmartHomeVideo = (newUrl: string) => {
+    const updatedSettings = {
+      ...store.settings,
+      smartHomeVideoUrl: newUrl,
+    };
+    commitStoreChanges({ ...store, settings: updatedSettings }, "Smart Home video URL updated!");
   };
 
   // -------------------------------------------------------------
@@ -830,9 +882,29 @@ export default function AdminPage() {
                     </div>
 
                     <div>
-                      <label className="text-[10px] font-mono uppercase tracking-wider text-neutral-500 block mb-1">
-                        Image URL or Local Path
-                      </label>
+                      <div className="flex items-center justify-between mb-1">
+                        <label className="text-[10px] font-mono uppercase tracking-wider text-neutral-500">
+                          Image URL or Local Path
+                        </label>
+                        <label className="cursor-pointer text-[10px] font-mono text-emerald-700 hover:text-emerald-900 flex items-center space-x-1">
+                          <Upload className="w-3 h-3" />
+                          <span>{isUploading ? "Uploading..." : "Upload File"}</span>
+                          <input
+                            type="file"
+                            accept="image/*"
+                            disabled={isUploading}
+                            className="hidden"
+                            onChange={(e) => {
+                              const file = e.target.files?.[0];
+                              if (file) {
+                                handleUploadImageFile(file, (url) => {
+                                  handleUpdateCategory(cat.id, "image", url);
+                                });
+                              }
+                            }}
+                          />
+                        </label>
+                      </div>
                       <input
                         type="text"
                         value={cat.image}
@@ -951,10 +1023,16 @@ export default function AdminPage() {
                         </select>
                       </td>
                       <td className="p-3.5 text-neutral-400">{member.addedAt}</td>
-                      <td className="p-3.5 text-right">
+                      <td className="p-3.5 text-right whitespace-nowrap space-x-2">
+                        <button
+                          onClick={() => handleOpenEditMember(member)}
+                          className="px-2.5 py-1 border border-neutral-300 hover:bg-neutral-200 text-[#1A1A1A] transition-colors"
+                        >
+                          Edit
+                        </button>
                         <button
                           onClick={() => handleDeleteTeamMember(member.id, member.name)}
-                          className="text-neutral-400 hover:text-red-600 transition-colors"
+                          className="p-1 text-neutral-400 hover:text-red-600 transition-colors"
                           title="Remove member"
                         >
                           <Trash2 className="w-4 h-4 inline" />
@@ -1056,6 +1134,35 @@ export default function AdminPage() {
                 <span className="text-neutral-400">Format: Country code + digits (e.g. 233248147952)</span>
               </div>
             </div>
+
+            {/* Smart Home Video Configuration */}
+            <div className="bg-white border border-neutral-300 p-6 shadow-sm space-y-4">
+              <h3 className="text-sm font-semibold tracking-tight text-[#1A1A1A]">
+                Smart Home Setup Demonstration Video
+              </h3>
+              <p className="text-xs font-mono text-neutral-500">
+                Configure the video displayed in the Smart Home Turnkey Automation section. Supports MP4 videos or YouTube links.
+              </p>
+
+              <div className="space-y-3 text-xs font-mono">
+                <input
+                  type="text"
+                  value={store.settings?.smartHomeVideoUrl || "https://assets.mixkit.co/videos/preview/mixkit-living-room-in-a-modern-apartment-41488-large.mp4"}
+                  onChange={(e) => handleUpdateSmartHomeVideo(e.target.value)}
+                  placeholder="https://...mp4 or YouTube video link"
+                  className="w-full px-3 py-2 border border-neutral-300 focus:outline-none focus:border-neutral-900"
+                />
+                <div className="flex flex-wrap gap-2 pt-1">
+                  <button
+                    type="button"
+                    onClick={() => handleUpdateSmartHomeVideo("https://assets.mixkit.co/videos/preview/mixkit-living-room-in-a-modern-apartment-41488-large.mp4")}
+                    className="px-2.5 py-1 bg-neutral-100 hover:bg-neutral-200 border border-neutral-200 text-[10px]"
+                  >
+                    Reset to Default Modern Apartment MP4
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
         )}
       </main>
@@ -1146,9 +1253,29 @@ export default function AdminPage() {
               </div>
 
               <div>
-                <label className="text-[10px] uppercase tracking-wider text-neutral-500 block mb-1">
-                  Primary Isolated Image URL
-                </label>
+                <div className="flex items-center justify-between mb-1">
+                  <label className="text-[10px] uppercase tracking-wider text-neutral-500">
+                    Primary Isolated Image URL
+                  </label>
+                  <label className="cursor-pointer text-[10px] font-mono text-emerald-700 hover:text-emerald-900 flex items-center space-x-1">
+                    <Upload className="w-3 h-3" />
+                    <span>{isUploading ? "Uploading..." : "Upload Device File"}</span>
+                    <input
+                      type="file"
+                      accept="image/*"
+                      disabled={isUploading}
+                      className="hidden"
+                      onChange={(e) => {
+                        const file = e.target.files?.[0];
+                        if (file) {
+                          handleUploadImageFile(file, (url) => {
+                            setEditingProduct({ ...editingProduct, image: url });
+                          });
+                        }
+                      }}
+                    />
+                  </label>
+                </div>
                 <input
                   type="text"
                   required
@@ -1160,9 +1287,29 @@ export default function AdminPage() {
               </div>
 
               <div>
-                <label className="text-[10px] uppercase tracking-wider text-neutral-500 block mb-1">
-                  Secondary Detail Angle URL (Shows on Hover)
-                </label>
+                <div className="flex items-center justify-between mb-1">
+                  <label className="text-[10px] uppercase tracking-wider text-neutral-500">
+                    Secondary Detail Angle URL (Shows on Hover)
+                  </label>
+                  <label className="cursor-pointer text-[10px] font-mono text-emerald-700 hover:text-emerald-900 flex items-center space-x-1">
+                    <Upload className="w-3 h-3" />
+                    <span>{isUploading ? "Uploading..." : "Upload Device File"}</span>
+                    <input
+                      type="file"
+                      accept="image/*"
+                      disabled={isUploading}
+                      className="hidden"
+                      onChange={(e) => {
+                        const file = e.target.files?.[0];
+                        if (file) {
+                          handleUploadImageFile(file, (url) => {
+                            setEditingProduct({ ...editingProduct, secondaryImage: url });
+                          });
+                        }
+                      }}
+                    />
+                  </label>
+                </div>
                 <input
                   type="text"
                   value={editingProduct.secondaryImage || ""}
@@ -1285,9 +1432,29 @@ export default function AdminPage() {
               </div>
 
               <div>
-                <label className="text-[10px] uppercase tracking-wider text-neutral-500 block mb-1">
-                  Image or Video URL
-                </label>
+                <div className="flex items-center justify-between mb-1">
+                  <label className="text-[10px] uppercase tracking-wider text-neutral-500">
+                    Image or Video URL
+                  </label>
+                  <label className="cursor-pointer text-[10px] font-mono text-emerald-700 hover:text-emerald-900 flex items-center space-x-1">
+                    <Upload className="w-3 h-3" />
+                    <span>{isUploading ? "Uploading..." : "Upload Device File"}</span>
+                    <input
+                      type="file"
+                      accept="image/*,video/mp4"
+                      disabled={isUploading}
+                      className="hidden"
+                      onChange={(e) => {
+                        const file = e.target.files?.[0];
+                        if (file) {
+                          handleUploadImageFile(file, (url) => {
+                            setEditingSlide({ ...editingSlide, src: url });
+                          });
+                        }
+                      }}
+                    />
+                  </label>
+                </div>
                 <input
                   type="text"
                   required
@@ -1306,31 +1473,31 @@ export default function AdminPage() {
                 <div className="flex flex-wrap gap-1.5">
                   <button
                     type="button"
-                    onClick={() => setEditingSlide({ ...editingSlide, src: "/assets/brand/hero-living.jpg" })}
+                    onClick={() => setEditingSlide({ ...editingSlide, src: "/assets/brand/hero/hero-pixel-white.jpg" })}
                     className="px-2 py-1 bg-neutral-100 hover:bg-neutral-200 text-[10px] border border-neutral-200"
                   >
-                    Living Room OLED
-                  </button>
-                  <button
-                    type="button"
-                    onClick={() => setEditingSlide({ ...editingSlide, src: "/assets/brand/hero/hero-warm-desk.jpg" })}
-                    className="px-2 py-1 bg-neutral-100 hover:bg-neutral-200 text-[10px] border border-neutral-200"
-                  >
-                    Warm Desk Setup
+                    Porcelain Pixel Devices
                   </button>
                   <button
                     type="button"
                     onClick={() => setEditingSlide({ ...editingSlide, src: "/assets/brand/hero/hero-gadgets-collection.jpg" })}
                     className="px-2 py-1 bg-neutral-100 hover:bg-neutral-200 text-[10px] border border-neutral-200"
                   >
-                    Minimalist Gadgets
+                    Matte Tech Gadgets
                   </button>
                   <button
                     type="button"
-                    onClick={() => setEditingSlide({ ...editingSlide, src: "/assets/brand/hero/hero-pixel-white.jpg" })}
+                    onClick={() => setEditingSlide({ ...editingSlide, src: "/assets/brand/hero/hero-warm-desk.jpg" })}
                     className="px-2 py-1 bg-neutral-100 hover:bg-neutral-200 text-[10px] border border-neutral-200"
                   >
-                    Porcelain White Devices
+                    Warm Workstation
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => setEditingSlide({ ...editingSlide, src: "/assets/raw-products/prod-00-musowood-walnut-vertical-stand/variety-walnut-desk-setup.jpg" })}
+                    className="px-2 py-1 bg-neutral-100 hover:bg-neutral-200 text-[10px] border border-neutral-200"
+                  >
+                    Walnut Stand Desk
                   </button>
                 </div>
               </div>
@@ -1351,6 +1518,108 @@ export default function AdminPage() {
                   className="px-6 py-2 bg-[#1A1A1A] text-white uppercase tracking-[0.15em] font-medium hover:bg-neutral-800 transition-colors"
                 >
                   Save Slide
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      )}
+      {/* ======================================================== */}
+      {/* EDIT TEAM MEMBER MODAL */}
+      {/* ======================================================== */}
+      {isEditingMember && editingMember && (
+        <div className="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm flex items-center justify-center p-4">
+          <div className="bg-white border border-neutral-300 w-full max-w-md p-6 sm:p-8 space-y-6 shadow-2xl relative">
+            <button
+              onClick={() => {
+                setIsEditingMember(false);
+                setEditingMember(null);
+              }}
+              className="absolute top-4 right-4 p-2 text-neutral-400 hover:text-black cursor-pointer"
+            >
+              <X className="w-5 h-5" />
+            </button>
+
+            <div>
+              <h2 className="text-xl font-medium tracking-tight">Edit Team Member</h2>
+              <p className="text-xs font-mono text-neutral-500">
+                Update account details, role permissions, or email address.
+              </p>
+            </div>
+
+            <form onSubmit={handleSaveMemberModal} className="space-y-4 text-xs font-mono">
+              <div>
+                <label className="text-[10px] uppercase tracking-wider text-neutral-500 block mb-1">
+                  Full Name
+                </label>
+                <input
+                  type="text"
+                  required
+                  value={editingMember.name}
+                  onChange={(e) => setEditingMember({ ...editingMember, name: e.target.value })}
+                  className="w-full px-3 py-2 border border-neutral-300 focus:outline-none focus:border-neutral-900"
+                />
+              </div>
+
+              <div>
+                <label className="text-[10px] uppercase tracking-wider text-neutral-500 block mb-1">
+                  Email Address
+                </label>
+                <input
+                  type="email"
+                  required
+                  value={editingMember.email}
+                  onChange={(e) => setEditingMember({ ...editingMember, email: e.target.value })}
+                  className="w-full px-3 py-2 border border-neutral-300 focus:outline-none focus:border-neutral-900"
+                />
+              </div>
+
+              <div>
+                <label className="text-[10px] uppercase tracking-wider text-neutral-500 block mb-1">
+                  Assigned Role
+                </label>
+                <select
+                  value={editingMember.role}
+                  onChange={(e) => setEditingMember({ ...editingMember, role: e.target.value as any })}
+                  className="w-full px-3 py-2 border border-neutral-300 bg-white focus:outline-none focus:border-neutral-900"
+                >
+                  <option value="Owner">Owner (Full Store & Security Access)</option>
+                  <option value="Catalog Manager">Catalog Manager (Products & Pricing)</option>
+                  <option value="Logistics / Dispatcher">Logistics / Dispatcher (Uber Couriers & WhatsApp Orders)</option>
+                  <option value="Sales / Support">Sales / Support (Customer Inquiries)</option>
+                </select>
+              </div>
+
+              <div>
+                <label className="text-[10px] uppercase tracking-wider text-neutral-500 block mb-1">
+                  Status
+                </label>
+                <select
+                  value={editingMember.status}
+                  onChange={(e) => setEditingMember({ ...editingMember, status: e.target.value as any })}
+                  className="w-full px-3 py-2 border border-neutral-300 bg-white focus:outline-none focus:border-neutral-900"
+                >
+                  <option value="active">Active</option>
+                  <option value="invited">Invited</option>
+                </select>
+              </div>
+
+              <div className="pt-4 border-t border-neutral-200 flex items-center justify-end space-x-3">
+                <button
+                  type="button"
+                  onClick={() => {
+                    setIsEditingMember(false);
+                    setEditingMember(null);
+                  }}
+                  className="px-4 py-2 border border-neutral-300 hover:bg-neutral-100 cursor-pointer"
+                >
+                  Cancel
+                </button>
+                <button
+                  type="submit"
+                  className="px-6 py-2 bg-[#1A1A1A] text-white uppercase tracking-[0.15em] font-medium hover:bg-neutral-800 transition-colors cursor-pointer"
+                >
+                  Save Member Details
                 </button>
               </div>
             </form>

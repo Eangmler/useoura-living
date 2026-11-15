@@ -34,6 +34,7 @@ export interface AdminSettings {
   whatsappNumber: string;
   storeName: string;
   currency: string;
+  smartHomeVideoUrl?: string;
 }
 
 export interface StoreData {
@@ -46,38 +47,31 @@ export interface StoreData {
 
 export const DEFAULT_HERO_SLIDES: HeroSlide[] = [
   {
-    id: "slide-living-oled",
+    id: "slide-pixel-white",
     type: "image",
-    src: "/assets/brand/hero-living.jpg",
+    src: "/assets/brand/hero/hero-pixel-white.jpg",
     title: "Curated technology and daily essentials.",
-    active: true,
-  },
-  {
-    id: "slide-warm-desk",
-    type: "image",
-    src: "/assets/brand/hero/hero-warm-desk.jpg",
-    title: "Pure form, uncompromised utility.",
     active: true,
   },
   {
     id: "slide-gadgets-collection",
     type: "image",
     src: "/assets/brand/hero/hero-gadgets-collection.jpg",
-    title: "Architectural tools engineered for daily life.",
+    title: "Pure form, uncompromised utility.",
     active: true,
   },
   {
-    id: "slide-pixel-white",
+    id: "slide-warm-desk",
     type: "image",
-    src: "/assets/brand/hero/hero-pixel-white.jpg",
-    title: "Ecosystems designed to work hand-in-hand.",
+    src: "/assets/brand/hero/hero-warm-desk.jpg",
+    title: "Architectural tools engineered for daily life.",
     active: true,
   },
   {
     id: "slide-ambient-video",
     type: "video",
     src: "https://assets.mixkit.co/videos/preview/mixkit-living-room-in-a-modern-apartment-41488-large.mp4",
-    poster: "/assets/brand/hero-living.jpg",
+    poster: "/assets/brand/hero/hero-pixel-white.jpg",
     title: "Quiet smart living.",
     active: true,
   },
@@ -134,6 +128,7 @@ export const DEFAULT_SETTINGS: AdminSettings = {
   whatsappNumber: "233248147952",
   storeName: "useoura living",
   currency: "GH₵",
+  smartHomeVideoUrl: "https://assets.mixkit.co/videos/preview/mixkit-living-room-in-a-modern-apartment-41488-large.mp4",
 };
 
 export const DEFAULT_STORE_DATA: StoreData = {

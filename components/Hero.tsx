@@ -25,6 +25,15 @@ export const Hero: React.FC<HeroProps> = ({ onShopClick }) => {
       };
 
       loadSlides();
+      fetch("/api/admin/store")
+        .then((r) => (r.ok ? r.json() : null))
+        .then((d) => {
+          if (d && d.heroSlides && d.heroSlides.length > 0) {
+            const active = d.heroSlides.filter((s: HeroSlide) => s.active !== false);
+            if (active.length > 0) setSlides(active);
+          }
+        })
+        .catch(() => {});
       window.addEventListener("storage", loadSlides);
       return () => window.removeEventListener("storage", loadSlides);
     }

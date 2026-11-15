@@ -23,6 +23,14 @@ export const ProductGrid: React.FC<ProductGridProps> = ({
   useEffect(() => {
     if (typeof window !== "undefined") {
       setLiveProducts(getStoredProducts());
+      fetch("/api/admin/store")
+        .then((r) => (r.ok ? r.json() : null))
+        .then((d) => {
+          if (d && d.products && d.products.length > 0) {
+            setLiveProducts(d.products);
+          }
+        })
+        .catch(() => {});
       const handleStorage = () => {
         setLiveProducts(getStoredProducts());
       };

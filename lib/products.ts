@@ -22,6 +22,34 @@ export interface Product {
 
 export const INITIAL_PRODUCTS: Product[] = [
   {
+    id: "prod-touch-ambient-lamp",
+    title: "Touch Control Ambient Lamp",
+    description: "Cordless 16-color touch-dimmable light engineered for quiet bedside and workspace illumination. 800mAh rechargeable battery with stepless brightness tuning.",
+    price: 185.00,
+    originalPrice: 220.00,
+    priceFormatted: "GH₵ 185.00",
+    category: "Smart Home Automation",
+    categorySlug: "smart-home",
+    image: "/assets/products/smart-home/touch-ambient-lamp-isolated.webp",
+    secondaryImage: "/assets/products/smart-home/touch-ambient-lamp-lifestyle.webp",
+    images: [
+      "/assets/products/smart-home/touch-ambient-lamp-isolated.webp",
+      "/assets/products/smart-home/touch-ambient-lamp-lifestyle.webp",
+      "/assets/products/smart-home/touch-ambient-lamp-story.webp"
+    ],
+    badge: "Cordless 16-RGB",
+    specs: [
+      { label: "Battery", value: "800mAh USB-C Rechargeable (Up to 14 hrs runtime)" },
+      { label: "Lighting", value: "16-Color RGB + 2700K Warm White" },
+      { label: "Control", value: "Capacitive top touch sensor (Tap to switch, hold to dim)" },
+      { label: "Chassis", value: "Matte optical diffuser & anodized base" }
+    ],
+    tag: "HOME // 07",
+    inStock: true,
+    hasDiscount: true,
+    featured: true,
+  },
+  {
     id: "prod-baseus-65w-car",
     title: "Baseus 65W Triple Port Car Charger",
     description: "Fast-charge laptops and phones on the go. Matte space aluminum.",

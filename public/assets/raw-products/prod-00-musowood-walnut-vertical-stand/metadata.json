@@ -1,0 +1,75 @@
+{
+  "goodsId": "607471800314856",
+  "title": "Modern Minimalist Wave-pattern Laptop Stand, Featuring a Unique Continuous U-shaped Wave * with an Artistic Feel. * in a *",
+  "price": 3.41,
+  "priceText": "$3.41",
+  "currency": "USD",
+  "imageUrl": "https://img.kwcdn.com/product/open/b213d58a3d494fd587ae2850551f45f5-goods.jpeg",
+  "galleryImages": [
+    "https://img.kwcdn.com/product/open/b213d58a3d494fd587ae2850551f45f5-goods.jpeg",
+    "https://img.kwcdn.com/product/open/e55c99e65fd944379b90fbeaa82cd0c8-goods.jpeg"
+  ],
+  "videoUrl": "https://goods-vod.kwcdn.com/goods-video/49cc9e5611beda46d8839d58b6c52f291b93da04.f30.mp4",
+  "videoCoverUrl": "https://img.kwcdn.com/product/open/b213d58a3d494fd587ae2850551f45f5-goods.jpeg",
+  "hasVideo": true,
+  "inStock": true,
+  "categoryName": "Tablets, Laptops & Accessories",
+  "categoryId": "2872",
+  "categoryPath": "Electronics > Tablets, Laptops & Accessories",
+  "skus": [
+    {
+      "skuId": "607471800314856___color",
+      "specText": "Option: * color",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "* color"
+        }
+      ],
+      "price": 3.41,
+      "priceText": "$3.41",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/open/e55c99e65fd944379b90fbeaa82cd0c8-goods.jpeg",
+      "inStock": true
+    }
+  ],
+  "description": "Modern Minimalist Wave-pattern Laptop Stand, Featuring a Unique Continuous U-shaped Wave * with an Artistic Feel. * in a * of Stylish Random Colors to Match Different Decor Styles. * Surface Has a Delicate Texture at the * at Temu. Free shipping on items shipped from Temu on electronics on sale at Temu.",
+  "specifications": {
+    "Material": "PVC"
+  },
+  "breadcrumbs": [
+    {
+      "optId": "",
+      "optName": "TEMU",
+      "level": 1,
+      "url": "https://www.temu.com"
+    },
+    {
+      "optId": "248",
+      "optName": "Electronics",
+      "level": 2,
+      "url": "https://www.temu.com/electronics-o3-248.html"
+    },
+    {
+      "optId": "2872",
+      "optName": "Tablets, Laptops & Accessories",
+      "level": 3,
+      "url": "https://www.temu.com/tablets-laptops-accessories-o3-2872.html"
+    },
+    {
+      "optId": "",
+      "optName": "Modern Minimalist Wave-pattern Laptop Stand, Featuring a Unique Continuous U-shaped Wave * with an Artistic Feel. * in a * of Stylish Random Colors to Match Different Decor Styles. * Surface Has a Delicate Texture",
+      "level": 4,
+      "url": ""
+    }
+  ],
+  "returnPolicy": {
+    "returnWindowDays": 90,
+    "freeReturns": true
+  },
+  "productUrl": "https://www.temu.com/modern-minimalist-wave-pattern-laptop-stand-featuring-a-unique-continuous-u-shaped-wave--with-an-artistic-feel--in-a--of-stylish-random-colors-to-match-different-decor-styles--surface-has-a-delicate-texture-g-607471800314856.html",
+  "sourcePageType": "pdp",
+  "sourceUrl": "https://www.temu.com/modern-minimalist-wave-pattern-laptop-stand-featuring-a-unique-continuous-u-shaped-wave--with-an-artistic-feel--in-a--of-stylish-random-colors-to-match-different-decor-styles--surface-has-a-delicate-texture-g-607471800314856.html",
+  "extractedAt": "2026-11-15T17:54:51.489Z"
+}

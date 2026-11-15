@@ -1,0 +1,107 @@
+{
+  "goodsId": "606894664087046",
+  "title": "Phone Case - * Magnetic Phone Case for Pixel 8 Pro, Pixel 9A, Pixel 10, Shockproof, Easy Protective Cover",
+  "price": 2.34,
+  "priceText": "$2.34",
+  "currency": "USD",
+  "imageUrl": "https://img.kwcdn.com/product/open/251e8ae8b27b462bb54e55c770db25e5-goods.jpeg",
+  "galleryImages": [
+    "https://img.kwcdn.com/product/open/251e8ae8b27b462bb54e55c770db25e5-goods.jpeg",
+    "https://img.kwcdn.com/product/open/e0dae0e8f637494ab2094f1593fd7747-goods.jpeg",
+    "https://img.kwcdn.com/product/open/4049dc1ac1054b2a8cb47694fe6d4693-goods.jpeg",
+    "https://img.kwcdn.com/product/open/0a5536dbfd374913981dd09fc4956e3c-goods.jpeg"
+  ],
+  "hasVideo": false,
+  "inStock": true,
+  "categoryName": "Cases, Holsters & Sleeves",
+  "categoryId": "2642",
+  "categoryPath": "Cell Phones & Accessories > Cases, Holsters & Sleeves",
+  "skus": [
+    {
+      "skuId": "606894664087046_pixel_8_pro_transparent",
+      "specText": "Option: Pixel 8 pro transparent",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "Pixel 8 pro transparent"
+        }
+      ],
+      "price": 2.34,
+      "priceText": "$2.34",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/open/e0dae0e8f637494ab2094f1593fd7747-goods.jpeg",
+      "inStock": true
+    },
+    {
+      "skuId": "606894664087046_pixel_9a_transparent",
+      "specText": "Option: Pixel 9a transparent",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "Pixel 9a transparent"
+        }
+      ],
+      "price": 2.34,
+      "priceText": "$2.34",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/open/4049dc1ac1054b2a8cb47694fe6d4693-goods.jpeg",
+      "inStock": true
+    },
+    {
+      "skuId": "606894664087046_pixel_10_transparent",
+      "specText": "Option: Pixel 10 transparent",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "Pixel 10 transparent"
+        }
+      ],
+      "price": 2.34,
+      "priceText": "$2.34",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/open/0a5536dbfd374913981dd09fc4956e3c-goods.jpeg",
+      "inStock": true
+    }
+  ],
+  "description": "Shop Phone Case - * Magnetic Phone Case for Pixel 8 Pro, Pixel 9A, Pixel 10, Shockproof, Easy Protective Cover on Temu. Free shipping on items shipped from Temu. * more great prices on cell phones & accessories.",
+  "specifications": {
+    "Material": "PVC"
+  },
+  "breadcrumbs": [
+    {
+      "optId": "",
+      "optName": "TEMU",
+      "level": 1,
+      "url": "https://www.temu.com"
+    },
+    {
+      "optId": "2640",
+      "optName": "Cell Phones & Accessories",
+      "level": 2,
+      "url": "https://www.temu.com/cell-phones-accessories-o3-2640.html"
+    },
+    {
+      "optId": "2642",
+      "optName": "Cases, Holsters & Sleeves",
+      "level": 3,
+      "url": "https://www.temu.com/cases-holsters-sleeves-o3-2642.html"
+    },
+    {
+      "optId": "",
+      "optName": "Phone Case - * Magnetic Phone Case for Pixel 8 Pro, Pixel 9A, Pixel 10, Shockproof, Easy Protective Cover",
+      "level": 4,
+      "url": ""
+    }
+  ],
+  "returnPolicy": {
+    "returnWindowDays": 90,
+    "freeReturns": true
+  },
+  "productUrl": "https://www.temu.com/phone-case--magnetic-phone-case-for-pixel-8-pro-pixel-9a-pixel-10-shockproof-easy-protective-cover-g-606894664087046.html",
+  "sourcePageType": "pdp",
+  "sourceUrl": "https://www.temu.com/product-g-606894664087046.html",
+  "extractedAt": "2026-11-15T17:53:18.979Z"
+}

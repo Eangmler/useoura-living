@@ -1,0 +1,243 @@
+{
+  "goodsId": "601099693964207",
+  "title": "Multiple Camera Protection Accessories 4/5/15/25/30/55/75/95/110pcs",
+  "price": 0.65,
+  "priceText": "$0.65",
+  "currency": "USD",
+  "imageUrl": "https://img.kwcdn.com/product/fancy/f0675156-eab4-4747-b988-501565f4e73a.jpg",
+  "galleryImages": [
+    "https://img.kwcdn.com/product/fancy/f0675156-eab4-4747-b988-501565f4e73a.jpg",
+    "https://img.kwcdn.com/product/open/2024-09-30/1727713237869-45b48ce9311343e1a615e48c042b8e9a-goods.jpeg",
+    "https://img.kwcdn.com/product/open/2024-09-30/1727713236039-3d8d19d6290d48e69bf8c8fdc15547c5-goods.jpeg",
+    "https://img.kwcdn.com/product/fancy/564a6b21-d406-4f7e-ad95-c18e226423fb.jpg",
+    "https://img.kwcdn.com/product/fancy/00fc0ced-93e2-48b5-bd10-2e553719b7fa.jpg",
+    "https://img.kwcdn.com/product/fancy/c54ec364-46ee-4775-af5b-08128406bb0d.jpg",
+    "https://img.kwcdn.com/product/fancy/c65aaca6-545f-48c5-818e-73695180f649.jpg",
+    "https://img.kwcdn.com/product/fancy/42a43eac-3f43-4e51-8aed-f107e041bd21.jpg",
+    "https://img.kwcdn.com/product/fancy/d379bbde-8c4d-4991-a299-ffed6f4c46eb.jpg",
+    "https://img.kwcdn.com/product/fancy/dcc45324-bb1b-44e9-ac5a-3eb54d9d4929.jpg"
+  ],
+  "videoUrl": "https://goods-vod.kwcdn.com/goods-video/9e2a4618d0dd344e858b1cadfdbf9d34457c7b5b.f30.mp4",
+  "videoCoverUrl": "https://img.kwcdn.com/product/fancy/f0675156-eab4-4747-b988-501565f4e73a.jpg",
+  "hasVideo": true,
+  "rating": 4.6,
+  "reviewCount": 655,
+  "inStock": true,
+  "categoryName": "Maintenance, * & Repairs",
+  "categoryId": "2647",
+  "categoryPath": "Cell Phones & Accessories > Maintenance, * & Repairs",
+  "skus": [
+    {
+      "skuId": "601099693964207_4pcs",
+      "specText": "Option: 4pcs",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "4pcs"
+        }
+      ],
+      "price": 0.65,
+      "priceText": "$0.65",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/open/2024-09-30/1727713237869-45b48ce9311343e1a615e48c042b8e9a-goods.jpeg",
+      "inStock": true
+    },
+    {
+      "skuId": "601099693964207_5pcs",
+      "specText": "Option: 5pcs",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "5pcs"
+        }
+      ],
+      "price": 0.65,
+      "priceText": "$0.65",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/open/2024-09-30/1727713236039-3d8d19d6290d48e69bf8c8fdc15547c5-goods.jpeg",
+      "inStock": true
+    },
+    {
+      "skuId": "601099693964207_15pcs",
+      "specText": "Option: 15pcs",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "15pcs"
+        }
+      ],
+      "price": 0.65,
+      "priceText": "$0.65",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/564a6b21-d406-4f7e-ad95-c18e226423fb.jpg",
+      "inStock": true
+    },
+    {
+      "skuId": "601099693964207_25pcs",
+      "specText": "Option: 25pcs",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "25pcs"
+        }
+      ],
+      "price": 0.65,
+      "priceText": "$0.65",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/00fc0ced-93e2-48b5-bd10-2e553719b7fa.jpg",
+      "inStock": true
+    },
+    {
+      "skuId": "601099693964207_30pcs",
+      "specText": "Option: 30pcs",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "30pcs"
+        }
+      ],
+      "price": 0.65,
+      "priceText": "$0.65",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/c54ec364-46ee-4775-af5b-08128406bb0d.jpg",
+      "inStock": true
+    },
+    {
+      "skuId": "601099693964207_55pcs",
+      "specText": "Option: 55pcs",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "55pcs"
+        }
+      ],
+      "price": 0.65,
+      "priceText": "$0.65",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/c65aaca6-545f-48c5-818e-73695180f649.jpg",
+      "inStock": true
+    },
+    {
+      "skuId": "601099693964207_75pcs",
+      "specText": "Option: 75pcs",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "75pcs"
+        }
+      ],
+      "price": 0.65,
+      "priceText": "$0.65",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/42a43eac-3f43-4e51-8aed-f107e041bd21.jpg",
+      "inStock": true
+    },
+    {
+      "skuId": "601099693964207_95pcs",
+      "specText": "Option: 95pcs",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "95pcs"
+        }
+      ],
+      "price": 0.65,
+      "priceText": "$0.65",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/d379bbde-8c4d-4991-a299-ffed6f4c46eb.jpg",
+      "inStock": true
+    },
+    {
+      "skuId": "601099693964207_110pcs",
+      "specText": "Option: 110pcs",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "110pcs"
+        }
+      ],
+      "price": 0.65,
+      "priceText": "$0.65",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/dcc45324-bb1b-44e9-ac5a-3eb54d9d4929.jpg",
+      "inStock": true
+    }
+  ],
+  "description": "Check out this Multiple Camera Protection Accessories 4/5/15/25/30/55/75/95/110pcs on Temu. Check out today's deals *. * * like other cell phones & accessories products.",
+  "specifications": {
+    "Material": "Other Plastic"
+  },
+  "breadcrumbs": [
+    {
+      "optId": "",
+      "optName": "TEMU",
+      "level": 1,
+      "url": "https://www.temu.com"
+    },
+    {
+      "optId": "2640",
+      "optName": "Cell Phones & Accessories",
+      "level": 2,
+      "url": "https://www.temu.com/cell-phones-accessories-o3-2640.html"
+    },
+    {
+      "optId": "2647",
+      "optName": "Maintenance, * & Repairs",
+      "level": 3,
+      "url": "https://www.temu.com/maintenance--repairs-o3-2647.html"
+    },
+    {
+      "optId": "",
+      "optName": "Multiple Camera Protection Accessories 4/5/15/25/30/55/75/95/110pcs",
+      "level": 4,
+      "url": ""
+    }
+  ],
+  "returnPolicy": {
+    "returnWindowDays": 90,
+    "freeReturns": true
+  },
+  "reviews": [
+    {
+      "ratingScore": 5,
+      "reviewText": "",
+      "reviewDate": "2025-07-12",
+      "authorName": null,
+      "reviewTextRedacted": true
+    },
+    {
+      "ratingScore": 5,
+      "reviewText": "",
+      "reviewDate": "2026-03-08",
+      "authorName": null,
+      "reviewTextRedacted": true
+    },
+    {
+      "ratingScore": 5,
+      "reviewText": "",
+      "reviewDate": "2026-02-03",
+      "authorName": null,
+      "reviewTextRedacted": true
+    },
+    {
+      "ratingScore": 5,
+      "reviewText": "",
+      "reviewDate": "2026-03-04",
+      "authorName": null,
+      "reviewTextRedacted": true
+    }
+  ],
+  "productUrl": "https://www.temu.com/4-5-15-25-30-55-75-95-110pcs-blocking-webcam-cover-privacy-protection-for-mobile-phones-laptops-computers-camera-lens-covers-g-601099693964207.html",
+  "sourcePageType": "pdp",
+  "sourceUrl": "https://www.temu.com/multiple-camera-protection-accessories-4-5-15-25-30-55-75-95-110pcs-g-601099693964207.html",
+  "extractedAt": "2026-11-15T17:53:14.279Z"
+}

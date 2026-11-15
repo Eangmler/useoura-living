@@ -1,0 +1,104 @@
+{
+  "goodsId": "606025671398984",
+  "title": "Ultra-Thin Under-Pillow Sleep Speaker, High-Quality, Noise-Free, Private Use, Long *, Wireless *",
+  "price": 3.69,
+  "priceText": "$3.69",
+  "currency": "USD",
+  "imageUrl": "https://img.kwcdn.com/product/fancy/58850c05-8b92-4901-b7e7-638d32aead09.jpg",
+  "galleryImages": [
+    "https://img.kwcdn.com/product/fancy/58850c05-8b92-4901-b7e7-638d32aead09.jpg",
+    "https://img.kwcdn.com/product/fancy/3be92a5c-1854-4cac-933e-89c65a07f2de.jpg"
+  ],
+  "videoUrl": "https://goods-vod.kwcdn.com/goods-video/adba4027d31505f78f70985dcbfc8585def5e256gs2CV.f30.mp4",
+  "videoCoverUrl": "https://img.kwcdn.com/product/fancy/58850c05-8b92-4901-b7e7-638d32aead09.jpg",
+  "hasVideo": true,
+  "rating": 3.7,
+  "reviewCount": 21,
+  "inStock": true,
+  "categoryName": "Audio & Radio",
+  "categoryId": "1433",
+  "categoryPath": "Electronics > Audio & Radio",
+  "skus": [
+    {
+      "skuId": "606025671398984_blue",
+      "specText": "Option: Blue",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "Blue"
+        }
+      ],
+      "price": 3.69,
+      "priceText": "$3.69",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/3be92a5c-1854-4cac-933e-89c65a07f2de.jpg",
+      "inStock": true
+    }
+  ],
+  "description": "Ultra-Thin Under-Pillow Sleep Speaker, High-Quality, Noise-Free, Private Use, Long *, Wireless * at the * at Temu. Free shipping on items shipped from Temu on electronics on sale at Temu.",
+  "breadcrumbs": [
+    {
+      "optId": "",
+      "optName": "TEMU",
+      "level": 1,
+      "url": "https://www.temu.com"
+    },
+    {
+      "optId": "248",
+      "optName": "Electronics",
+      "level": 2,
+      "url": "https://www.temu.com/electronics-o3-248.html"
+    },
+    {
+      "optId": "1433",
+      "optName": "Audio & Radio",
+      "level": 3,
+      "url": "https://www.temu.com/audio-radio-o3-1433.html"
+    },
+    {
+      "optId": "",
+      "optName": "Ultra-Thin Under-Pillow Sleep Speaker, High-Quality, Noise-Free, Private Use, Long *, Wireless *",
+      "level": 4,
+      "url": ""
+    }
+  ],
+  "returnPolicy": {
+    "returnWindowDays": 90,
+    "freeReturns": true
+  },
+  "reviews": [
+    {
+      "ratingScore": 5,
+      "reviewText": "",
+      "reviewDate": "2026-11-06",
+      "authorName": null,
+      "reviewTextRedacted": true
+    },
+    {
+      "ratingScore": 1,
+      "reviewText": "",
+      "reviewDate": "2026-*-27",
+      "authorName": null,
+      "reviewTextRedacted": true
+    },
+    {
+      "ratingScore": 5,
+      "reviewText": "",
+      "reviewDate": "2026-*-15",
+      "authorName": null,
+      "reviewTextRedacted": true
+    },
+    {
+      "ratingScore": 1,
+      "reviewText": "",
+      "reviewDate": "2026-*-26",
+      "authorName": null,
+      "reviewTextRedacted": true
+    }
+  ],
+  "productUrl": "https://www.temu.com/ultra-thin-under-pillow-sleep-speaker-high-quality--private-use-long--wireless--g-606025671398984.html",
+  "sourcePageType": "pdp",
+  "sourceUrl": "https://www.temu.com/ultra-thin-under-pillow-sleep-speaker-high-quality--private-use-long--wireless--g-606025671398984.html",
+  "extractedAt": "2026-11-15T17:55:10.242Z"
+}

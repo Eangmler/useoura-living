@@ -1,0 +1,122 @@
+{
+  "goodsId": "606334506390573",
+  "title": "Phone Stand & Converter - A 2-in-1 Phone Stand That Supports 240W Ultra-fast Charging. Its 90\u00b0 Angled Design Allows You to Play Games While Charging W",
+  "price": 1.25,
+  "priceText": "$1.25",
+  "currency": "USD",
+  "imageUrl": "https://img.kwcdn.com/product/fancy/d0af6fce-917b-4ec3-b895-1c364acc3455.jpg",
+  "galleryImages": [
+    "https://img.kwcdn.com/product/fancy/d0af6fce-917b-4ec3-b895-1c364acc3455.jpg",
+    "https://img.kwcdn.com/product/fancy/ddd12e86-83e3-4c26-904c-d4135d47208b.jpg",
+    "https://img.kwcdn.com/product/fancy/1481fc49-4269-4d15-9715-490830b4a787.jpg"
+  ],
+  "hasVideo": false,
+  "rating": 4.5,
+  "reviewCount": 118,
+  "inStock": false,
+  "categoryName": "Stands",
+  "categoryId": "2652",
+  "categoryPath": "Cell Phones & Accessories > Stands",
+  "skus": [
+    {
+      "skuId": "606334506390573_black",
+      "specText": "Option: Black",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "Black"
+        }
+      ],
+      "price": 1.25,
+      "priceText": "$1.25",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/ddd12e86-83e3-4c26-904c-d4135d47208b.jpg",
+      "inStock": false
+    },
+    {
+      "skuId": "606334506390573_orange",
+      "specText": "Option: Orange",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "Orange"
+        }
+      ],
+      "price": 1.25,
+      "priceText": "$1.25",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/1481fc49-4269-4d15-9715-490830b4a787.jpg",
+      "inStock": false
+    }
+  ],
+  "description": "Shop Phone Stand & Converter - A 2-in-1 Phone Stand That Supports 240W Ultra-fast Charging. Its 90\u00b0 Angled Design Allows You to Play Games While Charging Without Blocking Your Hands. Features a Built-in Foldable Phone Stand for Free Switching on Temu. Free shipping on items shipped from Temu. * more great prices on cell phones & accessories.",
+  "specifications": {
+    "Material": "ABS"
+  },
+  "breadcrumbs": [
+    {
+      "optId": "",
+      "optName": "TEMU",
+      "level": 1,
+      "url": "https://www.temu.com"
+    },
+    {
+      "optId": "2640",
+      "optName": "Cell Phones & Accessories",
+      "level": 2,
+      "url": "https://www.temu.com/cell-phones-accessories-o3-2640.html"
+    },
+    {
+      "optId": "2652",
+      "optName": "Stands",
+      "level": 3,
+      "url": "https://www.temu.com/stands-o3-2652.html"
+    },
+    {
+      "optId": "",
+      "optName": "Phone Stand &amp; Converter - A 2-in-1 Phone Stand That Supports 240W Ultra-fast Charging. Its 90\u00b0 Angled Design Allows You to Play Games While Charging Without Blocking Your Hands. Features a Built-in Foldable Phone Stand for Free Switching",
+      "level": 4,
+      "url": ""
+    }
+  ],
+  "returnPolicy": {
+    "returnWindowDays": 90,
+    "freeReturns": true
+  },
+  "reviews": [
+    {
+      "ratingScore": 5,
+      "reviewText": "",
+      "reviewDate": "2026-*-*",
+      "authorName": null,
+      "reviewTextRedacted": true
+    },
+    {
+      "ratingScore": 5,
+      "reviewText": "",
+      "reviewDate": "2026-09-26",
+      "authorName": null,
+      "reviewTextRedacted": true
+    },
+    {
+      "ratingScore": 5,
+      "reviewText": "",
+      "reviewDate": "2026-*-21",
+      "authorName": null,
+      "reviewTextRedacted": true
+    },
+    {
+      "ratingScore": 5,
+      "reviewText": "",
+      "reviewDate": "2026-*-01",
+      "authorName": null,
+      "reviewTextRedacted": true
+    }
+  ],
+  "productUrl": "https://www.temu.com/phone-stand-converter-a-2-in-1-phone-stand-that-supports-240w--charging-its-90-angled-design-allows-you-to-play-games-while-charging-without-blocking-your-hands-features-a-built-in-foldable-phone-stand-for-free-switching-g-606334506390573.html",
+  "sourcePageType": "pdp",
+  "sourceUrl": "https://www.temu.com/phone-stand-converter-a-2-in-1-phone-stand-that-supports-240w--charging-its-90-angled-design-allows-you-to-play-games-while-charging-without-blocking-your-hands-features-a-built-in-foldable-phone-stand-for-free-switching-g-606334506390573.html",
+  "extractedAt": "2026-11-15T17:55:08.374Z"
+}

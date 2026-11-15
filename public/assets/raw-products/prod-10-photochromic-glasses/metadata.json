@@ -1,0 +1,70 @@
+{
+  "goodsId": "607058543887942",
+  "title": "* Fashion - Photochromic, Suitable for and Activities, Perfect Gift *",
+  "price": 1.52,
+  "priceText": "$1.52",
+  "currency": "USD",
+  "imageUrl": "https://img.kwcdn.com/product/fancy/f990c8de-2a21-4a5a-999d-f7cf6b513397.jpg",
+  "galleryImages": [
+    "https://img.kwcdn.com/product/fancy/f990c8de-2a21-4a5a-999d-f7cf6b513397.jpg",
+    "https://img.kwcdn.com/product/fancy/1e2a0c56-c101-4521-abae-5f884b76e7b1.jpg"
+  ],
+  "hasVideo": false,
+  "inStock": true,
+  "categoryName": "Women'*",
+  "categoryId": "730",
+  "categoryPath": "Jewelry & Accessories > Women'*",
+  "skus": [
+    {
+      "skuId": "607058543887942_1pc_huangtou",
+      "specText": "Option: 1pc huangtou",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "1pc huangtou"
+        }
+      ],
+      "price": 1.52,
+      "priceText": "$1.52",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/1e2a0c56-c101-4521-abae-5f884b76e7b1.jpg",
+      "inStock": true
+    }
+  ],
+  "description": "* Fashion - Photochromic, Suitable for and Activities, Perfect Gift * at the * at Temu. Free shipping on items shipped from Temu on jewelry & accessories on sale at Temu.",
+  "breadcrumbs": [
+    {
+      "optId": "",
+      "optName": "TEMU",
+      "level": 1,
+      "url": "https://www.temu.com"
+    },
+    {
+      "optId": "352",
+      "optName": "Jewelry & Accessories",
+      "level": 2,
+      "url": "https://www.temu.com/jewelry-accessories-o3-352.html"
+    },
+    {
+      "optId": "730",
+      "optName": "Women'*",
+      "level": 3,
+      "url": "https://www.temu.com/womens-eyewear-o3-730.html"
+    },
+    {
+      "optId": "",
+      "optName": "* Fashion - Photochromic, Suitable for and Activities, Perfect Gift *",
+      "level": 4,
+      "url": ""
+    }
+  ],
+  "returnPolicy": {
+    "returnWindowDays": 90,
+    "freeReturns": true
+  },
+  "productUrl": "https://www.temu.com/-fashion-photochromic-suitable-for-and-activities-perfect-gift--g-607058543887942.html",
+  "sourcePageType": "pdp",
+  "sourceUrl": "https://www.temu.com/-fashion-photochromic-suitable-for-and-activities-perfect-gift--g-607058543887942.html",
+  "extractedAt": "2026-11-15T17:55:12.592Z"
+}

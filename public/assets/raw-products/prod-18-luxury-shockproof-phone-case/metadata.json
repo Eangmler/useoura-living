@@ -1,0 +1,1672 @@
+{
+  "goodsId": "606785444377926",
+  "title": "Phone Case: Luxury Shockproof Soft Phone Case Compatible with Google Pixel 11 Pro XL, 10, 9, 8, 7, 6, and 5 Pro XL, Featuring a Microfiber Protective",
+  "price": 3.26,
+  "priceText": "$3.26",
+  "currency": "USD",
+  "imageUrl": "https://img.kwcdn.com/product/open/3556254ec28f4379a41c5eb6307e425d-goods.jpeg",
+  "galleryImages": [
+    "https://img.kwcdn.com/product/open/3556254ec28f4379a41c5eb6307e425d-goods.jpeg",
+    "https://img.kwcdn.com/product/fancy/6871ba25-1d62-4f29-95fd-3b538d8c9365.jpg",
+    "https://img.kwcdn.com/product/fancy/79b03626-7394-4345-8dc9-9828c5a008d5.jpg",
+    "https://img.kwcdn.com/product/fancy/1935686e-a968-4741-9ed1-ffc077abda34.jpg",
+    "https://img.kwcdn.com/product/fancy/8db66e27-1bf9-4913-a7b4-33b83a476e07.jpg",
+    "https://img.kwcdn.com/product/fancy/56f33a55-07ce-438a-804e-6f6f250449ce.jpg"
+  ],
+  "videoUrl": "https://goods-vod.kwcdn.com/goods-video/92c0bd41e9bcf8a8feff83fbdf00347abf4d1c17gs2CV.f30.mp4",
+  "videoCoverUrl": "https://img.kwcdn.com/product/open/3556254ec28f4379a41c5eb6307e425d-goods.jpeg",
+  "hasVideo": true,
+  "rating": 5,
+  "reviewCount": 6,
+  "inStock": true,
+  "categoryName": "Cases, Holsters & Sleeves",
+  "categoryId": "2642",
+  "categoryPath": "Cell Phones & Accessories > Cases, Holsters & Sleeves",
+  "skus": [
+    {
+      "skuId": "606785444377926_dark_green_pixel_5",
+      "specText": "Option: Dark green pixel 5",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "Dark green pixel 5"
+        }
+      ],
+      "price": 3.26,
+      "priceText": "$3.26",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/6871ba25-1d62-4f29-95fd-3b538d8c9365.jpg",
+      "inStock": true
+    },
+    {
+      "skuId": "606785444377926_dark_green___5g",
+      "specText": "Option: Dark green * 5g",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "Dark green * 5g"
+        }
+      ],
+      "price": 3.26,
+      "priceText": "$3.26",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/6871ba25-1d62-4f29-95fd-3b538d8c9365.jpg",
+      "inStock": true
+    },
+    {
+      "skuId": "606785444377926_dark_green_pixel_6",
+      "specText": "Option: Dark green pixel 6",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "Dark green pixel 6"
+        }
+      ],
+      "price": 3.26,
+      "priceText": "$3.26",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/6871ba25-1d62-4f29-95fd-3b538d8c9365.jpg",
+      "inStock": true
+    },
+    {
+      "skuId": "606785444377926_dark_green_pixel_6_pro",
+      "specText": "Option: Dark green pixel 6 pro",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "Dark green pixel 6 pro"
+        }
+      ],
+      "price": 3.26,
+      "priceText": "$3.26",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/6871ba25-1d62-4f29-95fd-3b538d8c9365.jpg",
+      "inStock": true
+    },
+    {
+      "skuId": "606785444377926_dark_green_pixel_6a",
+      "specText": "Option: Dark green pixel 6a",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "Dark green pixel 6a"
+        }
+      ],
+      "price": 3.26,
+      "priceText": "$3.26",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/6871ba25-1d62-4f29-95fd-3b538d8c9365.jpg",
+      "inStock": true
+    },
+    {
+      "skuId": "606785444377926_dark_green_pixel_7",
+      "specText": "Option: Dark green pixel 7",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "Dark green pixel 7"
+        }
+      ],
+      "price": 3.26,
+      "priceText": "$3.26",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/6871ba25-1d62-4f29-95fd-3b538d8c9365.jpg",
+      "inStock": true
+    },
+    {
+      "skuId": "606785444377926_dark_green_pixel_7_pro",
+      "specText": "Option: Dark green pixel 7 pro",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "Dark green pixel 7 pro"
+        }
+      ],
+      "price": 3.26,
+      "priceText": "$3.26",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/6871ba25-1d62-4f29-95fd-3b538d8c9365.jpg",
+      "inStock": true
+    },
+    {
+      "skuId": "606785444377926_dark_green_pixel_7a",
+      "specText": "Option: Dark green pixel 7a",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "Dark green pixel 7a"
+        }
+      ],
+      "price": 3.26,
+      "priceText": "$3.26",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/6871ba25-1d62-4f29-95fd-3b538d8c9365.jpg",
+      "inStock": true
+    },
+    {
+      "skuId": "606785444377926_dark_green_pixel_8",
+      "specText": "Option: Dark green pixel 8",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "Dark green pixel 8"
+        }
+      ],
+      "price": 3.26,
+      "priceText": "$3.26",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/6871ba25-1d62-4f29-95fd-3b538d8c9365.jpg",
+      "inStock": true
+    },
+    {
+      "skuId": "606785444377926_dark_green_pixel_8_pro",
+      "specText": "Option: Dark green pixel 8 pro",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "Dark green pixel 8 pro"
+        }
+      ],
+      "price": 3.26,
+      "priceText": "$3.26",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/6871ba25-1d62-4f29-95fd-3b538d8c9365.jpg",
+      "inStock": true
+    },
+    {
+      "skuId": "606785444377926_dark_green_pixel_8a",
+      "specText": "Option: Dark green pixel 8a",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "Dark green pixel 8a"
+        }
+      ],
+      "price": 3.26,
+      "priceText": "$3.26",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/6871ba25-1d62-4f29-95fd-3b538d8c9365.jpg",
+      "inStock": true
+    },
+    {
+      "skuId": "606785444377926_dark_green_pixel_9",
+      "specText": "Option: Dark green pixel 9",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "Dark green pixel 9"
+        }
+      ],
+      "price": 3.26,
+      "priceText": "$3.26",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/6871ba25-1d62-4f29-95fd-3b538d8c9365.jpg",
+      "inStock": true
+    },
+    {
+      "skuId": "606785444377926_dark_green_pixel_9_pro",
+      "specText": "Option: Dark green pixel 9 pro",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "Dark green pixel 9 pro"
+        }
+      ],
+      "price": 3.26,
+      "priceText": "$3.26",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/6871ba25-1d62-4f29-95fd-3b538d8c9365.jpg",
+      "inStock": true
+    },
+    {
+      "skuId": "606785444377926_dark_green_pixel_9a",
+      "specText": "Option: Dark green pixel 9a",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "Dark green pixel 9a"
+        }
+      ],
+      "price": 3.26,
+      "priceText": "$3.26",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/6871ba25-1d62-4f29-95fd-3b538d8c9365.jpg",
+      "inStock": true
+    },
+    {
+      "skuId": "606785444377926_dark_green_pixel_9_pro_xl",
+      "specText": "Option: Dark green pixel 9 pro xl",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "Dark green pixel 9 pro xl"
+        }
+      ],
+      "price": 3.26,
+      "priceText": "$3.26",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/6871ba25-1d62-4f29-95fd-3b538d8c9365.jpg",
+      "inStock": true
+    },
+    {
+      "skuId": "606785444377926_dark_green_google_pixel_10",
+      "specText": "Option: Dark green google pixel 10",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "Dark green google pixel 10"
+        }
+      ],
+      "price": 3.26,
+      "priceText": "$3.26",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/6871ba25-1d62-4f29-95fd-3b538d8c9365.jpg",
+      "inStock": true
+    },
+    {
+      "skuId": "606785444377926_dark_green_google_pixel_10_pro",
+      "specText": "Option: Dark green google pixel 10 pro",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "Dark green google pixel 10 pro"
+        }
+      ],
+      "price": 3.26,
+      "priceText": "$3.26",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/6871ba25-1d62-4f29-95fd-3b538d8c9365.jpg",
+      "inStock": true
+    },
+    {
+      "skuId": "606785444377926_dark_green__",
+      "specText": "Option: Dark green *",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "Dark green *"
+        }
+      ],
+      "price": 3.26,
+      "priceText": "$3.26",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/6871ba25-1d62-4f29-95fd-3b538d8c9365.jpg",
+      "inStock": true
+    },
+    {
+      "skuId": "606785444377926_dark_green_google_pixel_10a",
+      "specText": "Option: Dark green google pixel 10a",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "Dark green google pixel 10a"
+        }
+      ],
+      "price": 3.26,
+      "priceText": "$3.26",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/6871ba25-1d62-4f29-95fd-3b538d8c9365.jpg",
+      "inStock": true
+    },
+    {
+      "skuId": "606785444377926_dark_green_google_pixel_11",
+      "specText": "Option: Dark green google pixel 11",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "Dark green google pixel 11"
+        }
+      ],
+      "price": 3.26,
+      "priceText": "$3.26",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/6871ba25-1d62-4f29-95fd-3b538d8c9365.jpg",
+      "inStock": true
+    },
+    {
+      "skuId": "606785444377926_dark_green_pixel_11_pro",
+      "specText": "Option: Dark green pixel 11 pro",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "Dark green pixel 11 pro"
+        }
+      ],
+      "price": 3.26,
+      "priceText": "$3.26",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/6871ba25-1d62-4f29-95fd-3b538d8c9365.jpg",
+      "inStock": true
+    },
+    {
+      "skuId": "606785444377926_dark_green_pixel_11_pro_xl",
+      "specText": "Option: Dark green pixel 11 pro xl",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "Dark green pixel 11 pro xl"
+        }
+      ],
+      "price": 3.26,
+      "priceText": "$3.26",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/6871ba25-1d62-4f29-95fd-3b538d8c9365.jpg",
+      "inStock": true
+    },
+    {
+      "skuId": "606785444377926___pixel_5",
+      "specText": "Option: * pixel 5",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "* pixel 5"
+        }
+      ],
+      "price": 3.26,
+      "priceText": "$3.26",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/79b03626-7394-4345-8dc9-9828c5a008d5.jpg",
+      "inStock": true
+    },
+    {
+      "skuId": "606785444377926_____5g",
+      "specText": "Option: * * 5g",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "* * 5g"
+        }
+      ],
+      "price": 3.26,
+      "priceText": "$3.26",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/79b03626-7394-4345-8dc9-9828c5a008d5.jpg",
+      "inStock": true
+    },
+    {
+      "skuId": "606785444377926___pixel_6",
+      "specText": "Option: * pixel 6",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "* pixel 6"
+        }
+      ],
+      "price": 3.26,
+      "priceText": "$3.26",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/79b03626-7394-4345-8dc9-9828c5a008d5.jpg",
+      "inStock": true
+    },
+    {
+      "skuId": "606785444377926___pixel_6_pro",
+      "specText": "Option: * pixel 6 pro",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "* pixel 6 pro"
+        }
+      ],
+      "price": 3.26,
+      "priceText": "$3.26",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/79b03626-7394-4345-8dc9-9828c5a008d5.jpg",
+      "inStock": true
+    },
+    {
+      "skuId": "606785444377926___pixel_6a",
+      "specText": "Option: * pixel 6a",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "* pixel 6a"
+        }
+      ],
+      "price": 3.26,
+      "priceText": "$3.26",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/79b03626-7394-4345-8dc9-9828c5a008d5.jpg",
+      "inStock": true
+    },
+    {
+      "skuId": "606785444377926___pixel_7",
+      "specText": "Option: * pixel 7",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "* pixel 7"
+        }
+      ],
+      "price": 3.26,
+      "priceText": "$3.26",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/79b03626-7394-4345-8dc9-9828c5a008d5.jpg",
+      "inStock": true
+    },
+    {
+      "skuId": "606785444377926___pixel_7_pro",
+      "specText": "Option: * pixel 7 pro",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "* pixel 7 pro"
+        }
+      ],
+      "price": 3.26,
+      "priceText": "$3.26",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/79b03626-7394-4345-8dc9-9828c5a008d5.jpg",
+      "inStock": true
+    },
+    {
+      "skuId": "606785444377926___pixel_7a",
+      "specText": "Option: * pixel 7a",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "* pixel 7a"
+        }
+      ],
+      "price": 3.26,
+      "priceText": "$3.26",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/79b03626-7394-4345-8dc9-9828c5a008d5.jpg",
+      "inStock": true
+    },
+    {
+      "skuId": "606785444377926___pixel_8",
+      "specText": "Option: * pixel 8",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "* pixel 8"
+        }
+      ],
+      "price": 3.26,
+      "priceText": "$3.26",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/79b03626-7394-4345-8dc9-9828c5a008d5.jpg",
+      "inStock": true
+    },
+    {
+      "skuId": "606785444377926___pixel_8_pro",
+      "specText": "Option: * pixel 8 pro",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "* pixel 8 pro"
+        }
+      ],
+      "price": 3.26,
+      "priceText": "$3.26",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/79b03626-7394-4345-8dc9-9828c5a008d5.jpg",
+      "inStock": true
+    },
+    {
+      "skuId": "606785444377926___pixel_8a",
+      "specText": "Option: * pixel 8a",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "* pixel 8a"
+        }
+      ],
+      "price": 3.26,
+      "priceText": "$3.26",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/79b03626-7394-4345-8dc9-9828c5a008d5.jpg",
+      "inStock": true
+    },
+    {
+      "skuId": "606785444377926___pixel_9",
+      "specText": "Option: * pixel 9",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "* pixel 9"
+        }
+      ],
+      "price": 3.26,
+      "priceText": "$3.26",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/79b03626-7394-4345-8dc9-9828c5a008d5.jpg",
+      "inStock": true
+    },
+    {
+      "skuId": "606785444377926___pixel_9_pro",
+      "specText": "Option: * pixel 9 pro",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "* pixel 9 pro"
+        }
+      ],
+      "price": 3.26,
+      "priceText": "$3.26",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/79b03626-7394-4345-8dc9-9828c5a008d5.jpg",
+      "inStock": true
+    },
+    {
+      "skuId": "606785444377926___pixel_9a",
+      "specText": "Option: * pixel 9a",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "* pixel 9a"
+        }
+      ],
+      "price": 3.26,
+      "priceText": "$3.26",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/79b03626-7394-4345-8dc9-9828c5a008d5.jpg",
+      "inStock": true
+    },
+    {
+      "skuId": "606785444377926___pixel_9_pro_xl",
+      "specText": "Option: * pixel 9 pro xl",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "* pixel 9 pro xl"
+        }
+      ],
+      "price": 3.26,
+      "priceText": "$3.26",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/79b03626-7394-4345-8dc9-9828c5a008d5.jpg",
+      "inStock": true
+    },
+    {
+      "skuId": "606785444377926___google_pixel_10",
+      "specText": "Option: * google pixel 10",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "* google pixel 10"
+        }
+      ],
+      "price": 3.26,
+      "priceText": "$3.26",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/79b03626-7394-4345-8dc9-9828c5a008d5.jpg",
+      "inStock": true
+    },
+    {
+      "skuId": "606785444377926___google_pixel_10_pro",
+      "specText": "Option: * google pixel 10 pro",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "* google pixel 10 pro"
+        }
+      ],
+      "price": 3.26,
+      "priceText": "$3.26",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/79b03626-7394-4345-8dc9-9828c5a008d5.jpg",
+      "inStock": true
+    },
+    {
+      "skuId": "606785444377926____",
+      "specText": "Option: * *",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "* *"
+        }
+      ],
+      "price": 3.26,
+      "priceText": "$3.26",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/79b03626-7394-4345-8dc9-9828c5a008d5.jpg",
+      "inStock": true
+    },
+    {
+      "skuId": "606785444377926___google_pixel_10a",
+      "specText": "Option: * google pixel 10a",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "* google pixel 10a"
+        }
+      ],
+      "price": 3.26,
+      "priceText": "$3.26",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/79b03626-7394-4345-8dc9-9828c5a008d5.jpg",
+      "inStock": true
+    },
+    {
+      "skuId": "606785444377926___google_pixel_11",
+      "specText": "Option: * google pixel 11",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "* google pixel 11"
+        }
+      ],
+      "price": 3.26,
+      "priceText": "$3.26",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/79b03626-7394-4345-8dc9-9828c5a008d5.jpg",
+      "inStock": true
+    },
+    {
+      "skuId": "606785444377926___pixel_11_pro",
+      "specText": "Option: * pixel 11 pro",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "* pixel 11 pro"
+        }
+      ],
+      "price": 3.26,
+      "priceText": "$3.26",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/79b03626-7394-4345-8dc9-9828c5a008d5.jpg",
+      "inStock": true
+    },
+    {
+      "skuId": "606785444377926___pixel_11_pro_xl",
+      "specText": "Option: * pixel 11 pro xl",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "* pixel 11 pro xl"
+        }
+      ],
+      "price": 3.26,
+      "priceText": "$3.26",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/79b03626-7394-4345-8dc9-9828c5a008d5.jpg",
+      "inStock": true
+    },
+    {
+      "skuId": "606785444377926_black_pixel_5",
+      "specText": "Option: Black pixel 5",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "Black pixel 5"
+        }
+      ],
+      "price": 3.26,
+      "priceText": "$3.26",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/1935686e-a968-4741-9ed1-ffc077abda34.jpg",
+      "inStock": true
+    },
+    {
+      "skuId": "606785444377926_black___5g",
+      "specText": "Option: Black * 5g",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "Black * 5g"
+        }
+      ],
+      "price": 3.26,
+      "priceText": "$3.26",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/1935686e-a968-4741-9ed1-ffc077abda34.jpg",
+      "inStock": true
+    },
+    {
+      "skuId": "606785444377926_black_pixel_6",
+      "specText": "Option: Black pixel 6",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "Black pixel 6"
+        }
+      ],
+      "price": 3.26,
+      "priceText": "$3.26",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/1935686e-a968-4741-9ed1-ffc077abda34.jpg",
+      "inStock": true
+    },
+    {
+      "skuId": "606785444377926_black_pixel_6_pro",
+      "specText": "Option: Black pixel 6 pro",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "Black pixel 6 pro"
+        }
+      ],
+      "price": 3.26,
+      "priceText": "$3.26",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/1935686e-a968-4741-9ed1-ffc077abda34.jpg",
+      "inStock": true
+    },
+    {
+      "skuId": "606785444377926_black_pixel_6a",
+      "specText": "Option: Black pixel 6a",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "Black pixel 6a"
+        }
+      ],
+      "price": 3.26,
+      "priceText": "$3.26",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/1935686e-a968-4741-9ed1-ffc077abda34.jpg",
+      "inStock": true
+    },
+    {
+      "skuId": "606785444377926_black_pixel_7",
+      "specText": "Option: Black pixel 7",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "Black pixel 7"
+        }
+      ],
+      "price": 3.26,
+      "priceText": "$3.26",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/1935686e-a968-4741-9ed1-ffc077abda34.jpg",
+      "inStock": true
+    },
+    {
+      "skuId": "606785444377926_black_pixel_7_pro",
+      "specText": "Option: Black pixel 7 pro",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "Black pixel 7 pro"
+        }
+      ],
+      "price": 3.26,
+      "priceText": "$3.26",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/1935686e-a968-4741-9ed1-ffc077abda34.jpg",
+      "inStock": true
+    },
+    {
+      "skuId": "606785444377926_black_pixel_7a",
+      "specText": "Option: Black pixel 7a",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "Black pixel 7a"
+        }
+      ],
+      "price": 3.26,
+      "priceText": "$3.26",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/1935686e-a968-4741-9ed1-ffc077abda34.jpg",
+      "inStock": true
+    },
+    {
+      "skuId": "606785444377926_black_pixel_8",
+      "specText": "Option: Black pixel 8",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "Black pixel 8"
+        }
+      ],
+      "price": 3.26,
+      "priceText": "$3.26",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/1935686e-a968-4741-9ed1-ffc077abda34.jpg",
+      "inStock": true
+    },
+    {
+      "skuId": "606785444377926_black_pixel_8_pro",
+      "specText": "Option: Black pixel 8 pro",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "Black pixel 8 pro"
+        }
+      ],
+      "price": 3.26,
+      "priceText": "$3.26",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/1935686e-a968-4741-9ed1-ffc077abda34.jpg",
+      "inStock": true
+    },
+    {
+      "skuId": "606785444377926_black_pixel_8a",
+      "specText": "Option: Black pixel 8a",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "Black pixel 8a"
+        }
+      ],
+      "price": 3.26,
+      "priceText": "$3.26",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/1935686e-a968-4741-9ed1-ffc077abda34.jpg",
+      "inStock": true
+    },
+    {
+      "skuId": "606785444377926_black_pixel_9",
+      "specText": "Option: Black pixel 9",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "Black pixel 9"
+        }
+      ],
+      "price": 3.26,
+      "priceText": "$3.26",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/1935686e-a968-4741-9ed1-ffc077abda34.jpg",
+      "inStock": true
+    },
+    {
+      "skuId": "606785444377926_black_pixel_9_pro",
+      "specText": "Option: Black pixel 9 pro",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "Black pixel 9 pro"
+        }
+      ],
+      "price": 3.26,
+      "priceText": "$3.26",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/1935686e-a968-4741-9ed1-ffc077abda34.jpg",
+      "inStock": true
+    },
+    {
+      "skuId": "606785444377926_black_pixel_9a",
+      "specText": "Option: Black pixel 9a",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "Black pixel 9a"
+        }
+      ],
+      "price": 3.26,
+      "priceText": "$3.26",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/1935686e-a968-4741-9ed1-ffc077abda34.jpg",
+      "inStock": true
+    },
+    {
+      "skuId": "606785444377926_black_pixel_9_pro_xl",
+      "specText": "Option: Black pixel 9 pro xl",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "Black pixel 9 pro xl"
+        }
+      ],
+      "price": 3.26,
+      "priceText": "$3.26",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/1935686e-a968-4741-9ed1-ffc077abda34.jpg",
+      "inStock": true
+    },
+    {
+      "skuId": "606785444377926_black_google_pixel_10",
+      "specText": "Option: Black google pixel 10",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "Black google pixel 10"
+        }
+      ],
+      "price": 3.26,
+      "priceText": "$3.26",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/1935686e-a968-4741-9ed1-ffc077abda34.jpg",
+      "inStock": true
+    },
+    {
+      "skuId": "606785444377926_black_google_pixel_10_pro",
+      "specText": "Option: Black google pixel 10 pro",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "Black google pixel 10 pro"
+        }
+      ],
+      "price": 3.26,
+      "priceText": "$3.26",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/1935686e-a968-4741-9ed1-ffc077abda34.jpg",
+      "inStock": true
+    },
+    {
+      "skuId": "606785444377926_black__",
+      "specText": "Option: Black *",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "Black *"
+        }
+      ],
+      "price": 3.26,
+      "priceText": "$3.26",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/1935686e-a968-4741-9ed1-ffc077abda34.jpg",
+      "inStock": true
+    },
+    {
+      "skuId": "606785444377926_black_google_pixel_10a",
+      "specText": "Option: Black google pixel 10a",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "Black google pixel 10a"
+        }
+      ],
+      "price": 3.26,
+      "priceText": "$3.26",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/1935686e-a968-4741-9ed1-ffc077abda34.jpg",
+      "inStock": true
+    },
+    {
+      "skuId": "606785444377926_black_google_pixel_11",
+      "specText": "Option: Black google pixel 11",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "Black google pixel 11"
+        }
+      ],
+      "price": 3.26,
+      "priceText": "$3.26",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/1935686e-a968-4741-9ed1-ffc077abda34.jpg",
+      "inStock": true
+    },
+    {
+      "skuId": "606785444377926_black_pixel_11_pro",
+      "specText": "Option: Black pixel 11 pro",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "Black pixel 11 pro"
+        }
+      ],
+      "price": 3.26,
+      "priceText": "$3.26",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/1935686e-a968-4741-9ed1-ffc077abda34.jpg",
+      "inStock": true
+    },
+    {
+      "skuId": "606785444377926_black_pixel_11_pro_xl",
+      "specText": "Option: Black pixel 11 pro xl",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "Black pixel 11 pro xl"
+        }
+      ],
+      "price": 3.26,
+      "priceText": "$3.26",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/1935686e-a968-4741-9ed1-ffc077abda34.jpg",
+      "inStock": true
+    },
+    {
+      "skuId": "606785444377926_light_purple_pixel_5",
+      "specText": "Option: Light purple pixel 5",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "Light purple pixel 5"
+        }
+      ],
+      "price": 3.26,
+      "priceText": "$3.26",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/8db66e27-1bf9-4913-a7b4-33b83a476e07.jpg",
+      "inStock": true
+    },
+    {
+      "skuId": "606785444377926_light_purple___5g",
+      "specText": "Option: Light purple * 5g",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "Light purple * 5g"
+        }
+      ],
+      "price": 3.26,
+      "priceText": "$3.26",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/8db66e27-1bf9-4913-a7b4-33b83a476e07.jpg",
+      "inStock": true
+    },
+    {
+      "skuId": "606785444377926_light_purple_pixel_6",
+      "specText": "Option: Light purple pixel 6",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "Light purple pixel 6"
+        }
+      ],
+      "price": 3.26,
+      "priceText": "$3.26",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/8db66e27-1bf9-4913-a7b4-33b83a476e07.jpg",
+      "inStock": true
+    },
+    {
+      "skuId": "606785444377926_light_purple_pixel_6_pro",
+      "specText": "Option: Light purple pixel 6 pro",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "Light purple pixel 6 pro"
+        }
+      ],
+      "price": 3.26,
+      "priceText": "$3.26",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/8db66e27-1bf9-4913-a7b4-33b83a476e07.jpg",
+      "inStock": true
+    },
+    {
+      "skuId": "606785444377926_light_purple_pixel_6a",
+      "specText": "Option: Light purple pixel 6a",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "Light purple pixel 6a"
+        }
+      ],
+      "price": 3.26,
+      "priceText": "$3.26",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/8db66e27-1bf9-4913-a7b4-33b83a476e07.jpg",
+      "inStock": true
+    },
+    {
+      "skuId": "606785444377926_light_purple_pixel_7",
+      "specText": "Option: Light purple pixel 7",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "Light purple pixel 7"
+        }
+      ],
+      "price": 3.26,
+      "priceText": "$3.26",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/8db66e27-1bf9-4913-a7b4-33b83a476e07.jpg",
+      "inStock": true
+    },
+    {
+      "skuId": "606785444377926_light_purple_pixel_7_pro",
+      "specText": "Option: Light purple pixel 7 pro",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "Light purple pixel 7 pro"
+        }
+      ],
+      "price": 3.26,
+      "priceText": "$3.26",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/8db66e27-1bf9-4913-a7b4-33b83a476e07.jpg",
+      "inStock": true
+    },
+    {
+      "skuId": "606785444377926_light_purple_pixel_7a",
+      "specText": "Option: Light purple pixel 7a",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "Light purple pixel 7a"
+        }
+      ],
+      "price": 3.26,
+      "priceText": "$3.26",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/8db66e27-1bf9-4913-a7b4-33b83a476e07.jpg",
+      "inStock": true
+    },
+    {
+      "skuId": "606785444377926_light_purple_pixel_8",
+      "specText": "Option: Light purple pixel 8",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "Light purple pixel 8"
+        }
+      ],
+      "price": 3.26,
+      "priceText": "$3.26",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/8db66e27-1bf9-4913-a7b4-33b83a476e07.jpg",
+      "inStock": true
+    },
+    {
+      "skuId": "606785444377926_light_purple_pixel_8_pro",
+      "specText": "Option: Light purple pixel 8 pro",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "Light purple pixel 8 pro"
+        }
+      ],
+      "price": 3.26,
+      "priceText": "$3.26",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/8db66e27-1bf9-4913-a7b4-33b83a476e07.jpg",
+      "inStock": true
+    },
+    {
+      "skuId": "606785444377926_light_purple_pixel_8a",
+      "specText": "Option: Light purple pixel 8a",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "Light purple pixel 8a"
+        }
+      ],
+      "price": 3.26,
+      "priceText": "$3.26",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/8db66e27-1bf9-4913-a7b4-33b83a476e07.jpg",
+      "inStock": true
+    },
+    {
+      "skuId": "606785444377926_light_purple_pixel_9",
+      "specText": "Option: Light purple pixel 9",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "Light purple pixel 9"
+        }
+      ],
+      "price": 3.26,
+      "priceText": "$3.26",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/8db66e27-1bf9-4913-a7b4-33b83a476e07.jpg",
+      "inStock": true
+    },
+    {
+      "skuId": "606785444377926_light_purple_pixel_9_pro",
+      "specText": "Option: Light purple pixel 9 pro",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "Light purple pixel 9 pro"
+        }
+      ],
+      "price": 3.26,
+      "priceText": "$3.26",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/8db66e27-1bf9-4913-a7b4-33b83a476e07.jpg",
+      "inStock": true
+    },
+    {
+      "skuId": "606785444377926_light_purple_pixel_9a",
+      "specText": "Option: Light purple pixel 9a",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "Light purple pixel 9a"
+        }
+      ],
+      "price": 3.26,
+      "priceText": "$3.26",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/8db66e27-1bf9-4913-a7b4-33b83a476e07.jpg",
+      "inStock": true
+    },
+    {
+      "skuId": "606785444377926_light_purple_pixel_9_pro_xl",
+      "specText": "Option: Light purple pixel 9 pro xl",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "Light purple pixel 9 pro xl"
+        }
+      ],
+      "price": 3.26,
+      "priceText": "$3.26",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/8db66e27-1bf9-4913-a7b4-33b83a476e07.jpg",
+      "inStock": true
+    },
+    {
+      "skuId": "606785444377926_google_pixel_10_light_purple",
+      "specText": "Option: Google pixel 10 light purple",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "Google pixel 10 light purple"
+        }
+      ],
+      "price": 3.26,
+      "priceText": "$3.26",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/8db66e27-1bf9-4913-a7b4-33b83a476e07.jpg",
+      "inStock": true
+    },
+    {
+      "skuId": "606785444377926_google_pixel_10___purple",
+      "specText": "Option: Google pixel 10 * purple",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "Google pixel 10 * purple"
+        }
+      ],
+      "price": 3.26,
+      "priceText": "$3.26",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/8db66e27-1bf9-4913-a7b4-33b83a476e07.jpg",
+      "inStock": true
+    },
+    {
+      "skuId": "606785444377926___light_purple",
+      "specText": "Option: * light purple",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "* light purple"
+        }
+      ],
+      "price": 3.26,
+      "priceText": "$3.26",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/8db66e27-1bf9-4913-a7b4-33b83a476e07.jpg",
+      "inStock": true
+    },
+    {
+      "skuId": "606785444377926_google_pixel_10__purple",
+      "specText": "Option: Google pixel 10* purple",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "Google pixel 10* purple"
+        }
+      ],
+      "price": 3.26,
+      "priceText": "$3.26",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/8db66e27-1bf9-4913-a7b4-33b83a476e07.jpg",
+      "inStock": true
+    },
+    {
+      "skuId": "606785444377926_google_pixel_11_light_purple",
+      "specText": "Option: Google pixel 11 light purple",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "Google pixel 11 light purple"
+        }
+      ],
+      "price": 3.26,
+      "priceText": "$3.26",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/8db66e27-1bf9-4913-a7b4-33b83a476e07.jpg",
+      "inStock": true
+    },
+    {
+      "skuId": "606785444377926_light_purple_pixel_11_pro",
+      "specText": "Option: Light purple pixel 11 pro",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "Light purple pixel 11 pro"
+        }
+      ],
+      "price": 3.26,
+      "priceText": "$3.26",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/8db66e27-1bf9-4913-a7b4-33b83a476e07.jpg",
+      "inStock": true
+    },
+    {
+      "skuId": "606785444377926_light_purple_pixel_11_pro_xl",
+      "specText": "Option: Light purple pixel 11 pro xl",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "Light purple pixel 11 pro xl"
+        }
+      ],
+      "price": 3.26,
+      "priceText": "$3.26",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/8db66e27-1bf9-4913-a7b4-33b83a476e07.jpg",
+      "inStock": true
+    },
+    {
+      "skuId": "606785444377926_light_green_pixel_5",
+      "specText": "Option: Light green pixel 5",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "Light green pixel 5"
+        }
+      ],
+      "price": 3.26,
+      "priceText": "$3.26",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/56f33a55-07ce-438a-804e-6f6f250449ce.jpg",
+      "inStock": true
+    },
+    {
+      "skuId": "606785444377926_light_green___5g",
+      "specText": "Option: Light green * 5g",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "Light green * 5g"
+        }
+      ],
+      "price": 3.26,
+      "priceText": "$3.26",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/56f33a55-07ce-438a-804e-6f6f250449ce.jpg",
+      "inStock": true
+    },
+    {
+      "skuId": "606785444377926_light_green_pixel_6",
+      "specText": "Option: Light green pixel 6",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "Light green pixel 6"
+        }
+      ],
+      "price": 3.26,
+      "priceText": "$3.26",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/56f33a55-07ce-438a-804e-6f6f250449ce.jpg",
+      "inStock": true
+    },
+    {
+      "skuId": "606785444377926_light_green_pixel_6_pro",
+      "specText": "Option: Light green pixel 6 pro",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "Light green pixel 6 pro"
+        }
+      ],
+      "price": 3.26,
+      "priceText": "$3.26",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/56f33a55-07ce-438a-804e-6f6f250449ce.jpg",
+      "inStock": true
+    },
+    {
+      "skuId": "606785444377926_light_green_pixel_6a",
+      "specText": "Option: Light green pixel 6a",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "Light green pixel 6a"
+        }
+      ],
+      "price": 3.26,
+      "priceText": "$3.26",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/56f33a55-07ce-438a-804e-6f6f250449ce.jpg",
+      "inStock": true
+    },
+    {
+      "skuId": "606785444377926_light_green_pixel_7",
+      "specText": "Option: Light green pixel 7",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "Light green pixel 7"
+        }
+      ],
+      "price": 3.26,
+      "priceText": "$3.26",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/56f33a55-07ce-438a-804e-6f6f250449ce.jpg",
+      "inStock": true
+    },
+    {
+      "skuId": "606785444377926_light_green_pixel_7_pro",
+      "specText": "Option: Light green pixel 7 pro",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "Light green pixel 7 pro"
+        }
+      ],
+      "price": 3.26,
+      "priceText": "$3.26",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/56f33a55-07ce-438a-804e-6f6f250449ce.jpg",
+      "inStock": true
+    },
+    {
+      "skuId": "606785444377926_light_green_pixel_7a",
+      "specText": "Option: Light green pixel 7a",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "Light green pixel 7a"
+        }
+      ],
+      "price": 3.26,
+      "priceText": "$3.26",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/56f33a55-07ce-438a-804e-6f6f250449ce.jpg",
+      "inStock": true
+    },
+    {
+      "skuId": "606785444377926_light_green_pixel_8",
+      "specText": "Option: Light green pixel 8",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "Light green pixel 8"
+        }
+      ],
+      "price": 3.26,
+      "priceText": "$3.26",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/56f33a55-07ce-438a-804e-6f6f250449ce.jpg",
+      "inStock": true
+    },
+    {
+      "skuId": "606785444377926_light_green_pixel_8_pro",
+      "specText": "Option: Light green pixel 8 pro",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "Light green pixel 8 pro"
+        }
+      ],
+      "price": 3.26,
+      "priceText": "$3.26",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/56f33a55-07ce-438a-804e-6f6f250449ce.jpg",
+      "inStock": true
+    },
+    {
+      "skuId": "606785444377926_light_green_pixel_8a",
+      "specText": "Option: Light green pixel 8a",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "Light green pixel 8a"
+        }
+      ],
+      "price": 3.26,
+      "priceText": "$3.26",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/56f33a55-07ce-438a-804e-6f6f250449ce.jpg",
+      "inStock": true
+    }
+  ],
+  "description": "Shop Phone Case: Luxury Shockproof Soft Phone Case Compatible with Google Pixel 11 Pro XL, 10, 9, 8, 7, 6, and 5 Pro XL, Featuring a Microfiber Protective Cover, and * a Cute Cartoon Kitten Wrist Strap at the * at Temu. Check reviews and See what's new of cell phones & accessories. * * *.",
+  "specifications": {
+    "Material": "Liquid Silicone"
+  },
+  "breadcrumbs": [
+    {
+      "optId": "",
+      "optName": "TEMU",
+      "level": 1,
+      "url": "https://www.temu.com"
+    },
+    {
+      "optId": "2640",
+      "optName": "Cell Phones & Accessories",
+      "level": 2,
+      "url": "https://www.temu.com/cell-phones-accessories-o3-2640.html"
+    },
+    {
+      "optId": "2642",
+      "optName": "Cases, Holsters & Sleeves",
+      "level": 3,
+      "url": "https://www.temu.com/cases-holsters-sleeves-o3-2642.html"
+    },
+    {
+      "optId": "",
+      "optName": "Phone Case: Luxury Shockproof Soft Phone Case Compatible with Google Pixel 11 Pro XL, 10, 9, 8, 7, 6, and 5 Pro XL, Featuring a Microfiber Protective Cover, and * a Cute Cartoon Kitten Wrist Strap",
+      "level": 4,
+      "url": ""
+    }
+  ],
+  "returnPolicy": {
+    "returnWindowDays": 90,
+    "freeReturns": true
+  },
+  "reviews": [
+    {
+      "ratingScore": 5,
+      "reviewText": "",
+      "reviewDate": "2026-11-04",
+      "authorName": null,
+      "reviewTextRedacted": true
+    },
+    {
+      "ratingScore": 5,
+      "reviewText": "",
+      "reviewDate": "2026-11-08",
+      "authorName": null,
+      "reviewTextRedacted": true
+    },
+    {
+      "ratingScore": 5,
+      "reviewText": "",
+      "reviewDate": "2026-11-14",
+      "authorName": null,
+      "reviewTextRedacted": true
+    }
+  ],
+  "productUrl": "https://www.temu.com/phone-case-luxury-shockproof-soft-phone-case-compatible-with-google-pixel-11-pro-xl-10--6-and-5-pro-xl-featuring-a-microfiber-protective-cover-and--a-cute-cartoon-kitten-wrist-strap-g-606785444377926.html",
+  "sourcePageType": "pdp",
+  "sourceUrl": "https://www.temu.com/product-g-606785444377926.html",
+  "extractedAt": "2026-11-15T17:53:29.138Z"
+}

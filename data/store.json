@@ -500,6 +500,46 @@
       "inStock": true,
       "hasDiscount": true,
       "featured": true
+    },
+    {
+      "id": "prod-camera-protection-rings",
+      "title": "Ultra-Thin Webcam Privacy Covers",
+      "description": "0.7mm ultra-thin sliding webcam covers for laptops, tablets, and phones. Provides physical privacy reassurance with smooth slider action and residue-free 3M adhesive.",
+      "price": 65,
+      "originalPrice": 95,
+      "priceFormatted": "GH\u20b5 65",
+      "category": "Mobile & Desk Tech",
+      "categorySlug": "mobile-desk",
+      "image": "/assets/products/mobile-desk/camera-protection-rings-isolated.webp",
+      "secondaryImage": "/assets/products/mobile-desk/camera-protection-rings-lifestyle.webp",
+      "images": [
+        "/assets/products/mobile-desk/camera-protection-rings-isolated.webp",
+        "/assets/products/mobile-desk/camera-protection-rings-lifestyle.webp",
+        "/assets/products/mobile-desk/camera-protection-rings-story.webp"
+      ],
+      "badge": "Privacy Essential",
+      "specs": [
+        {
+          "label": "Thickness",
+          "value": "0.7 mm Ultra-Slim"
+        },
+        {
+          "label": "Adhesive",
+          "value": "Residue-Free 3M"
+        },
+        {
+          "label": "Material",
+          "value": "Matte Anodized ABS"
+        },
+        {
+          "label": "Compatibility",
+          "value": "MacBook, iPad, Surface, Smartphones"
+        }
+      ],
+      "tag": "Hardware Privacy",
+      "inStock": true,
+      "hasDiscount": true,
+      "featured": false
     }
   ],
   "categories": [

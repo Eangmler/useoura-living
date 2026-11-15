@@ -1,0 +1,272 @@
+{
+  "goodsId": "607056161510284",
+  "title": "[4pcs Set] 3pcs Privacy Tempered Glass Screen Protector And 1pc Camera Lens Protector Suitable for Google Pixel 11/11 Pro/11 Pro XL/Pixel 10/10 Pro/10",
+  "price": 5.43,
+  "priceText": "$5.43",
+  "currency": "USD",
+  "imageUrl": "https://img.kwcdn.com/product/fancy/81901e49-3792-43b4-81f1-45ba638af3a8.jpg",
+  "galleryImages": [
+    "https://img.kwcdn.com/product/fancy/81901e49-3792-43b4-81f1-45ba638af3a8.jpg"
+  ],
+  "videoUrl": "https://goods-vod.kwcdn.com/goods-video/b986f72c6c5235e705230b5a794352ee5a740a6b.f30.mp4",
+  "videoCoverUrl": "https://img.kwcdn.com/product/fancy/81901e49-3792-43b4-81f1-45ba638af3a8.jpg",
+  "hasVideo": true,
+  "rating": 4,
+  "reviewCount": 4,
+  "inStock": true,
+  "shippingFeeText": "Free Shipping",
+  "estimatedDelivery": "5-13 days",
+  "categoryName": "Maintenance, * & Repairs",
+  "categoryId": "2647",
+  "categoryPath": "Cell Phones & Accessories > Maintenance, * & Repairs",
+  "skus": [
+    {
+      "skuId": "607056161510284_google_pixel_11",
+      "specText": "Option: Google pixel 11",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "Google pixel 11"
+        }
+      ],
+      "price": 5.43,
+      "priceText": "$5.43",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/81901e49-3792-43b4-81f1-45ba638af3a8.jpg",
+      "inStock": true
+    },
+    {
+      "skuId": "607056161510284_pixel_11_pro",
+      "specText": "Option: Pixel 11 pro",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "Pixel 11 pro"
+        }
+      ],
+      "price": 5.43,
+      "priceText": "$5.43",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/81901e49-3792-43b4-81f1-45ba638af3a8.jpg",
+      "inStock": true
+    },
+    {
+      "skuId": "607056161510284_pixel_11_pro_xl",
+      "specText": "Option: Pixel 11 pro xl",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "Pixel 11 pro xl"
+        }
+      ],
+      "price": 5.43,
+      "priceText": "$5.43",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/81901e49-3792-43b4-81f1-45ba638af3a8.jpg",
+      "inStock": true
+    },
+    {
+      "skuId": "607056161510284_google_pixel_10",
+      "specText": "Option: Google pixel 10",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "Google pixel 10"
+        }
+      ],
+      "price": 5.43,
+      "priceText": "$5.43",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/81901e49-3792-43b4-81f1-45ba638af3a8.jpg",
+      "inStock": true
+    },
+    {
+      "skuId": "607056161510284_google_pixel_10_pro",
+      "specText": "Option: Google pixel 10 pro",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "Google pixel 10 pro"
+        }
+      ],
+      "price": 5.43,
+      "priceText": "$5.43",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/81901e49-3792-43b4-81f1-45ba638af3a8.jpg",
+      "inStock": true
+    },
+    {
+      "skuId": "607056161510284__",
+      "specText": "Option: *",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "*"
+        }
+      ],
+      "price": 5.43,
+      "priceText": "$5.43",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/81901e49-3792-43b4-81f1-45ba638af3a8.jpg",
+      "inStock": true
+    },
+    {
+      "skuId": "607056161510284_pixel_9",
+      "specText": "Option: Pixel 9",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "Pixel 9"
+        }
+      ],
+      "price": 5.43,
+      "priceText": "$5.43",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/81901e49-3792-43b4-81f1-45ba638af3a8.jpg",
+      "inStock": true
+    },
+    {
+      "skuId": "607056161510284_pixel_9_pro",
+      "specText": "Option: Pixel 9 pro",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "Pixel 9 pro"
+        }
+      ],
+      "price": 5.43,
+      "priceText": "$5.43",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/81901e49-3792-43b4-81f1-45ba638af3a8.jpg",
+      "inStock": true
+    },
+    {
+      "skuId": "607056161510284_pixel_9_pro_xl",
+      "specText": "Option: Pixel 9 pro xl",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "Pixel 9 pro xl"
+        }
+      ],
+      "price": 5.43,
+      "priceText": "$5.43",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/81901e49-3792-43b4-81f1-45ba638af3a8.jpg",
+      "inStock": true
+    },
+    {
+      "skuId": "607056161510284_pixel_8",
+      "specText": "Option: Pixel 8",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "Pixel 8"
+        }
+      ],
+      "price": 5.43,
+      "priceText": "$5.43",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/81901e49-3792-43b4-81f1-45ba638af3a8.jpg",
+      "inStock": true
+    },
+    {
+      "skuId": "607056161510284_pixel_8_pro",
+      "specText": "Option: Pixel 8 pro",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "Pixel 8 pro"
+        }
+      ],
+      "price": 5.43,
+      "priceText": "$5.43",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/81901e49-3792-43b4-81f1-45ba638af3a8.jpg",
+      "inStock": true
+    },
+    {
+      "skuId": "607056161510284_pixel_8a",
+      "specText": "Option: Pixel 8a",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "Pixel 8a"
+        }
+      ],
+      "price": 5.43,
+      "priceText": "$5.43",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/81901e49-3792-43b4-81f1-45ba638af3a8.jpg",
+      "inStock": true
+    }
+  ],
+  "description": "Shop [4pcs Set] 3pcs Privacy Tempered Glass Screen Protector And 1pc Camera Lens Protector Suitable for Google Pixel 11/11 Pro/11 Pro XL/Pixel 10/10 Pro/10 Pro XL/Pixel 9/9 Pro/9 Pro XL/Pixel 8/8 Pro, Support Fingerprint Unlock, 9H Hardness, * on Temu. Free shipping on items shipped from Temu. * more great prices on cell phones & accessories.",
+  "specifications": {
+    "Material": "Tempered Glass"
+  },
+  "breadcrumbs": [
+    {
+      "optId": "",
+      "optName": "TEMU",
+      "level": 1,
+      "url": "https://www.temu.com"
+    },
+    {
+      "optId": "2640",
+      "optName": "Cell Phones & Accessories",
+      "level": 2,
+      "url": "https://www.temu.com/cell-phones-accessories-o3-2640.html"
+    },
+    {
+      "optId": "2647",
+      "optName": "Maintenance, * & Repairs",
+      "level": 3,
+      "url": "https://www.temu.com/maintenance--repairs-o3-2647.html"
+    },
+    {
+      "optId": "",
+      "optName": "[4pcs Set] 3pcs Privacy Tempered Glass Screen Protector And 1pc Camera Lens Protector Suitable for Google Pixel 11/11 Pro/11 Pro XL/Pixel 10/10 Pro/10 Pro XL/Pixel 9/9 Pro/9 Pro XL/Pixel 8/8 Pro, Support Fingerprint Unlock, 9H Hardness, *",
+      "level": 4,
+      "url": ""
+    }
+  ],
+  "returnPolicy": {
+    "returnWindowDays": 90,
+    "freeReturns": true,
+    "policyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+    "returnMethod": "https://schema.org/ReturnByMail"
+  },
+  "reviews": [
+    {
+      "ratingScore": 2,
+      "reviewText": "",
+      "reviewDate": "2026-09-11",
+      "authorName": null,
+      "reviewTextRedacted": true
+    },
+    {
+      "ratingScore": 4,
+      "reviewText": "",
+      "reviewDate": "2026-*-13",
+      "authorName": null,
+      "reviewTextRedacted": true
+    }
+  ],
+  "productUrl": "https://www.temu.com/4pcs-set-3pcs-privacy-tempered-glass-screen-protector-and-1pc-camera-lens-protector-suitable-for-google-pixel-11-11-pro-11-pro-xl-pixel--pro-10-pro-xl-pixel-9-9-pro-9-pro-xl-pixel-8-8--fingerprint-unlock-9h-hardness--g-607056161510284.html",
+  "sourcePageType": "pdp",
+  "sourceUrl": "https://www.temu.com/product-g-607056161510284.html",
+  "extractedAt": "2026-11-15T17:53:18.265Z"
+}

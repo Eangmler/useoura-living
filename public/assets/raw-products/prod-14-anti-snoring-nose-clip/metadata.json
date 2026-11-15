@@ -1,0 +1,153 @@
+{
+  "goodsId": "601099679915750",
+  "title": "Random 2/4/6/10pcs Mini Anti-Snoring Device, Snoring Sleep Anti-Snoring Nose Clip, Anti-Snoring Device, * Sleep",
+  "price": 1.34,
+  "priceText": "$1.34",
+  "currency": "USD",
+  "imageUrl": "https://img.kwcdn.com/product/fancy/643b1931-8e63-419a-a6eb-70fa7689572f.jpg",
+  "galleryImages": [
+    "https://img.kwcdn.com/product/fancy/643b1931-8e63-419a-a6eb-70fa7689572f.jpg",
+    "https://img.kwcdn.com/product/fancy/8bc647d3-8ade-45a3-8d79-4beee5872c13.jpg",
+    "https://img.kwcdn.com/product/fancy/a294199c-9840-42e6-9253-b1c0d1bf51da.jpg",
+    "https://img.kwcdn.com/product/fancy/b1368c0e-6dad-4b7e-8e7b-eb8aad3ab463.jpg",
+    "https://img.kwcdn.com/product/fancy/da53d016-234b-4b5d-8c56-0ba57b81b957.jpg"
+  ],
+  "hasVideo": false,
+  "rating": 4.5,
+  "reviewCount": 560,
+  "inStock": false,
+  "categoryName": "Health Care Products",
+  "categoryId": "872",
+  "categoryPath": "Health & Household > Health Care Products",
+  "skus": [
+    {
+      "skuId": "601099679915750_2_pcs",
+      "specText": "Option: 2 pcs",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "2 pcs"
+        }
+      ],
+      "price": 1.34,
+      "priceText": "$1.34",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/8bc647d3-8ade-45a3-8d79-4beee5872c13.jpg",
+      "inStock": false
+    },
+    {
+      "skuId": "601099679915750_4_pcs",
+      "specText": "Option: 4 pcs",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "4 pcs"
+        }
+      ],
+      "price": 1.34,
+      "priceText": "$1.34",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/a294199c-9840-42e6-9253-b1c0d1bf51da.jpg",
+      "inStock": false
+    },
+    {
+      "skuId": "601099679915750_6pcs",
+      "specText": "Option: 6pcs",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "6pcs"
+        }
+      ],
+      "price": 1.34,
+      "priceText": "$1.34",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/b1368c0e-6dad-4b7e-8e7b-eb8aad3ab463.jpg",
+      "inStock": false
+    },
+    {
+      "skuId": "601099679915750_10pcs",
+      "specText": "Option: 10pcs",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "10pcs"
+        }
+      ],
+      "price": 1.34,
+      "priceText": "$1.34",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/da53d016-234b-4b5d-8c56-0ba57b81b957.jpg",
+      "inStock": false
+    }
+  ],
+  "description": "Random 2/4/6/10pcs Mini Anti-Snoring Device, Snoring Sleep Anti-Snoring Nose Clip, Anti-Snoring Device, * Sleep at the * at Temu. Free shipping on items shipped from Temu * & household on sale at Temu.",
+  "breadcrumbs": [
+    {
+      "optId": "",
+      "optName": "TEMU",
+      "level": 1,
+      "url": "https://www.temu.com"
+    },
+    {
+      "optId": "871",
+      "optName": "Health & Household",
+      "level": 2,
+      "url": "https://www.temu.com/health-household-o3-871.html"
+    },
+    {
+      "optId": "872",
+      "optName": "Health Care Products",
+      "level": 3,
+      "url": "https://www.temu.com/health-care-products-o3-872.html"
+    },
+    {
+      "optId": "",
+      "optName": "Random 2/4/6/10pcs Mini Anti-Snoring Device, Snoring Sleep Anti-Snoring Nose Clip, Anti-Snoring Device, * Sleep",
+      "level": 4,
+      "url": ""
+    }
+  ],
+  "returnPolicy": {
+    "returnWindowDays": 90,
+    "freeReturns": true
+  },
+  "reviews": [
+    {
+      "ratingScore": 5,
+      "reviewText": "",
+      "reviewDate": "2024-12-07",
+      "authorName": null,
+      "reviewTextRedacted": true
+    },
+    {
+      "ratingScore": 5,
+      "reviewText": "",
+      "reviewDate": "2024-12-04",
+      "authorName": null,
+      "reviewTextRedacted": true
+    },
+    {
+      "ratingScore": 5,
+      "reviewText": "",
+      "reviewDate": "2025-01-15",
+      "authorName": null,
+      "reviewTextRedacted": true
+    },
+    {
+      "ratingScore": 4,
+      "reviewText": "",
+      "reviewDate": "2025-03-18",
+      "authorName": null,
+      "reviewTextRedacted": true
+    }
+  ],
+  "productUrl": "https://www.temu.com/random-2-4-6-10pcs--snoring-sleep-nose-clip-device-sleep-g-601099679915750.html",
+  "sourcePageType": "pdp",
+  "sourceUrl": "https://www.temu.com/random-2-4-6-10pcs-mini--device-snoring-sleep--nose-clip--device--sleep-g-601099679915750.html",
+  "extractedAt": "2026-11-15T17:53:17.310Z"
+}

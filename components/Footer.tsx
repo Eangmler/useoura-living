@@ -36,7 +36,7 @@ export const Footer: React.FC = () => {
             {/* Newsletter Subscription */}
             <div className="pt-4 space-y-3">
               <span className="text-[10px] font-mono tracking-[0.25em] uppercase text-neutral-400 block">
-                Dispatch Gazette // Weekly Editions
+                NEWSLETTER
               </span>
               <form onSubmit={handleSubscribe} className="flex max-w-md border border-neutral-300 bg-white">
                 <input
@@ -171,9 +171,7 @@ export const Footer: React.FC = () => {
             © 2026 useoura living. ALL RIGHTS RESERVED.
           </div>
           <div className="flex items-center space-x-6">
-            <span>GHANA (GH₵ GHS)</span>
-            <span>·</span>
-            <span>DIETER RAMS MODEL</span>
+            <span>GHANA (GH₵)</span>
             <span>·</span>
             <a href="/admin" className="hover:text-black transition-colors font-medium text-neutral-500">
               ADMIN

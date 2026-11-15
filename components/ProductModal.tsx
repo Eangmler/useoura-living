@@ -76,8 +76,8 @@ export const ProductModal: React.FC<ProductModalProps> = ({
         {/* Left Side: Multi-Angle Gallery Presentation */}
         <div className="md:w-1/2 bg-[#F0F0F0] border-b md:border-b-0 md:border-r border-[#EAEAEA] p-6 sm:p-10 flex flex-col justify-between relative">
           <div className="flex justify-between items-center text-[10px] font-mono tracking-[0.2em] text-neutral-400 uppercase">
-            <span>SCHEMATIC // {product.tag}</span>
-            <span>ANGLE {selectedImageIndex + 1} OF {galleryImages.length}</span>
+            <span>{product.category}</span>
+            <span>{selectedImageIndex + 1} / {galleryImages.length}</span>
           </div>
 
           {/* Main Large View */}

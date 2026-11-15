@@ -121,6 +121,46 @@
       "featured": false
     },
     {
+      "id": "prod-photochromic-glasses",
+      "title": "Photochromic Adaptive Glasses",
+      "description": "Dual-environment optical lenses engineered to transition from indoor blue-light filter to outdoor UV400 sunglasses. Architectural semi-rimless frame with featherweight comfort.",
+      "price": 195,
+      "originalPrice": 230,
+      "priceFormatted": "GH\u20b5 195.00",
+      "category": "Minimalist Lifestyle",
+      "categorySlug": "lifestyle",
+      "image": "/assets/products/lifestyle/photochromic-glasses-isolated.webp",
+      "secondaryImage": "/assets/products/lifestyle/photochromic-glasses-lifestyle.webp",
+      "images": [
+        "/assets/products/lifestyle/photochromic-glasses-isolated.webp",
+        "/assets/products/lifestyle/photochromic-glasses-lifestyle.webp",
+        "/assets/products/lifestyle/photochromic-glasses-story.webp"
+      ],
+      "badge": "Light-Adaptive",
+      "specs": [
+        {
+          "label": "Lenses",
+          "value": "Photochromic optical resin (Clear to smoked tint)"
+        },
+        {
+          "label": "Protection",
+          "value": "100% UV400 + Blue-Light screen barrier"
+        },
+        {
+          "label": "Frame",
+          "value": "Architectural matte gunmetal alloy"
+        },
+        {
+          "label": "Weight",
+          "value": "18g featherweight ergonomic temples"
+        }
+      ],
+      "tag": "OPTICS // 10",
+      "inStock": true,
+      "hasDiscount": true,
+      "featured": true
+    },
+    {
       "id": "prod-baseus-65w-car",
       "title": "Baseus 65W Triple Port Car Charger",
       "description": "Fast-charge laptops and phones on the go. Matte space aluminum.",

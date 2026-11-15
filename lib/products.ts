@@ -78,6 +78,34 @@ export const INITIAL_PRODUCTS: Product[] = [
     featured: true,
   },
   {
+    id: "prod-smart-wifi-ir-remote",
+    title: "Smart Wi-Fi IR Controller Hub",
+    description: "360-degree universal infrared transmitter engineered to automate legacy air conditioners, home theater systems, fans, and televisions into your smart living ecosystem.",
+    price: 160.00,
+    originalPrice: 190.00,
+    priceFormatted: "GH₵ 160.00",
+    category: "Smart Home Automation",
+    categorySlug: "smart-home",
+    image: "/assets/products/smart-home/smart-wifi-ir-remote-isolated.webp",
+    secondaryImage: "/assets/products/smart-home/smart-wifi-ir-remote-lifestyle.webp",
+    images: [
+      "/assets/products/smart-home/smart-wifi-ir-remote-isolated.webp",
+      "/assets/products/smart-home/smart-wifi-ir-remote-lifestyle.webp",
+      "/assets/products/smart-home/smart-wifi-ir-remote-story.webp"
+    ],
+    badge: "360° IR Blaster",
+    specs: [
+      { label: "Coverage", value: "360-degree omnidirectional up to 10m line-of-sight" },
+      { label: "Database", value: "Over 80,000+ IR appliances (AC, TV, Fans, Receivers)" },
+      { label: "Protocol", value: "Wi-Fi 2.4GHz + Smart Life / Tuya / HomeKit Shortcuts" },
+      { label: "Power", value: "Continuous USB 5V/1A low-draw supply" }
+    ],
+    tag: "HOME // 09",
+    inStock: true,
+    hasDiscount: true,
+    featured: false,
+  },
+  {
     id: "prod-baseus-65w-car",
     title: "Baseus 65W Triple Port Car Charger",
     description: "Fast-charge laptops and phones on the go. Matte space aluminum.",

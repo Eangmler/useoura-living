@@ -6,7 +6,12 @@ export const metadata: Metadata = {
   description: "Dieter Rams-inspired minimalist tech and automotive upgrades, delivered next-day via the Oura network across Ghana.",
   keywords: ["useoura living", "minimalist tech", "Braun aesthetic", "Dieter Rams", "Ghana tech", "Accra delivery", "curated electronics"],
   icons: {
-    icon: "/favicon.ico",
+    icon: [
+      { url: "/icon.svg", type: "image/svg+xml" },
+      { url: "/favicon.ico", sizes: "any" },
+    ],
+    shortcut: "/favicon.ico",
+    apple: "/icon.svg",
   },
 };
 

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <!-- Dieter Rams / Braun-inspired minimalist squircle base -->
+  <rect width="512" height="512" rx="120" fill="#1A1A1A"/>
+  
+  <!-- Subtle architectural border -->
+  <rect x="12" y="12" width="488" height="488" rx="108" fill="none" stroke="#2B2B2B" stroke-width="6"/>
+
+  <!-- Minimalist Oura Continuous Loop Ring (Pure Form, Less But Better) -->
+  <circle cx="256" cy="256" r="140" fill="none" stroke="#F7F7F5" stroke-width="52" stroke-linecap="round"/>
+  
+  <!-- Architectural Precision Core Dot (Concentric Living Balance) -->
+  <circle cx="256" cy="256" r="32" fill="#F7F7F5"/>
+</svg>

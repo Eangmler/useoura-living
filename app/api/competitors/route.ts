@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { db } from "@/lib/store";
+import { db } from "@/lib/db";
 import { SocialPlatform } from "@/lib/types";
 
 export async function GET() {

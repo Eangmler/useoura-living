@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { db } from "@/lib/store";
+import { db } from "@/lib/db";
 import { DualPlatformScraper } from "@/lib/apify";
 import { AiContentEngine } from "@/lib/ai";
 

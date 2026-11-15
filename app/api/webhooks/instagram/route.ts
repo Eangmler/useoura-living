@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { db } from "@/lib/store";
+import { db } from "@/lib/db";
 import { MetaGraphClient } from "@/lib/meta";
 
 export async function GET(req: NextRequest) {

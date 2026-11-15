@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { db } from "@/lib/store";
+import { db } from "@/lib/db";
 import { TikTokClient } from "@/lib/tiktok";
 
 export const maxDuration = 180;

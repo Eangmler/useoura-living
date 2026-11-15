@@ -239,6 +239,13 @@ export const INITIAL_PRODUCTS: Product[] = [
 export function getStoredProducts(): Product[] {
   if (typeof window === "undefined") return INITIAL_PRODUCTS;
   try {
+    const fullStore = localStorage.getItem("useoura_full_store");
+    if (fullStore) {
+      const parsedStore = JSON.parse(fullStore);
+      if (parsedStore && Array.isArray(parsedStore.products) && parsedStore.products.length > 0) {
+        return parsedStore.products;
+      }
+    }
     const stored = localStorage.getItem("useoura_admin_products");
     if (stored) {
       const parsed = JSON.parse(stored);
@@ -261,7 +268,7 @@ export const CATEGORIES = [
     name: "Mobile & Desk Tech",
     description: "Architectural accessories, precision charging, and ergonomic clarity engineered for the high-focus workstation.",
     count: "04 Objects",
-    image: "/assets/products/mobile-desk/acoustic-phone-dock-lifestyle.webp",
+    image: "/assets/brand/hero/hero-warm-desk.jpg",
     headline: "Form follow function.",
     details: "High-speed GaN adapters, double-braided cabling, and glare-free illumination.",
   },
@@ -281,7 +288,7 @@ export const CATEGORIES = [
     name: "Automotive Upgrades",
     description: "Transform your daily commute into an extension of your minimalist living environment.",
     count: "02 Tools",
-    image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=1000&q=80",
+    image: "/assets/brand/hero/hero-gadgets-collection.jpg",
     headline: "Travel with purpose.",
     details: "Aerospace magnetic car docks and 65W rapid triple-port chargers.",
   },

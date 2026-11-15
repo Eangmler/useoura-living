@@ -171,11 +171,7 @@ export const Footer: React.FC = () => {
             © 2026 useoura living. ALL RIGHTS RESERVED.
           </div>
           <div className="flex items-center space-x-6">
-            <span>GHANA (GH₵)</span>
-            <span>·</span>
-            <a href="/admin" className="hover:text-black transition-colors font-medium text-neutral-500">
-              ADMIN
-            </a>
+            <span>ACCRA · GHANA (GH₵)</span>
           </div>
         </div>
       </div>

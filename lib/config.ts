@@ -16,6 +16,15 @@ export const STORE_CONFIG = {
 
 export const getWhatsAppNumber = (): string => {
   if (typeof window !== "undefined") {
+    try {
+      const fullStore = localStorage.getItem("useoura_full_store");
+      if (fullStore) {
+        const parsed = JSON.parse(fullStore);
+        if (parsed?.settings?.whatsappNumber) {
+          return parsed.settings.whatsappNumber.replace(/[^0-9]/g, "");
+        }
+      }
+    } catch (e) {}
     const saved = localStorage.getItem("useoura_whatsapp_number");
     if (saved) return saved.replace(/[^0-9]/g, "");
   }

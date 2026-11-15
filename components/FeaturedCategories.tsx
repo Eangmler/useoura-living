@@ -1,9 +1,9 @@
 "use client";
 
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { ArrowUpRight } from "lucide-react";
-import { CATEGORIES } from "@/lib/products";
+import { StoreCategory, getClientStoreData, DEFAULT_CATEGORIES } from "@/lib/store";
 
 interface FeaturedCategoriesProps {
   onSelectCategory: (categorySlug: string) => void;
@@ -14,6 +14,23 @@ export const FeaturedCategories: React.FC<FeaturedCategoriesProps> = ({
   onSelectCategory,
   activeCategory,
 }) => {
+  const [categories, setCategories] = useState<StoreCategory[]>(DEFAULT_CATEGORIES);
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const loadCategories = () => {
+        const store = getClientStoreData();
+        if (store.categories && store.categories.length > 0) {
+          setCategories(store.categories);
+        }
+      };
+
+      loadCategories();
+      window.addEventListener("storage", loadCategories);
+      return () => window.removeEventListener("storage", loadCategories);
+    }
+  }, []);
+
   return (
     <section className="w-full border-b border-[#EAEAEA] bg-[#F7F7F5] py-20 lg:py-28">
       <div className="max-w-[1440px] mx-auto px-6 lg:px-12">
@@ -26,7 +43,7 @@ export const FeaturedCategories: React.FC<FeaturedCategoriesProps> = ({
 
         {/* Minimal Magazine Style Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
-          {CATEGORIES.map((category) => {
+          {categories.map((category) => {
             const isSelected = activeCategory === category.id;
 
             return (

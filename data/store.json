@@ -1,0 +1,297 @@
+{
+  "products": [
+    {
+      "id": "prod-baseus-65w-car",
+      "title": "Baseus 65W Triple Port Car Charger",
+      "description": "Fast-charge laptops and phones on the go. Matte space aluminum.",
+      "price": 210,
+      "originalPrice": 240,
+      "priceFormatted": "GH₵ 210.00",
+      "category": "Automotive Upgrades",
+      "categorySlug": "automotive",
+      "image": "https://baseus.com.au/cdn/shop/files/tzcckx-0g-3_1000x.jpg?v=1736398705",
+      "secondaryImage": "https://www.baseus.com/cdn/shop/products/Baseus_USB-A_USB-C_Car_Charger_65W_1_front.jpg?v=1667906382",
+      "images": [
+        "https://baseus.com.au/cdn/shop/files/tzcckx-0g-3_1000x.jpg?v=1736398705",
+        "https://www.baseus.com/cdn/shop/products/Baseus_USB-A_USB-C_Car_Charger_65W_1_front.jpg?v=1667906382",
+        "https://baseusofficialstore.com/wp-content/uploads/2024/02/H9948450fb6ce410a8b88143f092e9be61.jpg_.webp"
+      ],
+      "badge": "GaN Fast Charge",
+      "specs": [
+        { "label": "Output", "value": "65W Max (USB-C1 + C2 + USB-A)" },
+        { "label": "Display", "value": "Real-time LED voltage meter" },
+        { "label": "Compatibility", "value": "12V-24V car sockets, PD 3.0 & QC 4.0" },
+        { "label": "Finish", "value": "Matte space aluminum" }
+      ],
+      "tag": "AUTO // 01",
+      "inStock": true,
+      "hasDiscount": true,
+      "featured": true
+    },
+    {
+      "id": "prod-apple-35w-dual",
+      "title": "Apple 35W Dual Port Power Adapter",
+      "description": "Compact dual USB-C charging brick with folding pins.",
+      "price": 210,
+      "originalPrice": 230,
+      "priceFormatted": "GH₵ 210.00",
+      "category": "Mobile & Desk Tech",
+      "categorySlug": "mobile-desk",
+      "image": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/MNWP3?wid=1144&hei=1144&fmt=jpeg&qlt=90",
+      "secondaryImage": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/MW2H3?wid=1144&hei=1144&fmt=jpeg&qlt=90",
+      "images": [
+        "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/MNWP3?wid=1144&hei=1144&fmt=jpeg&qlt=90",
+        "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/MW2H3?wid=1144&hei=1144&fmt=jpeg&qlt=90"
+      ],
+      "badge": "Official Spec",
+      "specs": [
+        { "label": "Ports", "value": "2x USB-C (Intelligent power sharing)" },
+        { "label": "Power", "value": "35W dynamic distribution" },
+        { "label": "Prongs", "value": "Folding compact architectural pins" },
+        { "label": "Safety", "value": "Overcurrent & thermal protection" }
+      ],
+      "tag": "DESK // 02",
+      "inStock": true,
+      "featured": true
+    },
+    {
+      "id": "prod-anker-100w-cable",
+      "title": "Anker 100W Braided USB-C Cable",
+      "description": "Ultra-durable nylon fast-charging cable with silicone strap.",
+      "price": 175,
+      "priceFormatted": "GH₵ 175.00",
+      "category": "Mobile & Desk Tech",
+      "categorySlug": "mobile-desk",
+      "image": "https://cdn.shopify.com/s/files/1/0831/7042/7131/files/white-01_2d4272ab-2d5a-428d-8f79-c52ac1e98345_2878x_1.png?v=1790582640",
+      "secondaryImage": "https://m.media-amazon.com/images/I/61Nl8WqE14L._AC_SL1500_.jpg",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0831/7042/7131/files/white-01_2d4272ab-2d5a-428d-8f79-c52ac1e98345_2878x_1.png?v=1790582640",
+        "https://m.media-amazon.com/images/I/61Nl8WqE14L._AC_SL1500_.jpg"
+      ],
+      "badge": "100W PD",
+      "specs": [
+        { "label": "Throughput", "value": "100W (20V/5A E-Marker Chip)" },
+        { "label": "Build", "value": "Double-braided ballistic nylon" },
+        { "label": "Bend Rating", "value": "25,000+ lifecycle bends" },
+        { "label": "Length", "value": "1.8m (6ft) with silicone strap" }
+      ],
+      "tag": "DESK // 03",
+      "inStock": true,
+      "featured": true
+    },
+    {
+      "id": "prod-tuya-zigbee-hub",
+      "title": "Tuya Smart Zigbee 3.0 Hub",
+      "description": "The brain for your smart home ecosystem. Connects 128+ sensors.",
+      "price": 330,
+      "priceFormatted": "GH₵ 330.00",
+      "category": "Smart Home Automation",
+      "categorySlug": "smart-home",
+      "image": "https://ae01.alicdn.com/kf/S2dd107e3cb734fa4bb96bc6334f59e66X.jpg",
+      "secondaryImage": "https://ae01.alicdn.com/kf/S7a59a72faeb94f31835bc451bfe96191S.jpg",
+      "images": [
+        "https://ae01.alicdn.com/kf/S2dd107e3cb734fa4bb96bc6334f59e66X.jpg",
+        "https://ae01.alicdn.com/kf/S7a59a72faeb94f31835bc451bfe96191S.jpg"
+      ],
+      "badge": "Local Automation",
+      "specs": [
+        { "label": "Protocol", "value": "Zigbee 3.0 & BLE Mesh" },
+        { "label": "Capacity", "value": "128 simultaneous sub-devices" },
+        { "label": "Coverage", "value": "100m open area range" },
+        { "label": "Offline Support", "value": "Local automations execute without internet" }
+      ],
+      "tag": "HOME // 04",
+      "inStock": true,
+      "featured": true
+    },
+    {
+      "id": "prod-monitor-light-bar",
+      "title": "Minimalist Monitor Light Bar",
+      "description": "Mechanical switch, anti-glare screen lighting with auto-dimming sensor.",
+      "price": 580,
+      "originalPrice": 620,
+      "priceFormatted": "GH₵ 580.00",
+      "category": "Mobile & Desk Tech",
+      "categorySlug": "mobile-desk",
+      "image": "https://cdn.shopify.com/s/files/1/0831/7042/7131/files/lightbar-01_1024x1024.png?v=1790582645",
+      "secondaryImage": "https://m.media-amazon.com/images/I/61HauFw3m0L._AC_SL1500_.jpg",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0831/7042/7131/files/lightbar-01_1024x1024.png?v=1790582645",
+        "https://m.media-amazon.com/images/I/61HauFw3m0L._AC_SL1500_.jpg"
+      ],
+      "badge": "Eye Comfort",
+      "specs": [
+        { "label": "Optics", "value": "Asymmetrical 45° optical glare cut-off" },
+        { "label": "Color Temp", "value": "2700K - 6500K stepless adjustment" },
+        { "label": "CRI", "value": "Ra ≥ 95 color accuracy" },
+        { "label": "Controller", "value": "Wireless 2.4GHz desktop rotary dial" }
+      ],
+      "tag": "DESK // 05",
+      "inStock": true,
+      "hasDiscount": true,
+      "featured": true
+    },
+    {
+      "id": "prod-xxl-desk-mat",
+      "title": "XXL Solid Color Desk Mat",
+      "description": "Premium faux leather workspace protector. Waterproof and wipeable.",
+      "price": 220,
+      "priceFormatted": "GH₵ 220.00",
+      "category": "Mobile & Desk Tech",
+      "categorySlug": "mobile-desk",
+      "image": "https://cdn.shopify.com/s/files/1/0831/7042/7131/files/deskmat-01_1024x1024.png?v=1790582650",
+      "secondaryImage": "https://m.media-amazon.com/images/I/71P4oU44e4L._AC_SL1500_.jpg",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0831/7042/7131/files/deskmat-01_1024x1024.png?v=1790582650",
+        "https://m.media-amazon.com/images/I/71P4oU44e4L._AC_SL1500_.jpg"
+      ],
+      "specs": [
+        { "label": "Dimensions", "value": "900mm x 400mm x 2.2mm" },
+        { "label": "Material", "value": "Architectural vegan PU leather & cork base" },
+        { "label": "Resistance", "value": "Waterproof, oil-proof, heat resistant" },
+        { "label": "Edge", "value": "Precision stitched anti-fray border" }
+      ],
+      "tag": "DESK // 06",
+      "inStock": true
+    },
+    {
+      "id": "prod-magsafe-car-mount",
+      "title": "Magnetic Dashboard Phone Mount",
+      "description": "360° rotating sleek car mount. Aerospace alloy with N52 magnets.",
+      "price": 175,
+      "priceFormatted": "GH₵ 175.00",
+      "category": "Automotive Upgrades",
+      "categorySlug": "automotive",
+      "image": "https://cdn.shopify.com/s/files/1/0831/7042/7131/files/mount-01_1024x1024.png?v=1790582655",
+      "secondaryImage": "https://m.media-amazon.com/images/I/61k9Hk8Q+hL._AC_SL1500_.jpg",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0831/7042/7131/files/mount-01_1024x1024.png?v=1790582655",
+        "https://m.media-amazon.com/images/I/61k9Hk8Q+hL._AC_SL1500_.jpg"
+      ],
+      "badge": "N52 Magnet",
+      "specs": [
+        { "label": "Magnets", "value": "16x N52 aerospace neodymium array" },
+        { "label": "Rotation", "value": "360° fluid damping ball joint" },
+        { "label": "Adhesive", "value": "3M VHB heat-tolerant car mount pad" },
+        { "label": "Finish", "value": "CNC anodized aluminum body" }
+      ],
+      "tag": "AUTO // 07",
+      "inStock": true
+    },
+    {
+      "id": "prod-dji-mic-mini",
+      "title": "DJI Mic Mini Wireless Audio",
+      "description": "Discreet, ultra-light wireless audio for studio-grade voice capture.",
+      "price": 730,
+      "originalPrice": 790,
+      "priceFormatted": "GH₵ 730.00",
+      "category": "Minimalist Lifestyle",
+      "categorySlug": "lifestyle",
+      "image": "https://cdn.shopify.com/s/files/1/0831/7042/7131/files/dji-mic-mini-01.png?v=1790582660",
+      "secondaryImage": "https://m.media-amazon.com/images/I/51r292vK-CL._AC_SL1000_.jpg",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0831/7042/7131/files/dji-mic-mini-01.png?v=1790582660",
+        "https://m.media-amazon.com/images/I/51r292vK-CL._AC_SL1000_.jpg"
+      ],
+      "badge": "Studio Grade",
+      "specs": [
+        { "label": "Weight", "value": "10 grams (Ultra-compact)" },
+        { "label": "Battery Life", "value": "48 hours with charging case" },
+        { "label": "Range", "value": "400m direct lossless transmission" },
+        { "label": "Noise Reduction", "value": "Two-level intelligent ambient filter" }
+      ],
+      "tag": "AUDIO // 08",
+      "inStock": true,
+      "hasDiscount": true,
+      "featured": true
+    }
+  ],
+  "categories": [
+    {
+      "id": "mobile-desk",
+      "name": "Mobile & Desk Tech",
+      "image": "/assets/brand/hero/hero-warm-desk.jpg",
+      "description": "Architectural accessories, precision charging, and ergonomic clarity engineered for the high-focus workstation."
+    },
+    {
+      "id": "smart-home",
+      "name": "Smart Home Automation",
+      "image": "/assets/raw-products/prod-27-wifi-smart-light-switch.jpg",
+      "description": "Unobtrusive intelligence that anticipates your habits without drawing attention to itself."
+    },
+    {
+      "id": "automotive",
+      "name": "Automotive Upgrades",
+      "image": "/assets/brand/hero/hero-gadgets-collection.jpg",
+      "description": "Transform your daily commute into an extension of your minimalist living environment."
+    },
+    {
+      "id": "lifestyle",
+      "name": "Minimalist Lifestyle",
+      "image": "/assets/products/lifestyle/smart-visual-ear-cleaner-lifestyle.webp",
+      "description": "Discreet tools that integrate with your personal rhythm."
+    }
+  ],
+  "heroSlides": [
+    {
+      "id": "slide-living-oled",
+      "type": "image",
+      "src": "/assets/brand/hero-living.jpg",
+      "title": "Curated technology and daily essentials.",
+      "active": true
+    },
+    {
+      "id": "slide-warm-desk",
+      "type": "image",
+      "src": "/assets/brand/hero/hero-warm-desk.jpg",
+      "title": "Pure form, uncompromised utility.",
+      "active": true
+    },
+    {
+      "id": "slide-gadgets-collection",
+      "type": "image",
+      "src": "/assets/brand/hero/hero-gadgets-collection.jpg",
+      "title": "Architectural tools engineered for daily life.",
+      "active": true
+    },
+    {
+      "id": "slide-pixel-white",
+      "type": "image",
+      "src": "/assets/brand/hero/hero-pixel-white.jpg",
+      "title": "Ecosystems designed to work hand-in-hand.",
+      "active": true
+    },
+    {
+      "id": "slide-ambient-video",
+      "type": "video",
+      "src": "https://assets.mixkit.co/videos/preview/mixkit-living-room-in-a-modern-apartment-41488-large.mp4",
+      "poster": "/assets/brand/hero-living.jpg",
+      "title": "Quiet smart living.",
+      "active": true
+    }
+  ],
+  "teamMembers": [
+    {
+      "id": "team-owner-01",
+      "name": "Ernest Angmler",
+      "email": "eangmler@gmail.com",
+      "role": "Owner",
+      "addedAt": "2026-11-15",
+      "status": "active"
+    },
+    {
+      "id": "team-dispatch-02",
+      "name": "Accra Fleet Dispatch",
+      "email": "dispatch@useoura.com",
+      "role": "Logistics / Dispatcher",
+      "addedAt": "2026-11-15",
+      "status": "active"
+    }
+  ],
+  "settings": {
+    "pin": "oura2026",
+    "whatsappNumber": "233248147952",
+    "storeName": "useoura living",
+    "currency": "GH₵"
+  }
+}

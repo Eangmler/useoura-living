@@ -43,32 +43,21 @@ export const ProductCard: React.FC<ProductCardProps> = ({
         !product.inStock ? "opacity-75" : ""
       } ${className}`}
     >
-      {/* Top Header of Card: Technical Serial Tag & Category */}
-      <div className="p-4 sm:p-5 pb-3 flex items-center justify-between border-b border-[#EAEAEA]/80 text-[10px] font-mono tracking-[0.2em] uppercase text-neutral-400">
-        <span>{product.tag}</span>
-        <div className="flex items-center space-x-1.5">
-          {!product.inStock ? (
-            <span className="text-red-700 font-semibold bg-red-100 px-1.5 py-0.5">
-              OUT OF STOCK
-            </span>
-          ) : product.isLimited ? (
-            <span className="text-amber-800 font-semibold bg-amber-100 px-1.5 py-0.5">
-              LIMITED
-            </span>
-          ) : product.hasDiscount ? (
-            <span className="text-emerald-800 font-semibold bg-emerald-100 px-1.5 py-0.5">
-              SALE
-            </span>
-          ) : product.badge ? (
-            <span className="text-[#1A1A1A] font-medium bg-neutral-200/70 px-1.5 py-0.5">
-              {product.badge}
-            </span>
-          ) : null}
-        </div>
+      {/* Top Tag Bar - Only show if Sold Out or Sale, otherwise keep completely clean and empty */}
+      <div className="px-5 pt-4 pb-1 flex items-center justify-end min-h-[28px]">
+        {!product.inStock ? (
+          <span className="text-[10px] font-mono tracking-wider text-red-700 font-semibold bg-red-100 px-2 py-0.5 uppercase">
+            Sold Out
+          </span>
+        ) : product.hasDiscount ? (
+          <span className="text-[10px] font-mono tracking-wider text-emerald-800 font-semibold bg-emerald-100 px-2 py-0.5 uppercase">
+            Sale
+          </span>
+        ) : null}
       </div>
 
       {/* Floating Image Container with Two-Angle Hover Transition */}
-      <div className="relative w-full aspect-square bg-[#F0F0F0] flex items-center justify-center p-10 sm:p-12 overflow-hidden transition-colors group-hover:bg-[#EBEBEB]">
+      <div className="relative w-full aspect-square bg-[#F0F0F0] flex items-center justify-center p-8 sm:p-10 lg:p-12 overflow-hidden transition-colors group-hover:bg-[#EBEBEB]">
         {/* Subtle dot matrix grid background inside image card */}
         <div className="absolute inset-0 opacity-15 pointer-events-none bg-[radial-gradient(#999_1px,transparent_1px)] [background-size:16px_16px]" />
 
@@ -92,7 +81,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
         {/* Secondary Detailed Angle on Hover */}
         {hasSecondary && (
           <div
-            className={`absolute inset-0 flex items-center justify-center p-10 sm:p-12 transition-all duration-500 ${
+            className={`absolute inset-0 flex items-center justify-center p-8 sm:p-10 lg:p-12 transition-all duration-500 ${
               isHovered ? "opacity-100 scale-105" : "opacity-0 scale-110 pointer-events-none"
             }`}
           >
@@ -106,14 +95,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
           </div>
         )}
 
-        {/* Angle indicator indicator tag on hover */}
-        {hasSecondary && (
-          <div className="absolute top-3 left-3 opacity-0 group-hover:opacity-100 transition-opacity text-[8px] font-mono tracking-widest uppercase bg-white/80 px-1.5 py-0.5 text-neutral-500">
-            {isHovered ? "DETAIL ANGLE" : "PRIMARY"}
-          </div>
-        )}
-
-        {/* Hover Quick View pill */}
+        {/* Quick View Button on Hover */}
         <button
           onClick={(e) => {
             e.stopPropagation();
@@ -122,37 +104,27 @@ export const ProductCard: React.FC<ProductCardProps> = ({
           className="absolute bottom-4 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-all duration-300 px-3.5 py-1.5 bg-[#1A1A1A] text-white text-[10px] font-mono uppercase tracking-[0.2em] rounded-full flex items-center space-x-1.5 shadow-md hover:bg-neutral-800"
         >
           <Eye strokeWidth={1.5} className="w-3 h-3" />
-          <span>Inspect Angles</span>
+          <span>View</span>
         </button>
       </div>
 
-      {/* Product Information Body */}
-      <div className="p-5 sm:p-6 flex flex-col justify-between flex-grow space-y-4">
-        <div className="space-y-1.5">
-          <h3 className="text-base sm:text-lg font-medium text-[#1A1A1A] tracking-tight group-hover:text-neutral-700 transition-colors">
-            {product.title}
-          </h3>
-          <p className="text-xs text-neutral-500 font-normal leading-relaxed line-clamp-2">
-            {product.description}
-          </p>
-        </div>
+      {/* Product Information Body: ONLY Title and Price Row - NO PETTY DESCRIPTIONS */}
+      <div className="p-5 sm:p-6 space-y-4">
+        <h3 className="text-base sm:text-lg font-medium text-[#1A1A1A] tracking-tight group-hover:text-neutral-700 transition-colors">
+          {product.title}
+        </h3>
 
         {/* Price & Action Row */}
-        <div className="pt-4 border-t border-[#EAEAEA] flex items-center justify-between">
-          <div>
-            <span className="text-[9px] font-mono text-neutral-400 block uppercase tracking-widest">
-              PRICE (FREE ACCRA DISPATCH)
+        <div className="pt-3 border-t border-[#EAEAEA] flex items-center justify-between">
+          <div className="flex items-baseline space-x-2">
+            <span className="text-base font-semibold text-[#1A1A1A] font-mono">
+              GH₵ {product.price.toFixed(2)}
             </span>
-            <div className="flex items-baseline space-x-2">
-              <span className="text-sm sm:text-base font-semibold text-[#1A1A1A] font-mono">
-                GH₵ {product.price.toFixed(2)}
+            {product.originalPrice && product.originalPrice > product.price && (
+              <span className="text-xs font-mono text-neutral-400 line-through">
+                GH₵ {product.originalPrice.toFixed(2)}
               </span>
-              {product.originalPrice && product.originalPrice > product.price && (
-                <span className="text-xs font-mono text-neutral-400 line-through">
-                  GH₵ {product.originalPrice.toFixed(2)}
-                </span>
-              )}
-            </div>
+            )}
           </div>
 
           <button

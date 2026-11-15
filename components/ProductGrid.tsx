@@ -32,12 +32,12 @@ export const ProductGrid: React.FC<ProductGridProps> = ({
   }, []);
 
   const filterTabs = useMemo(() => [
-    { label: "All Objects", slug: "all", count: liveProducts.length },
-    { label: "Mobile & Desk", slug: "mobile-desk", count: liveProducts.filter(p => p.categorySlug === "mobile-desk").length },
-    { label: "Smart Home", slug: "smart-home", count: liveProducts.filter(p => p.categorySlug === "smart-home").length },
-    { label: "Automotive", slug: "automotive", count: liveProducts.filter(p => p.categorySlug === "automotive").length },
-    { label: "Lifestyle", slug: "lifestyle", count: liveProducts.filter(p => p.categorySlug === "lifestyle").length },
-  ], [liveProducts]);
+    { label: "All", slug: "all" },
+    { label: "Mobile & Desk", slug: "mobile-desk" },
+    { label: "Smart Home", slug: "smart-home" },
+    { label: "Automotive", slug: "automotive" },
+    { label: "Lifestyle", slug: "lifestyle" },
+  ], []);
 
   const filteredProducts = useMemo(() => {
     let list = [...liveProducts];
@@ -55,35 +55,24 @@ export const ProductGrid: React.FC<ProductGridProps> = ({
   return (
     <section id="bestsellers" className="w-full border-b border-[#EAEAEA] bg-[#F7F7F5] py-20 lg:py-28">
       <div className="max-w-[1440px] mx-auto px-6 lg:px-12">
-        {/* Section Header */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 pb-6 border-b border-[#EAEAEA] gap-6">
-          <div className="space-y-3">
-            <div className="flex items-center space-x-2 text-[10px] font-mono tracking-[0.25em] uppercase text-neutral-500">
-              <span className="w-2 h-[1px] bg-neutral-900" />
-              <span>SECTION 03 // ARCHITECTURAL HARDWARE</span>
-            </div>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-medium tracking-tight text-[#1A1A1A]">
-              Curated Catalogue
-            </h2>
-          </div>
+        {/* Clean Section Header: NO Section Numbers, NO Tag Clutter */}
+        <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-12 pb-6 border-b border-[#EAEAEA] gap-6">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-medium tracking-tight text-[#1A1A1A]">
+            Catalogue
+          </h2>
 
-          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 text-xs font-mono text-neutral-500">
-            <span className="uppercase tracking-widest">
-              [ {filteredProducts.length} OBJECTS · FREE ACCRA COURIER ]
-            </span>
-            <div className="flex items-center space-x-2 border border-neutral-300 px-3 py-1.5 bg-white">
-              <span className="text-[10px] uppercase tracking-wider text-neutral-400">Sort:</span>
-              <select
-                aria-label="Sort products by price or default order"
-                value={sortBy}
-                onChange={(e) => setSortBy(e.target.value as any)}
-                className="bg-transparent text-[#1A1A1A] text-xs font-mono focus:outline-none cursor-pointer"
-              >
-                <option value="default">Catalogue Order</option>
-                <option value="price-asc">Price: Low to High</option>
-                <option value="price-desc">Price: High to Low</option>
-              </select>
-            </div>
+          <div className="flex items-center space-x-2 border border-neutral-300 px-3 py-1.5 bg-white self-start sm:self-auto">
+            <span className="text-[10px] uppercase tracking-wider text-neutral-400 font-mono">Sort:</span>
+            <select
+              aria-label="Sort products by price or default order"
+              value={sortBy}
+              onChange={(e) => setSortBy(e.target.value as any)}
+              className="bg-transparent text-[#1A1A1A] text-xs font-mono focus:outline-none cursor-pointer"
+            >
+              <option value="default">Default</option>
+              <option value="price-asc">Price: Low to High</option>
+              <option value="price-desc">Price: High to Low</option>
+            </select>
           </div>
         </div>
 
@@ -102,9 +91,6 @@ export const ProductGrid: React.FC<ProductGridProps> = ({
                 }`}
               >
                 <span>{tab.label}</span>
-                <span className={`ml-2 text-[10px] ${isActive ? "text-neutral-300" : "text-neutral-400"}`}>
-                  ({tab.count})
-                </span>
               </button>
             );
           })}
@@ -123,16 +109,6 @@ export const ProductGrid: React.FC<ProductGridProps> = ({
               />
             );
           })}
-        </div>
-
-        {/* Footnote */}
-        <div className="mt-16 pt-8 border-t border-[#EAEAEA] flex flex-col sm:flex-row items-start sm:items-center justify-between text-[10px] font-mono tracking-[0.2em] uppercase text-neutral-400 gap-4">
-          <div>
-            <span>ACCRA FREE UBER COURIER DISPATCH</span>
-          </div>
-          <div>
-            <span>HOVER ANY CARD TO INSPECT DETAIL ANGLE</span>
-          </div>
         </div>
       </div>
     </section>

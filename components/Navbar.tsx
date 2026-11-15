@@ -49,16 +49,15 @@ export const Navbar: React.FC<NavbarProps> = ({
 
   return (
     <>
-      {/* Top Utility Announcement Bar */}
-      <div className="w-full bg-[#1A1A1A] text-[#F7F7F5] py-2 px-4 text-[10px] uppercase font-mono tracking-[0.25em] flex justify-between items-center border-b border-neutral-800">
+      {/* Top Utility Bar */}
+      <div className="w-full bg-[#1A1A1A] text-[#F7F7F5] py-2 px-4 text-[10px] uppercase font-mono tracking-[0.2em] flex justify-between items-center border-b border-neutral-800">
         <div className="container mx-auto flex items-center justify-between">
           <div className="flex items-center space-x-2">
             <span className="inline-block w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
-            <span className="hidden sm:inline">OURA LOGISTICS ACCRA //</span>
-            <span>NEXT-DAY DISPATCH TO ACCRA & TEMA</span>
+            <span>FREE GREATER ACCRA UBER COURIER INCLUDED</span>
           </div>
           <div className="flex items-center space-x-4 text-neutral-400">
-            <span className="hidden md:inline">FREE DELIVERY ON ORDERS &gt; GH₵ 400</span>
+            <span className="hidden sm:inline">WHATSAPP: +233 24 814 7952</span>
             <span className="text-neutral-500">|</span>
             <span className="text-neutral-300 font-medium">GHANA (GH₵)</span>
           </div>
@@ -83,9 +82,6 @@ export const Navbar: React.FC<NavbarProps> = ({
               <span className="font-semibold text-[#1A1A1A] tracking-tight">useoura</span>
               <span className="font-light text-neutral-400">living</span>
             </a>
-            <span className="hidden xl:inline-block text-[9px] font-mono tracking-[0.2em] text-neutral-400 uppercase border border-neutral-300/80 px-1.5 py-0.5 rounded-none">
-              CAT. 26
-            </span>
           </div>
 
           {/* Center: Desktop Navigation Links */}

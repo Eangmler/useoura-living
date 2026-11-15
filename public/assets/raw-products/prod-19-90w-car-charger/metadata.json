@@ -1,0 +1,111 @@
+{
+  "goodsId": "601099584036576",
+  "title": "Car charger 90W Type-C, suitable for iPhone 14 13 Pro Max iPad Macbook, * metal fast charging adapter PD3.0+QC3.0 dual port",
+  "price": 12.74,
+  "priceText": "$12.74",
+  "currency": "USD",
+  "imageUrl": "https://img.kwcdn.com/product/fancy/e9bef3a9-284b-402e-bd6a-21005d28ee21.jpg",
+  "galleryImages": [
+    "https://img.kwcdn.com/product/fancy/e9bef3a9-284b-402e-bd6a-21005d28ee21.jpg",
+    "https://img.kwcdn.com/product/fancy/499418c7-d798-4e43-be7a-663c4a3fecc5.jpg"
+  ],
+  "videoUrl": "https://goods-vod.kwcdn.com/goods-video/d51d9a3b71dbd3f244438fc595ad87679358e6ee.f30.mp4",
+  "videoCoverUrl": "https://img.kwcdn.com/product/fancy/e9bef3a9-284b-402e-bd6a-21005d28ee21.jpg",
+  "hasVideo": true,
+  "rating": 4.9,
+  "reviewCount": 111,
+  "inStock": true,
+  "shippingFeeText": "Free Shipping",
+  "estimatedDelivery": "5-13 days",
+  "categoryName": "Car *",
+  "categoryId": "1333",
+  "categoryPath": "Automotive > Car *",
+  "skus": [
+    {
+      "skuId": "601099584036576_black",
+      "specText": "Option: Black",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "Black"
+        }
+      ],
+      "price": 12.74,
+      "priceText": "$12.74",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/499418c7-d798-4e43-be7a-663c4a3fecc5.jpg",
+      "inStock": true
+    }
+  ],
+  "description": "* deals on Car charger 90W Type-C, suitable for iPhone 14 13 Pro Max iPad Macbook, * metal fast charging adapter PD3.0+QC3.0 dual port on Temu. Free shipping on items shipped from Temu. Shop on Temu to start saving.",
+  "specifications": {
+    "Material": "* Alloy"
+  },
+  "breadcrumbs": [
+    {
+      "optId": "",
+      "optName": "TEMU",
+      "level": 1,
+      "url": "https://www.temu.com"
+    },
+    {
+      "optId": "580",
+      "optName": "Automotive",
+      "level": 2,
+      "url": "https://www.temu.com/automotive-o3-580.html"
+    },
+    {
+      "optId": "1333",
+      "optName": "Car *",
+      "level": 3,
+      "url": "https://www.temu.com/car-audio-video-o3-1333.html"
+    },
+    {
+      "optId": "",
+      "optName": "Car charger 90W Type-C, suitable for iPhone 14 13 Pro Max iPad Macbook, * metal fast charging adapter PD3.0+QC3.0 dual port",
+      "level": 4,
+      "url": ""
+    }
+  ],
+  "returnPolicy": {
+    "returnWindowDays": 90,
+    "freeReturns": true,
+    "policyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+    "returnMethod": "https://schema.org/ReturnByMail"
+  },
+  "reviews": [
+    {
+      "ratingScore": 5,
+      "reviewText": "",
+      "reviewDate": "2025-03-12",
+      "authorName": null,
+      "reviewTextRedacted": true
+    },
+    {
+      "ratingScore": 5,
+      "reviewText": "",
+      "reviewDate": "2025-01-23",
+      "authorName": null,
+      "reviewTextRedacted": true
+    },
+    {
+      "ratingScore": 5,
+      "reviewText": "",
+      "reviewDate": "2026-03-15",
+      "authorName": null,
+      "reviewTextRedacted": true
+    },
+    {
+      "ratingScore": 5,
+      "reviewText": "",
+      "reviewDate": "2026-06-07",
+      "authorName": null,
+      "reviewTextRedacted": true
+    }
+  ],
+  "productUrl": "https://www.temu.com/car-charger-90w-type-c-suitable-for-iphone-14-13-pro-max-ipad-macbook--metal-fast-charging-adapter-pd3-0-qc3-0-dual-port-g-601099584036576.html",
+  "sourcePageType": "pdp",
+  "sourceUrl": "https://www.temu.com/product-g-601099584036576.html",
+  "extractedAt": "2026-11-15T17:53:30.340Z"
+}

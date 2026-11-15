@@ -1,0 +1,138 @@
+{
+  "goodsId": "601103235115850",
+  "title": "1080P Video Doorbell Camera, Intelligent Human Detection, Cloud Storage, Real-time Viewing, * Audio, Infrared *, Battery Powered, Ind",
+  "price": 14.94,
+  "priceText": "$14.94",
+  "currency": "USD",
+  "imageUrl": "https://img.kwcdn.com/product/fancy/9c5c0934-3a7c-474b-9ff5-d61ea815b3a3.jpg",
+  "galleryImages": [
+    "https://img.kwcdn.com/product/fancy/9c5c0934-3a7c-474b-9ff5-d61ea815b3a3.jpg",
+    "https://img.kwcdn.com/product/fancy/eeb5cee8-52f7-42c5-b8c7-c6f60418b2f4.jpg",
+    "https://img.kwcdn.com/product/fancy/67f7df01-eb12-47ac-a5ca-798114d6f554.jpg",
+    "https://img.kwcdn.com/product/fancy/cb53ddf2-f337-4c91-a110-97ebb21cea82.jpg"
+  ],
+  "videoUrl": "https://goods-vod.kwcdn.com/goods-video/c66c33f73eed2be4d3c3dc76b8a3579c3fa85c43gs2CV.f30.mp4",
+  "videoCoverUrl": "https://img.kwcdn.com/product/fancy/9c5c0934-3a7c-474b-9ff5-d61ea815b3a3.jpg",
+  "hasVideo": true,
+  "rating": 4.6,
+  "reviewCount": 38,
+  "inStock": true,
+  "categoryName": "Surveillance Cameras",
+  "categoryId": "6933",
+  "categoryPath": "Tools & Home Improvement > Surveillance Cameras",
+  "skus": [
+    {
+      "skuId": "601103235115850_black",
+      "specText": "Option: Black",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "Black"
+        }
+      ],
+      "price": 14.94,
+      "priceText": "$14.94",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/eeb5cee8-52f7-42c5-b8c7-c6f60418b2f4.jpg",
+      "inStock": true
+    },
+    {
+      "skuId": "601103235115850_p52_purple",
+      "specText": "Option: P52 purple",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "P52 purple"
+        }
+      ],
+      "price": 14.94,
+      "priceText": "$14.94",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/67f7df01-eb12-47ac-a5ca-798114d6f554.jpg",
+      "inStock": true
+    },
+    {
+      "skuId": "601103235115850_v52_black",
+      "specText": "Option: V52 black",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "V52 black"
+        }
+      ],
+      "price": 14.94,
+      "priceText": "$14.94",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/cb53ddf2-f337-4c91-a110-97ebb21cea82.jpg",
+      "inStock": true
+    }
+  ],
+  "description": "Check out this 1080P Video Doorbell Camera, Intelligent Human Detection, Cloud Storage, Real-time Viewing, * Audio, Infrared *, Battery Powered, Indoor Monitoring, USB Interface, 5200mAh Battery. on Temu. Today's * deals. * * like other tools & home * products.",
+  "breadcrumbs": [
+    {
+      "optId": "",
+      "optName": "TEMU",
+      "level": 1,
+      "url": "https://www.temu.com"
+    },
+    {
+      "optId": "893",
+      "optName": "Tools & Home Improvement",
+      "level": 2,
+      "url": "https://www.temu.com/tools-home--o3-893.html"
+    },
+    {
+      "optId": "6933",
+      "optName": "Surveillance Cameras",
+      "level": 3,
+      "url": "https://www.temu.com/surveillance-cameras-o3-6933.html"
+    },
+    {
+      "optId": "",
+      "optName": "1080P Video Doorbell Camera, Intelligent Human Detection, Cloud Storage, Real-time Viewing, * Audio, Infrared *, Battery Powered, Indoor Monitoring, USB Interface, 5200mAh Battery.",
+      "level": 4,
+      "url": ""
+    }
+  ],
+  "returnPolicy": {
+    "returnWindowDays": 90,
+    "freeReturns": true
+  },
+  "reviews": [
+    {
+      "ratingScore": 5,
+      "reviewText": "",
+      "reviewDate": "2026-03-01",
+      "authorName": null,
+      "reviewTextRedacted": true
+    },
+    {
+      "ratingScore": 5,
+      "reviewText": "",
+      "reviewDate": "2026-03-29",
+      "authorName": null,
+      "reviewTextRedacted": true
+    },
+    {
+      "ratingScore": 5,
+      "reviewText": "",
+      "reviewDate": "2026-04-09",
+      "authorName": null,
+      "reviewTextRedacted": true
+    },
+    {
+      "ratingScore": 1,
+      "reviewText": "",
+      "reviewDate": "2026-03-31",
+      "authorName": null,
+      "reviewTextRedacted": true
+    }
+  ],
+  "productUrl": "https://www.temu.com/1080p-video-doorbell-camera-intelligent-human-detection-cloud-storage-real-time-viewing-two-way-audio-infrared--battery-powered-indoor-monitoring-usb-interface-5200mah-battery-g-601103235115850.html",
+  "sourcePageType": "pdp",
+  "sourceUrl": "https://www.temu.com/1080p-video-doorbell-camera-intelligent-human-detection-cloud-storage-real-time-viewing-two-way-audio-infrared--battery-powered-indoor-monitoring-usb-interface-5200mah-battery-g-601103235115850.html",
+  "extractedAt": "2026-11-15T17:53:48.373Z"
+}

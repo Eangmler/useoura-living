@@ -1,0 +1,104 @@
+{
+  "goodsId": "601099654331277",
+  "title": "1PC X6 Connection Wi-Fi Camera, WiFi *, Not Battery Wireless, Real-time Recording, Motion Detection, * Smart Camera, Easy to *",
+  "price": 11.03,
+  "priceText": "$11.03",
+  "currency": "USD",
+  "imageUrl": "https://img.kwcdn.com/product/fancy/9683eebb-e41d-458a-8b01-4989b4fff854.jpg",
+  "galleryImages": [
+    "https://img.kwcdn.com/product/fancy/9683eebb-e41d-458a-8b01-4989b4fff854.jpg"
+  ],
+  "hasVideo": false,
+  "rating": 4.4,
+  "reviewCount": 2332,
+  "inStock": false,
+  "categoryName": "Security & Surveillance",
+  "categoryId": "1423",
+  "categoryPath": "Smart Home > Security & Surveillance",
+  "skus": [
+    {
+      "skuId": "601099654331277_black",
+      "specText": "Option: Black",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "Black"
+        }
+      ],
+      "price": 11.03,
+      "priceText": "$11.03",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/9683eebb-e41d-458a-8b01-4989b4fff854.jpg",
+      "inStock": false
+    }
+  ],
+  "description": "Check out this 1PC X6 Connection Wi-Fi Camera, WiFi *, Not Battery Wireless, Real-time Recording, Motion Detection, * Smart Camera, * Camera Indoors, 480P Resolution, 2.4GHz Home Wi-Fi, * on Temu. Shop on Temu and start saving. * * like other *.",
+  "specifications": {
+    "Material": "ABS"
+  },
+  "breadcrumbs": [
+    {
+      "optId": "",
+      "optName": "TEMU",
+      "level": 1,
+      "url": "https://www.temu.com"
+    },
+    {
+      "optId": "1422",
+      "optName": "Smart Home",
+      "level": 2,
+      "url": "https://www.temu.com/smart-home-o3-1422.html"
+    },
+    {
+      "optId": "1423",
+      "optName": "Security & Surveillance",
+      "level": 3,
+      "url": "https://www.temu.com/security-surveillance-o3-1423.html"
+    },
+    {
+      "optId": "",
+      "optName": "1PC X6 Connection Wi-Fi Camera, WiFi *, Not Battery Wireless, Real-time Recording, Motion Detection, * Smart Camera, * Camera Indoors, 480P Resolution, 2.4GHz Home Wi-Fi, *",
+      "level": 4,
+      "url": ""
+    }
+  ],
+  "returnPolicy": {
+    "returnWindowDays": 90,
+    "freeReturns": true
+  },
+  "reviews": [
+    {
+      "ratingScore": 5,
+      "reviewText": "",
+      "reviewDate": "2025-02-09",
+      "authorName": null,
+      "reviewTextRedacted": true
+    },
+    {
+      "ratingScore": 5,
+      "reviewText": "",
+      "reviewDate": "2025-01-29",
+      "authorName": null,
+      "reviewTextRedacted": true
+    },
+    {
+      "ratingScore": 5,
+      "reviewText": "",
+      "reviewDate": "2025-02-15",
+      "authorName": null,
+      "reviewTextRedacted": true
+    },
+    {
+      "ratingScore": 2,
+      "reviewText": "",
+      "reviewDate": "2026-05-06",
+      "authorName": null,
+      "reviewTextRedacted": true
+    }
+  ],
+  "productUrl": "https://www.temu.com/1pc-x6-connection-wi-fi-camera-wifi--not-battery-wireless-real-time-recording-motion-detection--smart-camera--camera-indoors-480p-resolution-2-4ghz-home-wi-fi--g-601099654331277.html",
+  "sourcePageType": "pdp",
+  "sourceUrl": "https://www.temu.com/1pc-x6-connection-wi-fi-camera-wifi--not-battery-wireless-real-time-recording-motion-detection--smart-camera--camera-indoors-480p-resolution-2-4ghz-home-wi-fi--g-601099654331277.html",
+  "extractedAt": "2026-11-15T17:54:01.606Z"
+}

@@ -1,0 +1,131 @@
+{
+  "goodsId": "601099664958549",
+  "title": "1* Fingerprint Lock Suitable for Cabinets & Drawers - Keyless Biometric Security Lock with Hidden Fingerprint, No-Drill Installation for Home O",
+  "price": 8.61,
+  "priceText": "$8.61",
+  "currency": "USD",
+  "imageUrl": "https://img.kwcdn.com/product/fancy/8e1fce74-7a7f-4c75-9cac-d96ed0e51b49.jpg",
+  "galleryImages": [
+    "https://img.kwcdn.com/product/fancy/8e1fce74-7a7f-4c75-9cac-d96ed0e51b49.jpg",
+    "https://img.kwcdn.com/product/fancy/16ac28a8-44df-491c-8f96-43383294a215.jpg",
+    "https://img.kwcdn.com/product/fancy/a46d87f3-a4bb-4fb9-ab27-11b408324bf3.jpg",
+    "https://img.kwcdn.com/product/fancy/d1de01f5-0d40-4b97-a176-b51e9a0374e4.jpg"
+  ],
+  "videoUrl": "https://goods-vod.kwcdn.com/goods-video/13b0e597ab9d57e396204e4fd9785f2bda942288.f30.mp4",
+  "videoCoverUrl": "https://img.kwcdn.com/product/fancy/8e1fce74-7a7f-4c75-9cac-d96ed0e51b49.jpg",
+  "hasVideo": true,
+  "rating": 4.8,
+  "reviewCount": 36,
+  "inStock": true,
+  "categoryName": "Smart Devices",
+  "categoryId": "1427",
+  "categoryPath": "Smart Home > Smart Devices",
+  "skus": [
+    {
+      "skuId": "601099664958549_round",
+      "specText": "Option: Round",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "Round"
+        }
+      ],
+      "price": 8.61,
+      "priceText": "$8.61",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/16ac28a8-44df-491c-8f96-43383294a215.jpg",
+      "inStock": true
+    },
+    {
+      "skuId": "601099664958549_plum__",
+      "specText": "Option: Plum *",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "Plum *"
+        }
+      ],
+      "price": 8.61,
+      "priceText": "$8.61",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/a46d87f3-a4bb-4fb9-ab27-11b408324bf3.jpg",
+      "inStock": true
+    },
+    {
+      "skuId": "601099664958549_fingerprint_recognition",
+      "specText": "Option: Fingerprint recognition",
+      "specs": [
+        {
+          "key": "Option",
+          "value": "Fingerprint recognition"
+        }
+      ],
+      "price": 8.61,
+      "priceText": "$8.61",
+      "marketPrice": null,
+      "marketPriceText": null,
+      "imageUrl": "https://img.kwcdn.com/product/fancy/d1de01f5-0d40-4b97-a176-b51e9a0374e4.jpg",
+      "inStock": true
+    }
+  ],
+  "description": "* deals on 1* Fingerprint Lock Suitable for Cabinets & Drawers - Keyless Biometric Security Lock with Hidden Fingerprint, No-Drill Installation for Home Office Locking System for Drawers, Cabinets, Storage Doors (No Wiring Required) on Temu. Free shipping on items shipped from Temu. Shop on Temu to start saving.",
+  "breadcrumbs": [
+    {
+      "optId": "",
+      "optName": "TEMU",
+      "level": 1,
+      "url": "https://www.temu.com"
+    },
+    {
+      "optId": "1422",
+      "optName": "Smart Home",
+      "level": 2,
+      "url": "https://www.temu.com/smart-home-o3-1422.html"
+    },
+    {
+      "optId": "1427",
+      "optName": "Smart Devices",
+      "level": 3,
+      "url": "https://www.temu.com/smart-devices-o3-1427.html"
+    },
+    {
+      "optId": "",
+      "optName": "1* Fingerprint Lock Suitable for Cabinets &amp; Drawers - Keyless Biometric Security Lock with Hidden Fingerprint, No-Drill Installation for Home Office Locking System for Drawers, Cabinets, Storage Doors (No Wiring Required)",
+      "level": 4,
+      "url": ""
+    }
+  ],
+  "returnPolicy": {
+    "returnWindowDays": 90,
+    "freeReturns": true
+  },
+  "reviews": [
+    {
+      "ratingScore": 5,
+      "reviewText": "",
+      "reviewDate": "2024-11-24",
+      "authorName": null,
+      "reviewTextRedacted": true
+    },
+    {
+      "ratingScore": 5,
+      "reviewText": "",
+      "reviewDate": "2026-*-17",
+      "authorName": null,
+      "reviewTextRedacted": true
+    },
+    {
+      "ratingScore": 4,
+      "reviewText": "",
+      "reviewDate": "2026-05-24",
+      "authorName": null,
+      "reviewTextRedacted": true
+    }
+  ],
+  "productUrl": "https://www.temu.com/1pc-fingerprint-drawer-lock--installation-hidden-keyless-opening-suitable-for-cabinets-cabinets-shoe-cabinets-bedside-tables-lockers-filing-cabinets-security-and-anti-theft-used-for-home-office-g-601099664958549.html",
+  "sourcePageType": "pdp",
+  "sourceUrl": "https://www.temu.com/1-fingerprint-lock-suitable-for-cabinets-drawers-keyless-biometric-security-lock-with-hidden-fingerprint-no-drill-installation-for-home-office-locking-system-for-drawers-cabinets-storage-doors-no-wiring-required-g-601099664958549.html",
+  "extractedAt": "2026-11-15T17:53:57.715Z"
+}

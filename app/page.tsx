@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/Hero";
 import { FeaturedCategories } from "@/components/FeaturedCategories";
@@ -13,17 +13,49 @@ import { SearchModal } from "@/components/SearchModal";
 import { PRODUCTS, Product } from "@/lib/products";
 
 export default function Home() {
-  const [cart, setCart] = useState<CartItem[]>([
-    {
-      product: PRODUCTS[0], // Preload with Baseus 65W for immediate e-commerce realism
-      quantity: 1,
-    },
-  ]);
+  const [cart, setCart] = useState<CartItem[]>([]);
+  const [isLoaded, setIsLoaded] = useState(false);
   const [isCartOpen, setIsCartOpen] = useState(false);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
   const [activeCategory, setActiveCategory] = useState<string>("all");
   const [toast, setToast] = useState<string | null>(null);
+
+  // Load cart from localStorage on client mount
+  useEffect(() => {
+    try {
+      const savedCart = localStorage.getItem("useoura_cart");
+      if (savedCart) {
+        const parsed = JSON.parse(savedCart);
+        if (Array.isArray(parsed) && parsed.length > 0) {
+          setCart(parsed);
+          setIsLoaded(true);
+          return;
+        }
+      }
+    } catch (e) {
+      console.error("Failed to load cart from storage", e);
+    }
+    // Default initial item for instant realistic feel
+    setCart([
+      {
+        product: PRODUCTS[0],
+        quantity: 1,
+      },
+    ]);
+    setIsLoaded(true);
+  }, []);
+
+  // Save cart to localStorage whenever it changes
+  useEffect(() => {
+    if (isLoaded) {
+      try {
+        localStorage.setItem("useoura_cart", JSON.stringify(cart));
+      } catch (e) {
+        console.error("Failed to save cart to storage", e);
+      }
+    }
+  }, [cart, isLoaded]);
 
   const showToast = (message: string) => {
     setToast(message);
@@ -32,7 +64,7 @@ export default function Home() {
     }, 2800);
   };
 
-  const handleAddToCart = (product: Product, quantity: number = 1) => {
+  const handleAddToCart = (product: Product, quantity: number = 1, openDrawer: boolean = false) => {
     setCart((prev) => {
       const existing = prev.find((item) => item.product.id === product.id);
       if (existing) {
@@ -45,6 +77,9 @@ export default function Home() {
       return [...prev, { product, quantity }];
     });
     showToast(`Added ${product.title} to bag`);
+    if (openDrawer) {
+      setIsCartOpen(true);
+    }
   };
 
   const handleUpdateQuantity = (productId: string, quantity: number) => {
@@ -63,10 +98,8 @@ export default function Home() {
     setCart((prev) => prev.filter((item) => item.product.id !== productId));
   };
 
-  const handleCheckout = () => {
-    alert(
-      "Shopify Sync Prototype // Order routing initialized for Greater Accra Region via Oura Logistics network."
-    );
+  const handleClearCart = () => {
+    setCart([]);
   };
 
   const handleShopClick = () => {
@@ -111,7 +144,7 @@ export default function Home() {
 
         {/* Bestsellers Product Grid (The Core Experience) */}
         <ProductGrid
-          onAddToCart={(prod) => handleAddToCart(prod, 1)}
+          onAddToCart={(prod) => handleAddToCart(prod, 1, false)}
           onQuickView={(prod) => setSelectedProduct(prod)}
           selectedCategorySlug={activeCategory}
           onSelectCategory={(slug) => setActiveCategory(slug)}
@@ -128,17 +161,17 @@ export default function Home() {
       <ProductModal
         product={selectedProduct}
         onClose={() => setSelectedProduct(null)}
-        onAddToCart={handleAddToCart}
+        onAddToCart={(prod, qty) => handleAddToCart(prod, qty, true)}
       />
 
-      {/* Cart Drawer Slide-over */}
+      {/* Cart Drawer Slide-over with Direct WhatsApp Checkout */}
       <CartDrawer
         isOpen={isCartOpen}
         onClose={() => setIsCartOpen(false)}
         items={cart}
         onUpdateQuantity={handleUpdateQuantity}
         onRemoveItem={handleRemoveItem}
-        onCheckout={handleCheckout}
+        onClearCart={handleClearCart}
       />
 
       {/* Minimalist Search Overlay */}

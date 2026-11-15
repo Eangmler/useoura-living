@@ -20,13 +20,13 @@ export const ProductGrid: React.FC<ProductGridProps> = ({
 }) => {
   const [sortBy, setSortBy] = useState<"default" | "price-asc" | "price-desc">("default");
 
-  const filterTabs = [
-    { label: "All Objects", slug: "all", count: 8 },
-    { label: "Mobile & Desk", slug: "mobile-desk", count: 4 },
-    { label: "Smart Home", slug: "smart-home", count: 1 },
-    { label: "Automotive", slug: "automotive", count: 2 },
-    { label: "Lifestyle", slug: "lifestyle", count: 1 },
-  ];
+  const filterTabs = useMemo(() => [
+    { label: "All Objects", slug: "all", count: PRODUCTS.length },
+    { label: "Mobile & Desk", slug: "mobile-desk", count: PRODUCTS.filter(p => p.categorySlug === "mobile-desk").length },
+    { label: "Smart Home", slug: "smart-home", count: PRODUCTS.filter(p => p.categorySlug === "smart-home").length },
+    { label: "Lifestyle", slug: "lifestyle", count: PRODUCTS.filter(p => p.categorySlug === "lifestyle").length },
+    { label: "Automotive", slug: "automotive", count: PRODUCTS.filter(p => p.categorySlug === "automotive").length },
+  ], []);
 
   const filteredProducts = useMemo(() => {
     let list = [...PRODUCTS];

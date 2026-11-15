@@ -2,8 +2,10 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
-import { X, Plus, Minus, Check, Shield, Truck, RotateCcw } from "lucide-react";
+import { X, Plus, Minus, Check, Shield, Truck, MessageCircle } from "lucide-react";
 import { Product } from "@/lib/products";
+import { buildWhatsAppLink, generateOrderReference } from "@/lib/whatsapp";
+import { STORE_CONFIG } from "@/lib/config";
 
 interface ProductModalProps {
   product: Product | null;
@@ -28,7 +30,31 @@ export const ProductModal: React.FC<ProductModalProps> = ({
     setTimeout(() => {
       setAdded(false);
       onClose();
-    }, 1200);
+    }, 800);
+  };
+
+  const handleInstantWhatsApp = () => {
+    const orderRef = generateOrderReference();
+    const itemSubtotal = product.price * quantity;
+    const isFreeAccra = itemSubtotal >= STORE_CONFIG.accraFreeDeliveryThreshold;
+    const deliveryFee = isFreeAccra ? 0 : STORE_CONFIG.accraDeliveryFee;
+
+    const url = buildWhatsAppLink({
+      orderRef,
+      items: [{ product, quantity }],
+      customerInfo: {
+        name: "",
+        phone: "",
+        region: "accra", // default for instant trigger
+        address: "",
+        landmarkNotes: "Initiated via Instant Product Quick-Order",
+      },
+      subtotal: itemSubtotal,
+      deliveryFee,
+      total: itemSubtotal + deliveryFee,
+    });
+
+    window.open(url, "_blank");
   };
 
   return (
@@ -42,7 +68,7 @@ export const ProductModal: React.FC<ProductModalProps> = ({
         <button
           onClick={onClose}
           aria-label="Close detail modal"
-          className="absolute top-4 right-4 z-20 p-2 bg-white/80 hover:bg-neutral-900 hover:text-white transition-colors border border-neutral-300"
+          className="absolute top-4 right-4 z-20 p-2 bg-white/80 hover:bg-neutral-900 hover:text-white transition-colors border border-neutral-300 cursor-pointer"
         >
           <X strokeWidth={1.5} className="w-5 h-5" />
         </button>
@@ -115,13 +141,13 @@ export const ProductModal: React.FC<ProductModalProps> = ({
               </div>
               <div className="flex items-center space-x-2">
                 <Shield strokeWidth={1.5} className="w-3.5 h-3.5 text-neutral-700" />
-                <span>6-Month Official Replacement Guarantee</span>
+                <span>Payment on Delivery (Accra) or MoMo confirmed dispatch</span>
               </div>
             </div>
           </div>
 
           {/* Add to Bag Controls */}
-          <div className="pt-6 border-t border-[#EAEAEA] space-y-4">
+          <div className="pt-6 border-t border-[#EAEAEA] space-y-3">
             <div className="flex items-center space-x-4">
               <div className="flex items-center border border-neutral-300 bg-white">
                 <button
@@ -161,6 +187,15 @@ export const ProductModal: React.FC<ProductModalProps> = ({
                 )}
               </button>
             </div>
+
+            {/* Instant WhatsApp Order button (GoPixelr style) */}
+            <button
+              onClick={handleInstantWhatsApp}
+              className="w-full py-3 bg-[#25D366] hover:bg-[#1fa851] text-white font-mono text-xs uppercase tracking-[0.15em] font-semibold transition-all duration-200 flex items-center justify-center space-x-2"
+            >
+              <MessageCircle strokeWidth={2} className="w-4 h-4 fill-current" />
+              <span>Instant Order on WhatsApp</span>
+            </button>
           </div>
         </div>
       </div>

@@ -1,44 +1,70 @@
 # useoura living
 
 > **"Weniger, aber besser." — Less, but better.**  
-> A Dieter Rams / Braun-inspired minimalist e-commerce prototype engineered in Next.js (App Router), Tailwind CSS, and Lucide Icons. Designed as an editorial visual guide and interactive architectural prototype for deployment to Vercel and manual translation into a custom Shopify theme.
+> A Dieter Rams / Braun-inspired minimalist e-commerce store engineered in Next.js (App Router), Tailwind CSS, and Lucide Icons. Hosted on Vercel with direct **WhatsApp Meta AI Order Routing**, tailored specifically for the Ghanaian market (Greater Accra Payment on Delivery & Regional pre-paid parcel dispatch).
 
 ---
 
-## 1. Brand Identity & Design System
+## 1. Store Architecture & WhatsApp Meta AI Checkout (GoPixelr Model)
 
-* **Brand Wordmark:** `useoura living` (`useoura` in medium/bold sans-serif, `living` in a lighter/thinner font weight, all lowercase).
-* **Aesthetic Philosophy:** Strict Dieter Rams ten principles of good design. Heavy asymmetrical negative space, architectural grid alignments (hairline borders `#EAEAEA`), and an uncompromising high-focus editorial aesthetic.
-* **Palette:**
-  * Background: Soft warm off-white (`#F7F7F5`)
-  * Gallery Canvas: Muted architectural silver/gray (`#F0F0F0` / `#EFEFEF`)
-  * Text & Accents: Deep slate/off-black (`#1A1A1A`), secondary muted gray (`#737373`)
-  * Grid hairlines: `#EAEAEA` / `#E5E5E5`
-* **Typography:** Clean sans-serif (Inter / system neo-grotesque) paired with crisp monospaced coordinates and specification tags (`JetBrains Mono`).
-
----
-
-## 2. Demographic Representation & Floating Image System
-
-* **Demographic Accuracy (Ghana / West Africa):** All lifestyle imagery featuring human interaction strictly features Black/African models and professionals in modern, minimal architectural workspaces and commute environments.
-* **The "Floating" Museum Effect:**
-  ```jsx
-  <div className="relative w-full aspect-square bg-[#F0F0F0] flex items-center justify-center p-10 sm:p-12 overflow-hidden">
-    <Image
-      src={product.image}
-      alt={product.title}
-      fill
-      className="object-contain mix-blend-multiply p-4"
-    />
-  </div>
-  ```
-  By enclosing the products inside `bg-[#F0F0F0]` cards and applying `mix-blend-multiply` with generous `p-10`/`p-12` padding, white product backdrops dissolve seamlessly into the card, rendering the gadgets like curated artifacts in an industrial design gallery.
+Instead of relying on third-party cart gateways or Shopify checkout:
+1. **Curated Webstore:** Shoppers explore Dieter Rams museum-style hardware cards, filter categories, and add items to their shopping bag.
+2. **Delivery & Region Selection (Step 2 in Bag):**
+   * **Greater Accra Region:** Customers are eligible for **Payment on Delivery (Cash or Mobile Money upon courier arrival)**. Free delivery on orders over `GH₵ 400.00`, otherwise `GH₵ 25.00`.
+   * **Outside Accra / Other Regions (Kumasi, Takoradi, Tamale, etc.):** Requires **Pre-Payment confirmation via Mobile Money before parcel dispatch**. Delivery fee: `GH₵ 45.00`.
+3. **Optional Address Entry (Zero-Friction Checkout):**
+   * Customers can enter their digital address, full name, phone number, and landmarks.
+   * **Crucially:** Address entry is strictly optional. If left blank, the customer is never blocked from ordering; instead, the order message flags `[NOT ENTERED ON WEB — ASSISTANT TO REQUEST]` so your WhatsApp Meta AI assistant automatically greets them and asks for their location.
+4. **Structured Meta AI Directive:**
+   The generated WhatsApp message contains a machine-readable `🤖 *META AI ASSISTANT DIRECTIVE:*` block designed for your WhatsApp AI / bot to instantly parse the status, region, items, and next steps.
 
 ---
 
-## 3. Product Catalog
+## 2. Meta AI WhatsApp Message Schema
 
-All 8 core hardware objects are priced in Ghanaian Cedis (`GH₵`) with next-day dispatch via Oura Fleet across Greater Accra:
+```text
+📦 *NEW ORDER — USEOURA LIVING*
+*Order Ref:* #OL-84920
+*Date:* 15 Nov 2026, 03:58 GMT
+
+🛒 *ORDERED ITEMS:*
+• 1x Baseus 65W Triple Port Car Charger (GH₵ 180.00 each = GH₵ 180.00)
+• 1x Apple 35W Dual Port Power Adapter (GH₵ 180.00 each = GH₵ 180.00)
+
+💰 *PAYMENT SUMMARY:*
+• Subtotal: GH₵ 360.00
+• Delivery: GH₵ 25.00 (Greater Accra Fleet)
+• *TOTAL AMOUNT DUE: GH₵ 385.00*
+
+📍 *DELIVERY INFORMATION:*
+• Customer Name: Kwame Mensah
+• Phone: 024 123 4567
+• Region: Greater Accra (Accra, Tema, Kasoa corridor)
+• Address: 14 Senchi St, Airport Residential Area, Accra
+• Delivery Notes / Landmark: Near Shell Filling Station
+
+💳 *PAYMENT POLICY:*
+• Policy: Payment on Delivery Available (Cash or MoMo on arrival)
+
+🤖 *META AI ASSISTANT DIRECTIVE:*
+[ACTION REQUIRED: Customer is in Greater Accra and eligible for Payment on Delivery. Address has been provided. Please confirm their order and notify them of the dispatch delivery time window.]
+```
+
+---
+
+## 3. Configuration & WhatsApp Number
+
+### Setting Your WhatsApp Business Number
+1. In your Vercel Project Settings, add an Environment Variable:
+   ```env
+   NEXT_PUBLIC_WHATSAPP_NUMBER=233XXXXXXXXX
+   ```
+   *(Enter your Ghanaian phone number in international format without `+` or spaces, e.g. `233241234567`)*.
+2. In the web application, click the **Settings icon (⚙)** in the Shopping Bag drawer to update or test any WhatsApp phone number on the fly. The number is saved to your browser session.
+
+---
+
+## 4. Hardware Catalog & Ghana Cedis (`GH₵`) Pricing
 
 | Ref | Product Title | Category | Price | Key Specs |
 |---|---|---|---|---|
@@ -53,52 +79,25 @@ All 8 core hardware objects are priced in Ghanaian Cedis (`GH₵`) with next-day
 
 ---
 
-## 4. Page Architecture & Components
-
-* **`components/Navbar.tsx`:** Sticky minimal bar with live logistics status (`NEXT-DAY DISPATCH ACCRA`), wordmark, uppercase tracked collection links, quick search, and interactive shopping bag drawer counter.
-* **`components/Hero.tsx`:** Editorial asymmetrical split hero with bold typography, pill CTA button ("Shop the Essentials"), Rams design index, and museum-grade product + lifestyle showcase.
-* **`components/FeaturedCategories.tsx`:** 4 magazine-style blocks with off-center breathing room, category numbering (`01`, `02`, `03`, `04`), and architectural photography.
-* **`components/ProductGrid.tsx`:** Asymmetrical grid with live category filters, price sorting, and quick inspection triggers.
-* **`components/ProductCard.tsx`:** Gallery card utilizing `mix-blend-multiply` floating effect, technical tags, and instant "Add to Bag" button.
-* **`components/ProductModal.tsx`:** Technical blueprint detail sheet with hardware specification tables and quantity selector.
-* **`components/CartDrawer.tsx`:** Slide-over bag drawer with real-time GH₵ subtotal, complimentary shipping progress threshold (GH₵ 400), and checkout trigger.
-* **`components/SearchModal.tsx`:** Fast real-time catalog search overlay with keyboard shortcuts (`Esc`).
-* **`components/BrandManifesto.tsx`:** Tribute to Dieter Rams' "Weniger, aber besser" philosophy and Accra workspace protocols.
-* **`components/Footer.tsx`:** Severely minimalist footer with newsletter dispatch, strict grid utility links, and GMT timezone coordinates.
-
----
-
 ## 5. Local Development
 
 ```bash
-# 1. Install dependencies
+# Install dependencies
 npm install
 
-# 2. Run local development server
+# Start development server
 npm run dev
 
-# 3. Open browser
+# Open locally
 http://localhost:3000
 ```
 
 ---
 
-## 6. Vercel Deployment
+## 6. Vercel Production Deployment
 
-Connect this repository to Vercel for zero-config automatic deployment:
-1. Push to GitHub (`git push origin main` or your new repo).
-2. Go to [vercel.com/new](https://vercel.com/new).
-3. Import the repository.
-4. Click **Deploy**. Next.js App Router and Tailwind CSS will automatically build and publish to a fast edge CDN.
-
----
-
-## 7. Shopify Theme Mapping Guide
-
-When translating this prototype into Liquid/Shopify OS 2.0 sections:
-* `Hero.tsx` ➔ `sections/hero-editorial.liquid`
-* `FeaturedCategories.tsx` ➔ `sections/featured-collections-magazine.liquid`
-* `ProductGrid.tsx` + `ProductCard.tsx` ➔ `sections/main-collection-asymmetric.liquid` + `snippets/card-product-floating.liquid`
-* `CartDrawer.tsx` ➔ `snippets/cart-drawer.liquid`
-* `BrandManifesto.tsx` ➔ `sections/brand-manifesto.liquid`
-* `Footer.tsx` ➔ `sections/footer-minimalist.liquid`
+Push to GitHub and connect to Vercel:
+1. Repository: `https://github.com/Eangmler/useoura-living.git`
+2. Set Environment Variable in Vercel:
+   `NEXT_PUBLIC_WHATSAPP_NUMBER=233XXXXXXXXX`
+3. Hit **Deploy**. The site will instantly publish to your custom domain or vercel.app URL.

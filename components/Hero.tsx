@@ -111,7 +111,7 @@ export const Hero: React.FC<HeroProps> = ({ onShopClick, onExploreProduct }) => 
                 {/* Editorial Lifestyle Image strictly featuring Black/African professional */}
                 <div className="relative aspect-[4/3] w-full overflow-hidden bg-neutral-200 mt-4 mb-6">
                   <Image
-                    src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=1200&q=85"
+                    src="/assets/brand/model/kisseh_official_model.jpg"
                     alt="African professional at minimalist modern workspace curated by useoura living"
                     fill
                     priority

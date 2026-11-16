@@ -660,6 +660,46 @@
       "inStock": true,
       "hasDiscount": true,
       "featured": false
+    },
+    {
+      "id": "prod-magnetic-phone-case",
+      "title": "Magnetic Matte Shockproof Pixel Case",
+      "description": "Frosted translucent matte protective armor for Google Pixel with integrated N52 Neodymium magnetic array for MagSafe chargers, mounts, and wallets. Oleophobic non-yellowing finish with raised camera visor bezel.",
+      "price": 110,
+      "originalPrice": 160,
+      "priceFormatted": "GH\u20b5 110",
+      "category": "Mobile & Desk Tech",
+      "categorySlug": "mobile-desk",
+      "image": "/assets/products/mobile-desk/magnetic-phone-case-isolated.webp",
+      "secondaryImage": "/assets/products/mobile-desk/magnetic-phone-case-lifestyle.webp",
+      "images": [
+        "/assets/products/mobile-desk/magnetic-phone-case-isolated.webp",
+        "/assets/products/mobile-desk/magnetic-phone-case-lifestyle.webp",
+        "/assets/products/mobile-desk/magnetic-phone-case-story.webp"
+      ],
+      "badge": "MagSafe Ready",
+      "specs": [
+        {
+          "label": "Magnetics",
+          "value": "Built-In N52 Strong Magnetic Ring"
+        },
+        {
+          "label": "Finish",
+          "value": "Frosted Translucent Anti-Fingerprint Matte"
+        },
+        {
+          "label": "Drop Defense",
+          "value": "Military-Grade Shock Absorption Corners"
+        },
+        {
+          "label": "Compatibility",
+          "value": "Google Pixel 8 Pro / 9 / 9 Pro / 9 Pro XL / 10"
+        }
+      ],
+      "tag": "Magnetic Ecosystem",
+      "inStock": true,
+      "hasDiscount": true,
+      "featured": false
     }
   ],
   "categories": [

@@ -540,6 +540,46 @@
       "inStock": true,
       "hasDiscount": true,
       "featured": false
+    },
+    {
+      "id": "prod-pixel-camera-lens-protector",
+      "title": "Pixel Camera Visor Glass Protector",
+      "description": "2-pack 9H tempered glass screen-printed protector engineered specifically for Google Pixel camera visor bar. Zero camera flare, Oleophobic coating, and edge-to-edge scratch defense.",
+      "price": 85,
+      "originalPrice": 120,
+      "priceFormatted": "GH\u20b5 85",
+      "category": "Mobile & Desk Tech",
+      "categorySlug": "mobile-desk",
+      "image": "/assets/products/mobile-desk/pixel-camera-lens-protector-isolated.webp",
+      "secondaryImage": "/assets/products/mobile-desk/pixel-camera-lens-protector-lifestyle.webp",
+      "images": [
+        "/assets/products/mobile-desk/pixel-camera-lens-protector-isolated.webp",
+        "/assets/products/mobile-desk/pixel-camera-lens-protector-lifestyle.webp",
+        "/assets/products/mobile-desk/pixel-camera-lens-protector-story.webp"
+      ],
+      "badge": "Pixel Essential",
+      "specs": [
+        {
+          "label": "Hardness",
+          "value": "9H Tempered Optical Glass"
+        },
+        {
+          "label": "Compatibility",
+          "value": "Google Pixel 9 / 9 Pro / 9 Pro XL / 8 / 8 Pro"
+        },
+        {
+          "label": "Coating",
+          "value": "Anti-Fingerprint Oleophobic"
+        },
+        {
+          "label": "Package",
+          "value": "2-Pack Complete Kit"
+        }
+      ],
+      "tag": "Optics Defense",
+      "inStock": true,
+      "hasDiscount": true,
+      "featured": false
     }
   ],
   "categories": [

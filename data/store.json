@@ -620,6 +620,46 @@
       "inStock": true,
       "hasDiscount": true,
       "featured": false
+    },
+    {
+      "id": "prod-pixel-privacy-screen-protector",
+      "title": "Pixel 28\u00b0 Anti-Peep Privacy Screen Kit",
+      "description": "4-piece complete defense kit for Google Pixel including three 9H 28\u00b0 micro-louver privacy tempered glass screen protectors and one camera visor glass protector. Total visual privacy in public with crystal-clear direct visibility.",
+      "price": 95,
+      "originalPrice": 140,
+      "priceFormatted": "GH\u20b5 95",
+      "category": "Mobile & Desk Tech",
+      "categorySlug": "mobile-desk",
+      "image": "/assets/products/mobile-desk/pixel-privacy-screen-protector-isolated.webp",
+      "secondaryImage": "/assets/products/mobile-desk/pixel-privacy-screen-protector-lifestyle.webp",
+      "images": [
+        "/assets/products/mobile-desk/pixel-privacy-screen-protector-isolated.webp",
+        "/assets/products/mobile-desk/pixel-privacy-screen-protector-lifestyle.webp",
+        "/assets/products/mobile-desk/pixel-privacy-screen-protector-story.webp"
+      ],
+      "badge": "Privacy Armor",
+      "specs": [
+        {
+          "label": "Technology",
+          "value": "28\u00b0 Micro-Louver Anti-Spy Filter"
+        },
+        {
+          "label": "Hardness",
+          "value": "9H Shatterproof Tempered Glass"
+        },
+        {
+          "label": "Bundle",
+          "value": "3x Screen Protectors + 1x Camera Visor Glass"
+        },
+        {
+          "label": "Compatibility",
+          "value": "Google Pixel 9 / 9 Pro / 9 Pro XL / 8 / 8 Pro"
+        }
+      ],
+      "tag": "Data Confidentiality",
+      "inStock": true,
+      "hasDiscount": true,
+      "featured": false
     }
   ],
   "categories": [

@@ -580,6 +580,46 @@
       "inStock": true,
       "hasDiscount": true,
       "featured": false
+    },
+    {
+      "id": "prod-anti-snoring-nose-clip",
+      "title": "Magnetic Anti-Snoring Breathing Clip",
+      "description": "Ultra-soft medical silicone breathing clips with built-in micro-magnetic nodes. Gently dilates nasal passages to maximize nocturnal airflow, eliminate snoring, and deepen sleep quality.",
+      "price": 55,
+      "originalPrice": 85,
+      "priceFormatted": "GH\u20b5 55",
+      "category": "Minimalist Lifestyle",
+      "categorySlug": "lifestyle",
+      "image": "/assets/products/lifestyle/anti-snoring-nose-clip-isolated.webp",
+      "secondaryImage": "/assets/products/lifestyle/anti-snoring-nose-clip-lifestyle.webp",
+      "images": [
+        "/assets/products/lifestyle/anti-snoring-nose-clip-isolated.webp",
+        "/assets/products/lifestyle/anti-snoring-nose-clip-lifestyle.webp",
+        "/assets/products/lifestyle/anti-snoring-nose-clip-story.webp"
+      ],
+      "badge": "Sleep Wellness",
+      "specs": [
+        {
+          "label": "Material",
+          "value": "BPA-Free Medical Grade Silicone"
+        },
+        {
+          "label": "Technology",
+          "value": "Acupressure Micro-Magnetic Nodes"
+        },
+        {
+          "label": "Accessories",
+          "value": "Compact Acrylic Travel Case"
+        },
+        {
+          "label": "Reusability",
+          "value": "Washable & Infinitely Reusable"
+        }
+      ],
+      "tag": "Sleep Recovery",
+      "inStock": true,
+      "hasDiscount": true,
+      "featured": false
     }
   ],
   "categories": [

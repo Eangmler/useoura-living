@@ -5,6 +5,8 @@ import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/Hero";
 import { FeaturedCategories } from "@/components/FeaturedCategories";
 import { ProductGrid } from "@/components/ProductGrid";
+import { DeskSetupSection } from "@/components/DeskSetupSection";
+import { CraftsmanshipSection } from "@/components/CraftsmanshipSection";
 import { ComboSection } from "@/components/ComboSection";
 import { SmartHomeSection } from "@/components/SmartHomeSection";
 import { Footer } from "@/components/Footer";
@@ -176,7 +178,7 @@ export default function Home() {
           activeCategory={activeCategory}
         />
 
-        {/* 3. Core Product Grid (2-Angle Hover & In-Stock/Discount Indicators) */}
+        {/* 3. Core Product Grid (2-Angle Hover, Lofree-Style Finish Swatches & Status Indicators) */}
         <ProductGrid
           onAddToCart={(prod) => handleAddToCart(prod, 1, false)}
           onQuickView={(prod) => setSelectedProduct(prod)}
@@ -184,10 +186,20 @@ export default function Home() {
           onSelectCategory={(slug) => setActiveCategory(slug)}
         />
 
-        {/* 4. Curated Combos (Hardware that works hand-in-hand) */}
+        {/* 4. The 2m² Space: Lofree-Inspired Interactive Desk Hotspots */}
+        <DeskSetupSection
+          onAddToCart={(prod) => handleAddToCart(prod, 1, false)}
+          onQuickView={(prod) => setSelectedProduct(prod)}
+          onAddBundleToCart={handleAddComboToCart}
+        />
+
+        {/* 5. Tactile Engineering & Material Breakdown */}
+        <CraftsmanshipSection />
+
+        {/* 6. Curated Combos (Hardware that works hand-in-hand) */}
         <ComboSection onAddComboToCart={handleAddComboToCart} />
 
-        {/* 5. Smart Home Engineering & In-Person Setups (with Minimalist YouTube Video) */}
+        {/* 7. Smart Home Engineering & In-Person Setups (Turnkey Installation in Accra) */}
         <SmartHomeSection />
       </main>
 

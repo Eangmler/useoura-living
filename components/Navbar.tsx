@@ -49,16 +49,23 @@ export const Navbar: React.FC<NavbarProps> = ({
 
   return (
     <>
-      {/* Top Utility Bar */}
+      {/* Top Utility Bar (Lofree-Inspired Ambient Announcement Bar) */}
       <div className="w-full bg-[#1A1A1A] text-[#F7F7F5] py-2 px-4 text-[10px] uppercase font-mono tracking-[0.2em] flex justify-between items-center border-b border-neutral-800">
         <div className="container mx-auto flex items-center justify-between">
-          <div className="flex items-center space-x-2">
-            <span className="inline-block w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
-            <span>FREE GREATER ACCRA UBER COURIER INCLUDED</span>
+          <div className="flex items-center space-x-2 truncate pr-4">
+            <span className="inline-block w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse shrink-0" />
+            <span className="truncate">FREE ACCRA UBER COURIER · THE 2M² DESK SANCTUARY · CASH ON DELIVERY</span>
           </div>
-          <div className="flex items-center space-x-4 text-neutral-400">
-            <span className="hidden sm:inline">WHATSAPP: +233 24 814 7952</span>
-            <span className="text-neutral-500">|</span>
+          <div className="flex items-center space-x-4 text-neutral-400 shrink-0">
+            <a
+              href="https://wa.me/233248147952"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hidden sm:inline hover:text-white transition-colors"
+            >
+              WHATSAPP: +233 24 814 7952
+            </a>
+            <span className="text-neutral-600">|</span>
             <span className="text-neutral-300 font-medium">GHANA (GH₵)</span>
           </div>
         </div>
